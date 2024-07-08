@@ -1,0 +1,838 @@
+/* 
+  Localizable.strings
+  
+
+  Created by 高效奕 on 2024/7/8.
+  
+*/
+/* Acceleration Units */
+"metersPerSecondSquared.symbol" = "m/s²";
+"metersPerSecondSquared.shortName" = "米每二次方秒";
+"metersPerSecondSquared.longName" = "米每二次方秒";
+
+"gravity.symbol" = "g";
+"gravity.shortName" = "重力加速度";
+"gravity.longName" = "重力加速度";
+
+/* Angle Units */
+"degrees.symbol" = "°";
+"degrees.shortName" = "度";
+"degrees.longName" = "度";
+
+"arcMinutes.symbol" = "'";
+"arcMinutes.shortName" = "弧度分钟";
+"arcMinutes.longName" = "弧度分钟";
+
+"arcSeconds.symbol" = "\"";
+"arcSeconds.shortName" = "弧度秒";
+"arcSeconds.longName" = "弧度秒";
+
+"radians.symbol" = "rad";
+"radians.shortName" = "弧度";
+"radians.longName" = "弧度";
+
+"gradians.symbol" = "gon";
+"gradians.shortName" = "刻度";
+"gradians.longName" = "刻度";
+
+"revolutions.symbol" = "rev";
+"revolutions.shortName" = "转";
+"revolutions.longName" = "转";
+
+/* Area Units */
+"squareMegameters.symbol" = "Mm²";
+"squareMegameters.shortName" = "平方兆米";
+"squareMegameters.longName" = "平方兆米";
+
+"squareKilometers.symbol" = "km²";
+"squareKilometers.shortName" = "平方公里";
+"squareKilometers.longName" = "平方公里";
+
+"squareMeters.symbol" = "m²";
+"squareMeters.shortName" = "平方米";
+"squareMeters.longName" = "平方米";
+
+"squareCentimeters.symbol" = "cm²";
+"squareCentimeters.shortName" = "平方厘米";
+"squareCentimeters.longName" = "平方厘米";
+
+"squareMillimeters.symbol" = "mm²";
+"squareMillimeters.shortName" = "平方毫米";
+"squareMillimeters.longName" = "平方毫米";
+
+"squareMicrometers.symbol" = "µm²";
+"squareMicrometers.shortName" = "平方微米";
+"squareMicrometers.longName" = "平方微米";
+
+"squareNanometers.symbol" = "nm²";
+"squareNanometers.shortName" = "平方纳米";
+"squareNanometers.longName" = "平方纳米";
+
+"squareInches.symbol" = "in²";
+"squareInches.shortName" = "平方英寸";
+"squareInches.longName" = "平方英寸";
+
+"squareFeet.symbol" = "ft²";
+"squareFeet.shortName" = "平方英尺";
+"squareFeet.longName" = "平方英尺";
+
+"squareYards.symbol" = "yd²";
+"squareYards.shortName" = "平方码";
+"squareYards.longName" = "平方码";
+
+"squareMiles.symbol" = "mi²";
+"squareMiles.shortName" = "平方英里";
+"squareMiles.longName" = "平方英里";
+
+"acres.symbol" = "ac";
+"acres.shortName" = "英亩";
+"acres.longName" = "英亩";
+
+"ares.symbol" = "a";
+"ares.shortName" = "公亩";
+"ares.longName" = "公亩";
+
+"hectares.symbol" = "ha";
+"hectares.shortName" = "公顷";
+"hectares.longName" = "公顷";
+
+/* Concentration Units */
+"gramsPerLiter.symbol" = "g/L";
+"gramsPerLiter.shortName" = "克每升";
+"gramsPerLiter.longName" = "克每升";
+
+"milligramsPerDeciliter.symbol" = "mg/dL";
+"milligramsPerDeciliter.shortName" = "毫克每分升";
+"milligramsPerDeciliter.longName" = "毫克每分升";
+
+"partsPerMillion.symbol" = "ppm";
+"partsPerMillion.shortName" = "百万分之一";
+"partsPerMillion.longName" = "百万分之一";
+
+/* Time Units */
+"hours.symbol" = "h";
+"hours.shortName" = "小时";
+"hours.longName" = "小时";
+
+"minutes.symbol" = "min";
+"minutes.shortName" = "分钟";
+"minutes.longName" = "分钟";
+
+"seconds.symbol" = "s";
+"seconds.shortName" = "秒";
+"seconds.longName" = "秒";
+
+"milliseconds.symbol" = "ms";
+"milliseconds.shortName" = "毫秒";
+"milliseconds.longName" = "毫秒";
+
+"microseconds.symbol" = "µs";
+"microseconds.shortName" = "微秒";
+"microseconds.longName" = "微秒";
+
+"nanoseconds.symbol" = "ns";
+"nanoseconds.shortName" = "纳秒";
+"nanoseconds.longName" = "纳秒";
+
+"picoseconds.symbol" = "ps";
+"picoseconds.shortName" = "皮秒";
+"picoseconds.longName" = "皮秒";
+
+/* Electric Charge Capacity Units */
+"megaampereHours.symbol" = "MAh";
+"megaampereHours.shortName" = "兆安时";
+"megaampereHours.longName" = "兆安时";
+
+"kiloampereHours.symbol" = "kAh";
+"kiloampereHours.shortName" = "千安时";
+"kiloampereHours.longName" = "千安时";
+
+"ampereHours.symbol" = "Ah";
+"ampereHours.shortName" = "安时";
+"ampereHours.longName" = "安时";
+
+"milliampereHours.symbol" = "mAh";
+"milliampereHours.shortName" = "毫安时";
+"milliampereHours.longName" = "毫安时";
+
+"microampereHours.symbol" = "µAh";
+"microampereHours.shortName" = "微安时";
+"microampereHours.longName" = "微安时";
+
+/* Electric Current Units */
+"megaamperes.symbol" = "MA";
+"megaamperes.shortName" = "兆安培";
+"megaamperes.longName" = "兆安培";
+
+"kiloamperes.symbol" = "kA";
+"kiloamperes.shortName" = "千安培";
+"kiloamperes.longName" = "千安培";
+
+"amperes.symbol" = "A";
+"amperes.shortName" = "安培";
+"amperes.longName" = "安培";
+
+"milliamperes.symbol" = "mA";
+"milliamperes.shortName" = "毫安培";
+"milliamperes.longName" = "毫安培";
+
+"microamperes.symbol" = "µA";
+"microamperes.shortName" = "微安培";
+"microamperes.longName" = "微安培";
+
+/* Electric Potential Units */
+"megavolts.symbol" = "MV";
+"megavolts.shortName" = "兆伏特";
+"megavolts.longName" = "兆伏特";
+
+"kilovolts.symbol" = "kV";
+"kilovolts.shortName" = "千伏特";
+"kilovolts.longName" = "千伏特";
+
+"volts.symbol" = "V";
+"volts.shortName" = "伏特";
+"volts.longName" = "伏特";
+
+"millivolts.symbol" = "mV";
+"millivolts.shortName" = "毫伏特";
+"millivolts.longName" = "毫伏特";
+
+"microvolts.symbol" = "µV";
+"microvolts.shortName" = "微伏特";
+"microvolts.longName" = "微伏特";
+
+/* Electric Resistance Units */
+"megaohms.symbol" = "MΩ";
+"megaohms.shortName" = "兆欧姆";
+"megaohms.longName" = "兆欧姆";
+
+"kiloohms.symbol" = "kΩ";
+"kiloohms.shortName" = "千欧姆";
+"kiloohms.longName" = "千欧姆";
+
+"ohms.symbol" = "Ω";
+"ohms.shortName" = "欧姆";
+"ohms.longName" = "欧姆";
+
+"milliohms.symbol" = "mΩ";
+"milliohms.shortName" = "毫欧姆";
+"milliohms.longName" = "毫欧姆";
+
+"microohms.symbol" = "µΩ";
+"microohms.shortName" = "微欧姆";
+"microohms.longName" = "微欧姆";
+
+/* Energy Units */
+"kilojoules.symbol" = "kJ";
+"kilojoules.shortName" = "千焦耳";
+"kilojoules.longName" = "千焦耳";
+
+"joules.symbol" = "J";
+"joules.shortName" = "焦耳";
+"joules.longName" = "焦耳";
+
+"kilocalories.symbol" = "kcal";
+"kilocalories.shortName" = "千卡路里";
+"kilocalories.longName" = "千卡路里";
+
+"calories.symbol" = "cal";
+"calories.shortName" = "卡路里";
+"calories.longName" = "卡路里";
+
+"kilowattHours.symbol" = "kWh";
+"kilowattHours.shortName" = "千瓦时";
+"kilowattHours.longName" = "千瓦时";
+
+/* Frequency Units */
+"terahertz.symbol" = "THz";
+"terahertz.shortName" = "太赫兹";
+"terahertz.longName" = "太赫兹";
+
+"gigahertz.symbol" = "GHz";
+"gigahertz.shortName" = "千兆赫兹";
+"gigahertz.longName" = "千兆赫兹";
+
+"megahertz.symbol" = "MHz";
+"megahertz.shortName" = "兆赫兹";
+"megahertz.longName" = "兆赫兹";
+
+"kilohertz.symbol" = "kHz";
+"kilohertz.shortName" = "千赫兹";
+"kilohertz.longName" = "千赫兹";
+
+"hertz.symbol" = "Hz";
+"hertz.shortName" = "赫兹";
+"hertz.longName" = "赫兹";
+
+"millihertz.symbol" = "mHz";
+"millihertz.shortName" = "毫赫兹";
+"millihertz.longName" = "毫赫兹";
+
+"microhertz.symbol" = "µHz";
+"microhertz.shortName" = "微赫兹";
+"microhertz.longName" = "微赫兹";
+
+"nanohertz.symbol" = "nHz";
+"nanohertz.shortName" = "纳赫兹";
+"nanohertz.longName" = "纳赫兹";
+
+"framesPerSecond.symbol" = "fps";
+"framesPerSecond.shortName" = "帧每秒";
+"framesPerSecond.longName" = "帧每秒";
+
+/* Fuel Efficiency Units */
+"litersPer100Kilometers.symbol" = "L/100km";
+"litersPer100Kilometers.shortName" = "升每百公里";
+"litersPer100Kilometers.longName" = "升每百公里";
+
+"milesPerImperialGallon.symbol" = "mpg (Imp.)";
+"milesPerImperialGallon.shortName" = "英制加仑每英里";
+"milesPerImperialGallon.longName" = "英制加仑每英里";
+
+"milesPerGallon.symbol" = "mpg";
+"milesPerGallon.shortName" = "加仑每英里";
+"milesPerGallon.longName" = "加仑每英里";
+
+/* Data Units */
+"bytes.symbol" = "B";
+"bytes.shortName" = "字节";
+"bytes.longName" = "字节";
+
+"bits.symbol" = "b";
+"bits.shortName" = "比特";
+"bits.longName" = "比特";
+
+"nibbles.symbol" = "N";
+"nibbles.shortName" = "半字节";
+"nibbles.longName" = "半字节";
+
+"yottabytes.symbol" = "YB";
+"yottabytes.shortName" = "尧字节";
+"yottabytes.longName" = "尧字节";
+
+"zettabytes.symbol" = "ZB";
+"zettabytes.shortName" = "泽字节";
+"zettabytes.longName" = "泽字节";
+
+"exabytes.symbol" = "EB";
+"exabytes.shortName" = "艾字节";
+"exabytes.longName" = "艾字节";
+
+"petabytes.symbol" = "PB";
+"petabytes.shortName" = "拍字节";
+"petabytes.longName" = "拍字节";
+
+"terabytes.symbol" = "TB";
+"terabytes.shortName" = "太字节";
+"terabytes.longName" = "太字节";
+
+"gigabytes.symbol" = "GB";
+"gigabytes.shortName" = "千兆字节";
+"gigabytes.longName" = "千兆字节";
+
+"megabytes.symbol" = "MB";
+"megabytes.shortName" = "兆字节";
+"megabytes.longName" = "兆字节";
+
+"kilobytes.symbol" = "kB";
+"kilobytes.shortName" = "千字节";
+"kilobytes.longName" = "千字节";
+
+"yottabits.symbol" = "Yb";
+"yottabits.shortName" = "尧比特";
+"yottabits.longName" = "尧比特";
+
+"zettabits.symbol" = "Zb";
+"zettabits.shortName" = "泽比特";
+"zettabits.longName" = "泽比特";
+
+"exabits.symbol" = "Eb";
+"exabits.shortName" = "艾比特";
+"exabits.longName" = "艾比特";
+
+"petabits.symbol" = "Pb";
+"petabits.shortName" = "拍比特";
+"petabits.longName" = "拍比特";
+
+"terabits.symbol" = "Tb";
+"terabits.shortName" = "太比特";
+"terabits.longName" = "太比特";
+
+"gigabits.symbol" = "Gb";
+"gigabits.shortName" = "千兆比特";
+"gigabits.longName" = "千兆比特";
+
+"megabits.symbol" = "Mb";
+"megabits.shortName" = "兆比特";
+"megabits.longName" = "兆比特";
+
+"kilobits.symbol" = "kb";
+"kilobits.shortName" = "千比特";
+"kilobits.longName" = "千比特";
+
+"yobibytes.symbol" = "YiB";
+"yobibytes.shortName" = "尧二进制字节";
+"yobibytes.longName" = "尧二进制字节";
+
+"zebibytes.symbol" = "ZiB";
+"zebibytes.shortName" = "泽二进制字节";
+"zebibytes.longName" = "泽二进制字节";
+
+"exbibytes.symbol" = "EiB";
+"exbibytes.shortName" = "艾二进制字节";
+"exbibytes.longName" = "艾二进制字节";
+
+"pebibytes.symbol" = "PiB";
+"pebibytes.shortName" = "拍二进制字节";
+"pebibytes.longName" = "拍二进制字节";
+
+"tebibytes.symbol" = "TiB";
+"tebibytes.shortName" = "太二进制字节";
+"tebibytes.longName" = "太二进制字节";
+
+"gibibytes.symbol" = "GiB";
+"gibibytes.shortName" = "千兆二进制字节";
+"gibibytes.longName" = "千兆二进制字节";
+
+"mebibytes.symbol" = "MiB";
+"mebibytes.shortName" = "兆二进制字节";
+"mebibytes.longName" = "兆二进制字节";
+
+"kibibytes.symbol" = "KiB";
+"kibibytes.shortName" = "千二进制字节";
+"kibibytes.longName" = "千二进制字节";
+
+"yobibits.symbol" = "Yib";
+"yobibits.shortName" = "尧二进制比特";
+"yobibits.longName" = "尧二进制比特";
+
+"zebibits.symbol" = "Zib";
+"zebibits.shortName" = "泽二进制比特";
+"zebibits.longName" = "泽二进制比特";
+
+"exbibits.symbol" = "Eib";
+"exbibits.shortName" = "艾二进制比特";
+"exbibits.longName" = "艾二进制比特";
+
+"pebibits.symbol" = "Pib";
+"pebibits.shortName" = "拍二进制比特";
+"pebibits.longName" = "拍二进制比特";
+
+"tebibits.symbol" = "Tib";
+"tebibits.shortName" = "太二进制比特";
+"tebibits.longName" = "太二进制比特";
+
+"gibibits.symbol" = "Gib";
+"gibibits.shortName" = "千兆二进制比特";
+"gibibits.longName" = "千兆二进制比特";
+
+"mebibits.symbol" = "Mib";
+"mebibits.shortName" = "兆二进制比特";
+"mebibits.longName" = "兆二进制比特";
+
+"kibibits.symbol" = "Kib";
+"kibibits.shortName" = "千二进制比特";
+"kibibits.longName" = "千二进制比特";
+
+/* Length Units */
+"nauticalMiles.symbol" = "NM";
+"nauticalMiles.shortName" = "海里";
+"nauticalMiles.longName" = "海里";
+
+"kilometers.symbol" = "km";
+"kilometers.shortName" = "千米";
+"kilometers.longName" = "千米";
+
+"meters.symbol" = "m";
+"meters.shortName" = "米";
+"meters.longName" = "米";
+
+"miles.symbol" = "mi";
+"miles.shortName" = "英里";
+"miles.longName" = "英里";
+
+"megameters.symbol" = "Mm";
+"megameters.shortName" = "兆米";
+"megameters.longName" = "兆米";
+
+"hectometers.symbol" = "hm";
+"hectometers.shortName" = "百米";
+"hectometers.longName" = "百米";
+
+"decameters.symbol" = "dam";
+"decameters.shortName" = "十米";
+"decameters.longName" = "十米";
+
+"decimeters.symbol" = "dm";
+"decimeters.shortName" = "分米";
+"decimeters.longName" = "分米";
+
+"centimeters.symbol" = "cm";
+"centimeters.shortName" = "厘米";
+"centimeters.longName" = "厘米";
+
+"millimeters.symbol" = "mm";
+"millimeters.shortName" = "毫米";
+"millimeters.longName" = "毫米";
+
+"micrometers.symbol" = "µm";
+"micrometers.shortName" = "微米";
+"micrometers.longName" = "微米";
+
+"nanometers.symbol" = "nm";
+"nanometers.shortName" = "纳米";
+"nanometers.longName" = "纳米";
+
+"picometers.symbol" = "pm";
+"picometers.shortName" = "皮米";
+"picometers.longName" = "皮米";
+
+"inches.symbol" = "in";
+"inches.shortName" = "英寸";
+"inches.longName" = "英寸";
+
+"feet.symbol" = "ft";
+"feet.shortName" = "英尺";
+"feet.longName" = "英尺";
+
+"yards.symbol" = "yd";
+"yards.shortName" = "码";
+"yards.longName" = "码";
+
+"scandinavianMiles.symbol" = "smi";
+"scandinavianMiles.shortName" = "斯堪的纳维亚英里";
+"scandinavianMiles.longName" = "斯堪的纳维亚英里";
+
+"lightyears.symbol" = "ly";
+"lightyears.shortName" = "光年";
+"lightyears.longName" = "光年";
+
+"fathoms.symbol" = "fathom";
+"fathoms.shortName" = "英寻";
+"fathoms.longName" = "英寻";
+
+"furlongs.symbol" = "furlong";
+"furlongs.shortName" = "弗隆";
+"furlongs.longName" = "弗隆";
+
+"astronomicalUnits.symbol" = "AU";
+"astronomicalUnits.shortName" = "天文单位";
+"astronomicalUnits.longName" = "天文单位";
+
+"parsecs.symbol" = "pc";
+"parsecs.shortName" = "秒差距";
+"parsecs.longName" = "秒差距";
+
+/* Mass Units */
+"kilograms.symbol" = "kg";
+"kilograms.shortName" = "千克";
+"kilograms.longName" = "千克";
+
+"grams.symbol" = "g";
+"grams.shortName" = "克";
+"grams.longName" = "克";
+
+"decigrams.symbol" = "dg";
+"decigrams.shortName" = "分克";
+"decigrams.longName" = "分克";
+
+"centigrams.symbol" = "cg";
+"centigrams.shortName" = "厘克";
+"centigrams.longName" = "厘克";
+
+"milligrams.symbol" = "mg";
+"milligrams.shortName" = "毫克";
+"milligrams.longName" = "毫克";
+
+"micrograms.symbol" = "µg";
+"micrograms.shortName" = "微克";
+"micrograms.longName" = "微克";
+
+"nanograms.symbol" = "ng";
+"nanograms.shortName" = "纳克";
+"nanograms.longName" = "纳克";
+
+"picograms.symbol" = "pg";
+"picograms.shortName" = "皮克";
+"picograms.longName" = "皮克";
+
+"ounces.symbol" = "oz";
+"ounces.shortName" = "盎司";
+"ounces.longName" = "盎司";
+
+"pounds.symbol" = "lb";
+"pounds.shortName" = "磅";
+"pounds.longName" = "磅";
+
+"stones.symbol" = "st";
+"stones.shortName" = "英石";
+"stones.longName" = "英石";
+
+"metricTons.symbol" = "t";
+"metricTons.shortName" = "公吨";
+"metricTons.longName" = "公吨";
+
+"shortTons.symbol" = "ton";
+"shortTons.shortName" = "短吨";
+"shortTons.longName" = "短吨";
+
+"carats.symbol" = "ct";
+"carats.shortName" = "克拉";
+"carats.longName" = "克拉";
+
+"ouncesTroy.symbol" = "oz t";
+"ouncesTroy.shortName" = "金衡盎司";
+"ouncesTroy.longName" = "金衡盎司";
+
+"slugs.symbol" = "slug";
+"slugs.shortName" = "斯拉格";
+"slugs.longName" = "斯拉格";
+
+/* Power Units */
+"terawatts.symbol" = "TW";
+"terawatts.shortName" = "太瓦";
+"terawatts.longName" = "太瓦";
+
+"gigawatts.symbol" = "GW";
+"gigawatts.shortName" = "千兆瓦";
+"gigawatts.longName" = "千兆瓦";
+
+"megawatts.symbol" = "MW";
+"megawatts.shortName" = "兆瓦";
+"megawatts.longName" = "兆瓦";
+
+"kilowatts.symbol" = "kW";
+"kilowatts.shortName" = "千瓦";
+"kilowatts.longName" = "千瓦";
+
+"watts.symbol" = "W";
+"watts.shortName" = "瓦";
+"watts.longName" = "瓦";
+
+"milliwatts.symbol" = "mW";
+"milliwatts.shortName" = "毫瓦";
+"milliwatts.longName" = "毫瓦";
+
+"microwatts.symbol" = "µW";
+"microwatts.shortName" = "微瓦";
+"microwatts.longName" = "微瓦";
+
+"nanowatts.symbol" = "nW";
+"nanowatts.shortName" = "纳瓦";
+"nanowatts.longName" = "纳瓦";
+
+"picowatts.symbol" = "pW";
+"picowatts.shortName" = "皮瓦";
+"picowatts.longName" = "皮瓦";
+
+"femtowatts.symbol" = "fW";
+"femtowatts.shortName" = "飞瓦";
+"femtowatts.longName" = "飞瓦";
+
+"horsepower.symbol" = "hp";
+"horsepower.shortName" = "马力";
+"horsepower.longName" = "马力";
+
+/* Pressure Units */
+"newtonsPerMetersSquared.symbol" = "N/m²";
+"newtonsPerMetersSquared.shortName" = "牛顿每平方米";
+"newtonsPerMetersSquared.longName" = "牛顿每平方米";
+
+"gigapascals.symbol" = "GPa";
+"gigapascals.shortName" = "千兆帕";
+"gigapascals.longName" = "千兆帕";
+
+"megapascals.symbol" = "MPa";
+"megapascals.shortName" = "兆帕";
+"megapascals.longName" = "兆帕";
+
+"kilopascals.symbol" = "kPa";
+"kilopascals.shortName" = "千帕";
+"kilopascals.longName" = "千帕";
+
+"hectopascals.symbol" = "hPa";
+"hectopascals.shortName" = "百帕";
+"hectopascals.longName" = "百帕";
+
+"inchesOfMercury.symbol" = "inHg";
+"inchesOfMercury.shortName" = "英寸汞柱";
+"inchesOfMercury.longName" = "英寸汞柱";
+
+"bars.symbol" = "bar";
+"bars.shortName" = "巴";
+"bars.longName" = "巴";
+
+"millibars.symbol" = "mbar";
+"millibars.shortName" = "毫巴";
+"millibars.longName" = "毫巴";
+
+"millimetersOfMercury.symbol" = "mmHg";
+"millimetersOfMercury.shortName" = "毫米汞柱";
+"millimetersOfMercury.longName" = "毫米汞柱";
+
+"poundsForcePerSquareInch.symbol" = "psi";
+"poundsForcePerSquareInch.shortName" = "磅力每平方英寸";
+"poundsForcePerSquareInch.longName" = "磅力每平方英寸";
+
+/* Speed Units */
+"knots.symbol" = "kn";
+"knots.shortName" = "节";
+"knots.longName" = "节";
+
+"kilometersPerHour.symbol" = "km/h";
+"kilometersPerHour.shortName" = "千米每小时";
+"kilometersPerHour.longName" = "千米每小时";
+
+"metersPerSecond.symbol" = "m/s";
+"metersPerSecond.shortName" = "米每秒";
+"metersPerSecond.longName" = "米每秒";
+
+"milesPerHour.symbol" = "mph";
+"milesPerHour.shortName" = "英里每小时";
+"milesPerHour.longName" = "英里每小时";
+
+"feetPerSecond.symbol" = "ft/s";
+"feetPerSecond.shortName" = "英尺每秒";
+"feetPerSecond.longName" = "英尺每秒";
+
+"feetPerMinute.symbol" = "ft/min";
+"feetPerMinute.shortName" = "英尺每分钟";
+"feetPerMinute.longName" = "英尺每分钟";
+
+/* Temperature Units */
+"kelvin.symbol" = "K";
+"kelvin.shortName" = "开尔文";
+"kelvin.longName" = "开尔文";
+
+"celsius.symbol" = "°C";
+"celsius.shortName" = "摄氏度";
+"celsius.longName" = "摄氏度";
+
+"fahrenheit.symbol" = "°F";
+"fahrenheit.shortName" = "华氏度";
+"fahrenheit.longName" = "华氏度";
+
+/* Volume Units */
+"liters.symbol" = "L";
+"liters.shortName" = "升";
+"liters.longName" = "升";
+
+"cubicMeters.symbol" = "m³";
+"cubicMeters.shortName" = "立方米";
+"cubicMeters.longName" = "立方米";
+
+"cubicCentimeters.symbol" = "cm³";
+"cubicCentimeters.shortName" = "立方厘米";
+"cubicCentimeters.longName" = "立方厘米";
+
+"gallons.symbol" = "gal";
+"gallons.shortName" = "加仑";
+"gallons.longName" = "加仑";
+
+"megaliters.symbol" = "ML";
+"megaliters.shortName" = "兆升";
+"megaliters.longName" = "兆升";
+
+"kiloliters.symbol" = "kL";
+"kiloliters.shortName" = "千升";
+"kiloliters.longName" = "千升";
+
+"deciliters.symbol" = "dL";
+"deciliters.shortName" = "分升";
+"deciliters.longName" = "分升";
+
+"centiliters.symbol" = "cL";
+"centiliters.shortName" = "厘升";
+"centiliters.longName" = "厘升";
+
+"milliliters.symbol" = "mL";
+"milliliters.shortName" = "毫升";
+"milliliters.longName" = "毫升";
+
+"cubicKilometers.symbol" = "km³";
+"cubicKilometers.shortName" = "立方千米";
+"cubicKilometers.longName" = "立方千米";
+
+"cubicDecimeters.symbol" = "dm³";
+"cubicDecimeters.shortName" = "立方分米";
+"cubicDecimeters.longName" = "立方分米";
+
+"cubicMillimeters.symbol" = "mm³";
+"cubicMillimeters.shortName" = "立方毫米";
+"cubicMillimeters.longName" = "立方毫米";
+
+"cubicInches.symbol" = "in³";
+"cubicInches.shortName" = "立方英寸";
+"cubicInches.longName" = "立方英寸";
+
+"cubicFeet.symbol" = "ft³";
+"cubicFeet.shortName" = "立方英尺";
+"cubicFeet.longName" = "立方英尺";
+
+"cubicYards.symbol" = "yd³";
+"cubicYards.shortName" = "立方码";
+"cubicYards.longName" = "立方码";
+
+"cubicMiles.symbol" = "mi³";
+"cubicMiles.shortName" = "立方英里";
+"cubicMiles.longName" = "立方英里";
+
+"acreFeet.symbol" = "ac ft";
+"acreFeet.shortName" = "英亩英尺";
+"acreFeet.longName" = "英亩英尺";
+
+"bushels.symbol" = "bu";
+"bushels.shortName" = "蒲式耳";
+"bushels.longName" = "蒲式耳";
+
+"teaspoons.symbol" = "tsp";
+"teaspoons.shortName" = "茶匙";
+"teaspoons.longName" = "茶匙";
+
+"tablespoons.symbol" = "tbsp";
+"tablespoons.shortName" = "汤匙";
+"tablespoons.longName" = "汤匙";
+
+"fluidOunces.symbol" = "fl oz";
+"fluidOunces.shortName" = "液体盎司";
+"fluidOunces.longName" = "液体盎司";
+
+"cups.symbol" = "cup";
+"cups.shortName" = "杯";
+"cups.longName" = "杯";
+
+"pints.symbol" = "pt";
+"pints.shortName" = "品脱";
+"pints.longName" = "品脱";
+
+"quarts.symbol" = "qt";
+"quarts.shortName" = "夸脱";
+"quarts.longName" = "夸脱";
+
+"imperialTeaspoons.symbol" = "imp tsp";
+"imperialTeaspoons.shortName" = "英制茶匙";
+"imperialTeaspoons.longName" = "英制茶匙";
+
+"imperialTablespoons.symbol" = "imp tbsp";
+"imperialTablespoons.shortName" = "英制汤匙";
+"imperialTablespoons.longName" = "英制汤匙";
+
+"imperialFluidOunces.symbol" = "imp fl oz";
+"imperialFluidOunces.shortName" = "英制液体盎司";
+"imperialFluidOunces.longName" = "英制液体盎司";
+
+"imperialPints.symbol" = "imp pt";
+"imperialPints.shortName" = "英制品脱";
+"imperialPints.longName" = "英制品脱";
+
+"imperialQuarts.symbol" = "imp qt";
+"imperialQuarts.shortName" = "英制夸脱";
+"imperialQuarts.longName" = "英制夸脱";
+
+"imperialGallons.symbol" = "imp gal";
+"imperialGallons.shortName" = "英制加仑";
+"imperialGallons.longName" = "英制加仑";
+
+"metricCups.symbol" = "cup";
+"metricCups.shortName" = "公制杯";
+"metricCups.longName" = "公制杯";
