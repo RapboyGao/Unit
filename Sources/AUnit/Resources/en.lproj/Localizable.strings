@@ -1,839 +1,721 @@
-/* 
-  Localizable.strings
-  
-
-  Created by 高效奕 on 2024/7/8.
-  
-*/
-
-/* Acceleration Units */
-"metersPerSecondSquared.symbol" = "m/s²";
-"metersPerSecondSquared.shortName" = "m/s²";
-"metersPerSecondSquared.longName" = "meters per second squared";
-
-"gravity.symbol" = "g";
-"gravity.shortName" = "g";
-"gravity.longName" = "gravity";
-
-/* Angle Units */
-"degrees.symbol" = "°";
-"degrees.shortName" = "deg";
-"degrees.longName" = "degrees";
-
-"arcMinutes.symbol" = "'";
-"arcMinutes.shortName" = "arcmin";
-"arcMinutes.longName" = "arc minutes";
-
-"arcSeconds.symbol" = "\"";
-"arcSeconds.shortName" = "arcsec";
-"arcSeconds.longName" = "arc seconds";
-
-"radians.symbol" = "rad";
-"radians.shortName" = "rad";
-"radians.longName" = "radians";
-
-"gradians.symbol" = "gon";
-"gradians.shortName" = "gon";
-"gradians.longName" = "gradians";
-
-"revolutions.symbol" = "rev";
-"revolutions.shortName" = "rev";
-"revolutions.longName" = "revolutions";
-
-/* Area Units */
-"squareMegameters.symbol" = "Mm²";
-"squareMegameters.shortName" = "Mm²";
-"squareMegameters.longName" = "square megameters";
-
-"squareKilometers.symbol" = "km²";
-"squareKilometers.shortName" = "km²";
-"squareKilometers.longName" = "square kilometers";
-
-"squareMeters.symbol" = "m²";
-"squareMeters.shortName" = "m²";
-"squareMeters.longName" = "square meters";
-
-"squareCentimeters.symbol" = "cm²";
-"squareCentimeters.shortName" = "cm²";
-"squareCentimeters.longName" = "square centimeters";
-
-"squareMillimeters.symbol" = "mm²";
-"squareMillimeters.shortName" = "mm²";
-"squareMillimeters.longName" = "square millimeters";
-
-"squareMicrometers.symbol" = "µm²";
-"squareMicrometers.shortName" = "µm²";
-"squareMicrometers.longName" = "square micrometers";
-
-"squareNanometers.symbol" = "nm²";
-"squareNanometers.shortName" = "nm²";
-"squareNanometers.longName" = "square nanometers";
-
-"squareInches.symbol" = "in²";
-"squareInches.shortName" = "in²";
-"squareInches.longName" = "square inches";
-
-"squareFeet.symbol" = "ft²";
-"squareFeet.shortName" = "ft²";
-"squareFeet.longName" = "square feet";
-
-"squareYards.symbol" = "yd²";
-"squareYards.shortName" = "yd²";
-"squareYards.longName" = "square yards";
-
-"squareMiles.symbol" = "mi²";
-"squareMiles.shortName" = "mi²";
-"squareMiles.longName" = "square miles";
-
-"acres.symbol" = "ac";
-"acres.shortName" = "ac";
-"acres.longName" = "acres";
-
-"ares.symbol" = "a";
-"ares.shortName" = "a";
-"ares.longName" = "ares";
-
-"hectares.symbol" = "ha";
-"hectares.shortName" = "ha";
-"hectares.longName" = "hectares";
-
-/* Concentration Units */
-"gramsPerLiter.symbol" = "g/L";
-"gramsPerLiter.shortName" = "g/L";
-"gramsPerLiter.longName" = "grams per liter";
-
-"milligramsPerDeciliter.symbol" = "mg/dL";
-"milligramsPerDeciliter.shortName" = "mg/dL";
-"milligramsPerDeciliter.longName" = "milligrams per deciliter";
-
-"partsPerMillion.symbol" = "ppm";
-"partsPerMillion.shortName" = "ppm";
-"partsPerMillion.longName" = "parts per million";
-
-/* Time Units */
-"hours.symbol" = "h";
-"hours.shortName" = "h";
-"hours.longName" = "hours";
-
-"minutes.symbol" = "min";
-"minutes.shortName" = "min";
-"minutes.longName" = "minutes";
-
-"seconds.symbol" = "s";
-"seconds.shortName" = "s";
-"seconds.longName" = "seconds";
-
-"milliseconds.symbol" = "ms";
-"milliseconds.shortName" = "ms";
-"milliseconds.longName" = "milliseconds";
-
-"microseconds.symbol" = "µs";
-"microseconds.shortName" = "µs";
-"microseconds.longName" = "microseconds";
-
-"nanoseconds.symbol" = "ns";
-"nanoseconds.shortName" = "ns";
-"nanoseconds.longName" = "nanoseconds";
-
-"picoseconds.symbol" = "ps";
-"picoseconds.shortName" = "ps";
-"picoseconds.longName" = "picoseconds";
-
-/* Electric Charge Capacity Units */
-"megaampereHours.symbol" = "MAh";
-"megaampereHours.shortName" = "MAh";
-"megaampereHours.longName" = "megaampere hours";
-
-"kiloampereHours.symbol" = "kAh";
-"kiloampereHours.shortName" = "kAh";
-"kiloampereHours.longName" = "kiloampere hours";
-
-"ampereHours.symbol" = "Ah";
-"ampereHours.shortName" = "Ah";
-"ampereHours.longName" = "ampere hours";
-
-"milliampereHours.symbol" = "mAh";
-"milliampereHours.shortName" = "mAh";
-"milliampereHours.longName" = "milliampere hours";
-
-"microampereHours.symbol" = "µAh";
-"microampereHours.shortName" = "µAh";
-"microampereHours.longName" = "microampere hours";
-
-/* Electric Current Units */
-"megaamperes.symbol" = "MA";
-"megaamperes.shortName" = "MA";
-"megaamperes.longName" = "megaamperes";
-
-"kiloamperes.symbol" = "kA";
-"kiloamperes.shortName" = "kA";
-"kiloamperes.longName" = "kiloamperes";
-
-"amperes.symbol" = "A";
-"amperes.shortName" = "A";
-"amperes.longName" = "amperes";
-
-"milliamperes.symbol" = "mA";
-"milliamperes.shortName" = "mA";
-"milliamperes.longName" = "milliamperes";
-
-"microamperes.symbol" = "µA";
-"microamperes.shortName" = "µA";
-"microamperes.longName" = "microamperes";
-
-/* Electric Potential Units */
-"megavolts.symbol" = "MV";
-"megavolts.shortName" = "MV";
-"megavolts.longName" = "megavolts";
-
-"kilovolts.symbol" = "kV";
-"kilovolts.shortName" = "kV";
-"kilovolts.longName" = "kilovolts";
-
-"volts.symbol" = "V";
-"volts.shortName" = "V";
-"volts.longName" = "volts";
-
-"millivolts.symbol" = "mV";
-"millivolts.shortName" = "mV";
-"millivolts.longName" = "millivolts";
-
-"microvolts.symbol" = "µV";
-"microvolts.shortName" = "µV";
-"microvolts.longName" = "microvolts";
-
-/* Electric Resistance Units */
-"megaohms.symbol" = "MΩ";
-"megaohms.shortName" = "MΩ";
-"megaohms.longName" = "megaohms";
-
-"kiloohms.symbol" = "kΩ";
-"kiloohms.shortName" = "kΩ";
-"kiloohms.longName" = "kiloohms";
-
-"ohms.symbol" = "Ω";
-"ohms.shortName" = "Ω";
-"ohms.longName" = "ohms";
-
-"milliohms.symbol" = "mΩ";
-"milliohms.shortName" = "mΩ";
-"milliohms.longName" = "milliohms";
-
-"microohms.symbol" = "µΩ";
-"microohms.shortName" = "µΩ";
-"microohms.longName" = "microohms";
-
-/* Energy Units */
-"kilojoules.symbol" = "kJ";
-"kilojoules.shortName" = "kJ";
-"kilojoules.longName" = "kilojoules";
-
-"joules.symbol" = "J";
-"joules.shortName" = "J";
-"joules.longName" = "joules";
-
-"kilocalories.symbol" = "kcal";
-"kilocalories.shortName" = "kcal";
-"kilocalories.longName" = "kilocalories";
-
-"calories.symbol" = "cal";
-"calories.shortName" = "cal";
-"calories.longName" = "calories";
-
-"kilowattHours.symbol" = "kWh";
-"kilowattHours.shortName" = "kWh";
-"kilowattHours.longName" = "kilowatt hours";
-
-/* Frequency Units */
-"terahertz.symbol" = "THz";
-"terahertz.shortName" = "THz";
-"terahertz.longName" = "terahertz";
-
-"gigahertz.symbol" = "GHz";
-"gigahertz.shortName" = "GHz";
-"gigahertz.longName" = "gigahertz";
-
-"megahertz.symbol" = "MHz";
-"megahertz.shortName" = "MHz";
-"megahertz.longName" = "megahertz";
-
-"kilohertz.symbol" = "kHz";
-"kilohertz.shortName" = "kHz";
-"kilohertz.longName" = "kilohertz";
-
-"hertz.symbol" = "Hz";
-"hertz.shortName" = "Hz";
-"hertz.longName" = "hertz";
-
-"millihertz.symbol" = "mHz";
-"millihertz.shortName" = "mHz";
-"millihertz.longName" = "millihertz";
-
-"microhertz.symbol" = "µHz";
-"microhertz.shortName" = "µHz";
-"microhertz.longName" = "microhertz";
-
-"nanohertz.symbol" = "nHz";
-"nanohertz.shortName" = "nHz";
-"nanohertz.longName" = "nanohertz";
-
-"framesPerSecond.symbol" = "fps";
-"framesPerSecond.shortName" = "fps";
-"framesPerSecond.longName" = "frames per second";
-
-/* Fuel Efficiency Units */
-"litersPer100Kilometers.symbol" = "L/100km";
-"litersPer100Kilometers.shortName" = "L/100km";
-"litersPer100Kilometers.longName" = "liters per 100 kilometers";
-
-"milesPerImperialGallon.symbol" = "mpg (Imp.)";
-"milesPerImperialGallon.shortName" = "mpg (Imp.)";
-"milesPerImperialGallon.longName" = "miles per imperial gallon";
-
-"milesPerGallon.symbol" = "mpg";
-"milesPerGallon.shortName" = "mpg";
-"milesPerGallon.longName" = "miles per gallon";
-
-/* Data Units */
-"bytes.symbol" = "B";
-"bytes.shortName" = "B";
-"bytes.longName" = "bytes";
-
-"bits.symbol" = "b";
-"bits.shortName" = "b";
-"bits.longName" = "bits";
-
-"nibbles.symbol" = "N";
-"nibbles.shortName" = "N";
-"nibbles.longName" = "nibbles";
-
-"yottabytes.symbol" = "YB";
-"yottabytes.shortName" = "YB";
-"yottabytes.longName" = "yottabytes";
-
-"zettabytes.symbol" = "ZB";
-"zettabytes.shortName" = "ZB";
-"zettabytes.longName" = "zettabytes";
-
-"exabytes.symbol" = "EB";
-"exabytes.shortName" = "EB";
-"exabytes.longName" = "exabytes";
-
-"petabytes.symbol" = "PB";
-"petabytes.shortName" = "PB";
-"petabytes.longName" = "petabytes";
-
-"terabytes.symbol" = "TB";
-"terabytes.shortName" = "TB";
-"terabytes.longName" = "terabytes";
-
-"gigabytes.symbol" = "GB";
-"gigabytes.shortName" = "GB";
-"gigabytes.longName" = "gigabytes";
-
-"megabytes.symbol" = "MB";
-"megabytes.shortName" = "MB";
-"megabytes.longName" = "megabytes";
-
-"kilobytes.symbol" = "kB";
-"kilobytes.shortName" = "kB";
-"kilobytes.longName" = "kilobytes";
-
-"yottabits.symbol" = "Yb";
-"yottabits.shortName" = "Yb";
-"yottabits.longName" = "yottabits";
-
-"zettabits.symbol" = "Zb";
-"zettabits.shortName" = "Zb";
-"zettabits.longName" = "zettabits";
-
-"exabits.symbol" = "Eb";
-"exabits.shortName" = "Eb";
-"exabits.longName" = "exabits";
-
-"petabits.symbol" = "Pb";
-"petabits.shortName" = "Pb";
-"petabits.longName" = "petabits";
-
-"terabits.symbol" = "Tb";
-"terabits.shortName" = "Tb";
-"terabits.longName" = "terabits";
-
-"gigabits.symbol" = "Gb";
-"gigabits.shortName" = "Gb";
-"gigabits.longName" = "gigabits";
-
-"megabits.symbol" = "Mb";
-"megabits.shortName" = "Mb";
-"megabits.longName" = "megabits";
-
-"kilobits.symbol" = "kb";
-"kilobits.shortName" = "kb";
-"kilobits.longName" = "kilobits";
-
-"yobibytes.symbol" = "YiB";
-"yobibytes.shortName" = "YiB";
-"yobibytes.longName" = "yobibytes";
-
-"zebibytes.symbol" = "ZiB";
-"zebibytes.shortName" = "ZiB";
-"zebibytes.longName" = "zebibytes";
-
-"exbibytes.symbol" = "EiB";
-"exbibytes.shortName" = "EiB";
-"exbibytes.longName" = "exbibytes";
-
-"pebibytes.symbol" = "PiB";
-"pebibytes.shortName" = "PiB";
-"pebibytes.longName" = "pebibytes";
-
-"tebibytes.symbol" = "TiB";
-"tebibytes.shortName" = "TiB";
-"tebibytes.longName" = "tebibytes";
-
-"gibibytes.symbol" = "GiB";
-"gibibytes.shortName" = "GiB";
-"gibibytes.longName" = "gibibytes";
-
-"mebibytes.symbol" = "MiB";
-"mebibytes.shortName" = "MiB";
-"mebibytes.longName" = "mebibytes";
-
-"kibibytes.symbol" = "KiB";
-"kibibytes.shortName" = "KiB";
-"kibibytes.longName" = "kibibytes";
-
-"yobibits.symbol" = "Yib";
-"yobibits.shortName" = "Yib";
-"yobibits.longName" = "yobibits";
-
-"zebibits.symbol" = "Zib";
-"zebibits.shortName" = "Zib";
-"zebibits.longName" = "zebibits";
-
-"exbibits.symbol" = "Eib";
-"exbibits.shortName" = "Eib";
-"exbibits.longName" = "exbibits";
-
-"pebibits.symbol" = "Pib";
-"pebibits.shortName" = "Pib";
-"pebibits.longName" = "pebibits";
-
-"tebibits.symbol" = "Tib";
-"tebibits.shortName" = "Tib";
-"tebibits.longName" = "tebibits";
-
-"gibibits.symbol" = "Gib";
-"gibibits.shortName" = "Gib";
-"gibibits.longName" = "gibibits";
-
-"mebibits.symbol" = "Mib";
-"mebibits.shortName" = "Mib";
-"mebibits.longName" = "mebibits";
-
-"kibibits.symbol" = "Kib";
-"kibibits.shortName" = "Kib";
-"kibibits.longName" = "kibibits";
-
-/* Length Units */
-"nauticalMiles.symbol" = "NM";
-"nauticalMiles.shortName" = "NM";
-"nauticalMiles.longName" = "nautical miles";
-
-"kilometers.symbol" = "km";
-"kilometers.shortName" = "km";
-"kilometers.longName" = "kilometers";
-
-"meters.symbol" = "m";
-"meters.shortName" = "m";
-"meters.longName" = "meters";
-
-"miles.symbol" = "mi";
-"miles.shortName" = "mi";
-"miles.longName" = "miles";
-
-"megameters.symbol" = "Mm";
-"megameters.shortName" = "Mm";
-"megameters.longName" = "megameters";
-
-"hectometers.symbol" = "hm";
-"hectometers.shortName" = "hm";
-"hectometers.longName" = "hectometers";
-
-"decameters.symbol" = "dam";
-"decameters.shortName" = "dam";
-"decameters.longName" = "decameters";
-
-"decimeters.symbol" = "dm";
-"decimeters.shortName" = "dm";
-"decimeters.longName" = "decimeters";
-
-"centimeters.symbol" = "cm";
-"centimeters.shortName" = "cm";
-"centimeters.longName" = "centimeters";
-
-"millimeters.symbol" = "mm";
-"millimeters.shortName" = "mm";
-"millimeters.longName" = "millimeters";
-
-"micrometers.symbol" = "µm";
-"micrometers.shortName" = "µm";
-"micrometers.longName" = "micrometers";
-
-"nanometers.symbol" = "nm";
-"nanometers.shortName" = "nm";
-"nanometers.longName" = "nanometers";
-
-"picometers.symbol" = "pm";
-"picometers.shortName" = "pm";
-"picometers.longName" = "picometers";
-
-"inches.symbol" = "in";
-"inches.shortName" = "in";
-"inches.longName" = "inches";
-
+// AUnitType
+"length.symbol" = "Length";
+"length.shortName" = "Length";
+"length.longName" = "Length Unit";
+"speed.symbol" = "Speed";
+"speed.shortName" = "Speed";
+"speed.longName" = "Speed Unit";
+"pressure.symbol" = "Pressure";
+"pressure.shortName" = "Pressure";
+"pressure.longName" = "Pressure Unit";
+"temperature.symbol" = "Temperature";
+"temperature.shortName" = "Temperature";
+"temperature.longName" = "Temperature Unit";
+"temperatureDifference.symbol" = "Temperature Difference";
+"temperatureDifference.shortName" = "Temperature Difference";
+"temperatureDifference.longName" = "Temperature Difference Unit";
+"mass.symbol" = "Mass";
+"mass.shortName" = "Mass";
+"mass.longName" = "Mass Unit";
+"volume.symbol" = "Volume";
+"volume.shortName" = "Volume";
+"volume.longName" = "Volume Unit";
+"acceleration.symbol" = "Acceleration";
+"acceleration.shortName" = "Acceleration";
+"acceleration.longName" = "Acceleration Unit";
+"power.symbol" = "Power";
+"power.shortName" = "Power";
+"power.longName" = "Power Unit";
+"angle.symbol" = "Angle";
+"angle.shortName" = "Angle";
+"angle.longName" = "Angle Unit";
+"area.symbol" = "Area";
+"area.shortName" = "Area";
+"area.longName" = "Area Unit";
+"concentration.symbol" = "Concentration";
+"concentration.shortName" = "Concentration";
+"concentration.longName" = "Concentration Unit";
+"time.symbol" = "Time";
+"time.shortName" = "Time";
+"time.longName" = "Time Unit";
+"electricChargeCapacity.symbol" = "Electric Charge Capacity";
+"electricChargeCapacity.shortName" = "Electric Charge Capacity";
+"electricChargeCapacity.longName" = "Electric Charge Capacity Unit";
+"electricCurrent.symbol" = "Electric Current";
+"electricCurrent.shortName" = "Electric Current";
+"electricCurrent.longName" = "Electric Current Unit";
+"electricPotential.symbol" = "Electric Potential";
+"electricPotential.shortName" = "Electric Potential";
+"electricPotential.longName" = "Electric Potential Unit";
+"electricResistance.symbol" = "Electric Resistance";
+"electricResistance.shortName" = "Electric Resistance";
+"electricResistance.longName" = "Electric Resistance Unit";
+"energy.symbol" = "Energy";
+"energy.shortName" = "Energy";
+"energy.longName" = "Energy Unit";
+"frequency.symbol" = "Frequency";
+"frequency.shortName" = "Frequency";
+"frequency.longName" = "Frequency Unit";
+"fuelEfficiency.symbol" = "Fuel Efficiency";
+"fuelEfficiency.shortName" = "Fuel Efficiency";
+"fuelEfficiency.longName" = "Fuel Efficiency Unit";
+"data.symbol" = "Data";
+"data.shortName" = "Data";
+"data.longName" = "Data Unit";
+
+// Length
 "feet.symbol" = "ft";
-"feet.shortName" = "ft";
-"feet.longName" = "feet";
-
+"feet.shortName" = "Feet";
+"feet.longName" = "Feet";
+"nauticalMiles.symbol" = "NM";
+"nauticalMiles.shortName" = "Nautical Miles";
+"nauticalMiles.longName" = "Nautical Miles";
+"meters.symbol" = "m";
+"meters.shortName" = "Meters";
+"meters.longName" = "Meters";
+"kilometers.symbol" = "km";
+"kilometers.shortName" = "Kilometers";
+"kilometers.longName" = "Kilometers";
+"miles.symbol" = "mi";
+"miles.shortName" = "Miles";
+"miles.longName" = "Miles";
+"megameters.symbol" = "Mm";
+"megameters.shortName" = "Megameters";
+"megameters.longName" = "Megameters";
+"hectometers.symbol" = "hm";
+"hectometers.shortName" = "Hectometers";
+"hectometers.longName" = "Hectometers";
+"decameters.symbol" = "dam";
+"decameters.shortName" = "Decameters";
+"decameters.longName" = "Decameters";
+"decimeters.symbol" = "dm";
+"decimeters.shortName" = "Decimeters";
+"decimeters.longName" = "Decimeters";
+"centimeters.symbol" = "cm";
+"centimeters.shortName" = "Centimeters";
+"centimeters.longName" = "Centimeters";
+"millimeters.symbol" = "mm";
+"millimeters.shortName" = "Millimeters";
+"millimeters.longName" = "Millimeters";
+"micrometers.symbol" = "µm";
+"micrometers.shortName" = "Micrometers";
+"micrometers.longName" = "Micrometers";
+"nanometers.symbol" = "nm";
+"nanometers.shortName" = "Nanometers";
+"nanometers.longName" = "Nanometers";
+"picometers.symbol" = "pm";
+"picometers.shortName" = "Picometers";
+"picometers.longName" = "Picometers";
+"inches.symbol" = "in";
+"inches.shortName" = "Inches";
+"inches.longName" = "Inches";
 "yards.symbol" = "yd";
-"yards.shortName" = "yd";
-"yards.longName" = "yards";
-
-"scandinavianMiles.symbol" = "smi";
-"scandinavianMiles.shortName" = "smi";
-"scandinavianMiles.longName" = "scandinavian miles";
-
+"yards.shortName" = "Yards";
+"yards.longName" = "Yards";
+"scandinavianMiles.symbol" = "sm";
+"scandinavianMiles.shortName" = "Scandinavian Miles";
+"scandinavianMiles.longName" = "Scandinavian Miles";
 "lightyears.symbol" = "ly";
-"lightyears.shortName" = "ly";
-"lightyears.longName" = "lightyears";
-
-"fathoms.symbol" = "fathom";
-"fathoms.shortName" = "fathom";
-"fathoms.longName" = "fathoms";
-
-"furlongs.symbol" = "furlong";
-"furlongs.shortName" = "furlong";
-"furlongs.longName" = "furlongs";
-
+"lightyears.shortName" = "Lightyears";
+"lightyears.longName" = "Lightyears";
+"fathoms.symbol" = "ftm";
+"fathoms.shortName" = "Fathoms";
+"fathoms.longName" = "Fathoms";
+"furlongs.symbol" = "fur";
+"furlongs.shortName" = "Furlongs";
+"furlongs.longName" = "Furlongs";
 "astronomicalUnits.symbol" = "AU";
-"astronomicalUnits.shortName" = "AU";
-"astronomicalUnits.longName" = "astronomical units";
-
+"astronomicalUnits.shortName" = "Astronomical Units";
+"astronomicalUnits.longName" = "Astronomical Units";
 "parsecs.symbol" = "pc";
-"parsecs.shortName" = "pc";
-"parsecs.longName" = "parsecs";
+"parsecs.shortName" = "Parsecs";
+"parsecs.longName" = "Parsecs";
 
-/* Mass Units */
-"kilograms.symbol" = "kg";
-"kilograms.shortName" = "kg";
-"kilograms.longName" = "kilograms";
-
-"grams.symbol" = "g";
-"grams.shortName" = "g";
-"grams.longName" = "grams";
-
-"decigrams.symbol" = "dg";
-"decigrams.shortName" = "dg";
-"decigrams.longName" = "decigrams";
-
-"centigrams.symbol" = "cg";
-"centigrams.shortName" = "cg";
-"centigrams.longName" = "centigrams";
-
-"milligrams.symbol" = "mg";
-"milligrams.shortName" = "mg";
-"milligrams.longName" = "milligrams";
-
-"micrograms.symbol" = "µg";
-"micrograms.shortName" = "µg";
-"micrograms.longName" = "micrograms";
-
-"nanograms.symbol" = "ng";
-"nanograms.shortName" = "ng";
-"nanograms.longName" = "nanograms";
-
-"picograms.symbol" = "pg";
-"picograms.shortName" = "pg";
-"picograms.longName" = "picograms";
-
-"ounces.symbol" = "oz";
-"ounces.shortName" = "oz";
-"ounces.longName" = "ounces";
-
-"pounds.symbol" = "lb";
-"pounds.shortName" = "lb";
-"pounds.longName" = "pounds";
-
-"stones.symbol" = "st";
-"stones.shortName" = "st";
-"stones.longName" = "stones";
-
-"metricTons.symbol" = "t";
-"metricTons.shortName" = "t";
-"metricTons.longName" = "metric tons";
-
-"shortTons.symbol" = "ton";
-"shortTons.shortName" = "ton";
-"shortTons.longName" = "short tons";
-
-"carats.symbol" = "ct";
-"carats.shortName" = "ct";
-"carats.longName" = "carats";
-
-"ouncesTroy.symbol" = "oz t";
-"ouncesTroy.shortName" = "oz t";
-"ouncesTroy.longName" = "troy ounces";
-
-"slugs.symbol" = "slug";
-"slugs.shortName" = "slug";
-"slugs.longName" = "slugs";
-
-/* Power Units */
-"terawatts.symbol" = "TW";
-"terawatts.shortName" = "TW";
-"terawatts.longName" = "terawatts";
-
-"gigawatts.symbol" = "GW";
-"gigawatts.shortName" = "GW";
-"gigawatts.longName" = "gigawatts";
-
-"megawatts.symbol" = "MW";
-"megawatts.shortName" = "MW";
-"megawatts.longName" = "megawatts";
-
-"kilowatts.symbol" = "kW";
-"kilowatts.shortName" = "kW";
-"kilowatts.longName" = "kilowatts";
-
-"watts.symbol" = "W";
-"watts.shortName" = "W";
-"watts.longName" = "watts";
-
-"milliwatts.symbol" = "mW";
-"milliwatts.shortName" = "mW";
-"milliwatts.longName" = "milliwatts";
-
-"microwatts.symbol" = "µW";
-"microwatts.shortName" = "µW";
-"microwatts.longName" = "microwatts";
-
-"nanowatts.symbol" = "nW";
-"nanowatts.shortName" = "nW";
-"nanowatts.longName" = "nanowatts";
-
-"picowatts.symbol" = "pW";
-"picowatts.shortName" = "pW";
-"picowatts.longName" = "picowatts";
-
-"femtowatts.symbol" = "fW";
-"femtowatts.shortName" = "fW";
-"femtowatts.longName" = "femtowatts";
-
-"horsepower.symbol" = "hp";
-"horsepower.shortName" = "hp";
-"horsepower.longName" = "horsepower";
-
-/* Pressure Units */
-"newtonsPerMetersSquared.symbol" = "N/m²";
-"newtonsPerMetersSquared.shortName" = "N/m²";
-"newtonsPerMetersSquared.longName" = "newtons per square meter";
-
-"gigapascals.symbol" = "GPa";
-"gigapascals.shortName" = "GPa";
-"gigapascals.longName" = "gigapascals";
-
-"megapascals.symbol" = "MPa";
-"megapascals.shortName" = "MPa";
-"megapascals.longName" = "megapascals";
-
-"kilopascals.symbol" = "kPa";
-"kilopascals.shortName" = "kPa";
-"kilopascals.longName" = "kilopascals";
-
-"hectopascals.symbol" = "hPa";
-"hectopascals.shortName" = "hPa";
-"hectopascals.longName" = "hectopascals";
-
-"inchesOfMercury.symbol" = "inHg";
-"inchesOfMercury.shortName" = "inHg";
-"inchesOfMercury.longName" = "inches of mercury";
-
-"bars.symbol" = "bar";
-"bars.shortName" = "bar";
-"bars.longName" = "bars";
-
-"millibars.symbol" = "mbar";
-"millibars.shortName" = "mbar";
-"millibars.longName" = "millibars";
-
-"millimetersOfMercury.symbol" = "mmHg";
-"millimetersOfMercury.shortName" = "mmHg";
-"millimetersOfMercury.longName" = "millimeters of mercury";
-
-"poundsForcePerSquareInch.symbol" = "psi";
-"poundsForcePerSquareInch.shortName" = "psi";
-"poundsForcePerSquareInch.longName" = "pounds force per square inch";
-
-/* Speed Units */
-"knots.symbol" = "kn";
-"knots.shortName" = "kn";
-"knots.longName" = "knots";
-
-"kilometersPerHour.symbol" = "km/h";
-"kilometersPerHour.shortName" = "km/h";
-"kilometersPerHour.longName" = "kilometers per hour";
-
-"metersPerSecond.symbol" = "m/s";
-"metersPerSecond.shortName" = "m/s";
-"metersPerSecond.longName" = "meters per second";
-
-"milesPerHour.symbol" = "mph";
-"milesPerHour.shortName" = "mph";
-"milesPerHour.longName" = "miles per hour";
-
+// Speed
 "feetPerSecond.symbol" = "ft/s";
-"feetPerSecond.shortName" = "ft/s";
-"feetPerSecond.longName" = "feet per second";
-
+"feetPerSecond.shortName" = "Feet per Second";
+"feetPerSecond.longName" = "Feet per Second";
+"knots.symbol" = "kn";
+"knots.shortName" = "Knots";
+"knots.longName" = "Knots";
+"kilometersPerHour.symbol" = "km/h";
+"kilometersPerHour.shortName" = "Kilometers per Hour";
+"kilometersPerHour.longName" = "Kilometers per Hour";
+"metersPerSecond.symbol" = "m/s";
+"metersPerSecond.shortName" = "Meters per Second";
+"metersPerSecond.longName" = "Meters per Second";
+"milesPerHour.symbol" = "mph";
+"milesPerHour.shortName" = "Miles per Hour";
+"milesPerHour.longName" = "Miles per Hour";
 "feetPerMinute.symbol" = "ft/min";
-"feetPerMinute.shortName" = "ft/min";
-"feetPerMinute.longName" = "feet per minute";
+"feetPerMinute.shortName" = "Feet per Minute";
+"feetPerMinute.longName" = "Feet per Minute";
 
-/* Temperature Units */
+// Pressure
+"hectopascals.symbol" = "hPa";
+"hectopascals.shortName" = "Hectopascals";
+"hectopascals.longName" = "Hectopascals";
+"inchesOfMercury.symbol" = "inHg";
+"inchesOfMercury.shortName" = "Inches of Mercury";
+"inchesOfMercury.longName" = "Inches of Mercury";
+"millimetersOfMercury.symbol" = "mmHg";
+"millimetersOfMercury.shortName" = "Millimeters of Mercury";
+"millimetersOfMercury.longName" = "Millimeters of Mercury";
+"newtonsPerMetersSquared.symbol" = "N/m²";
+"newtonsPerMetersSquared.shortName" = "Newtons per Square Meter";
+"newtonsPerMetersSquared.longName" = "Newtons per Square Meter";
+"gigapascals.symbol" = "GPa";
+"gigapascals.shortName" = "Gigapascals";
+"gigapascals.longName" = "Gigapascals";
+"megapascals.symbol" = "MPa";
+"megapascals.shortName" = "Megapascals";
+"megapascals.longName" = "Megapascals";
+"kilopascals.symbol" = "kPa";
+"kilopascals.shortName" = "Kilopascals";
+"kilopascals.longName" = "Kilopascals";
+"bars.symbol" = "bar";
+"bars.shortName" = "Bars";
+"bars.longName" = "Bars";
+"millibars.symbol" = "mbar";
+"millibars.shortName" = "Millibars";
+"millibars.longName" = "Millibars";
+"poundsForcePerSquareInch.symbol" = "psi";
+"poundsForcePerSquareInch.shortName" = "Pounds-force per Square Inch";
+"poundsForcePerSquareInch.longName" = "Pounds-force per Square Inch";
+
+// Temperature
 "kelvin.symbol" = "K";
-"kelvin.shortName" = "K";
-"kelvin.longName" = "kelvin";
-
+"kelvin.shortName" = "Kelvin";
+"kelvin.longName" = "Kelvin";
 "celsius.symbol" = "°C";
-"celsius.shortName" = "°C";
-"celsius.longName" = "celsius";
-
+"celsius.shortName" = "Celsius";
+"celsius.longName" = "Celsius";
 "fahrenheit.symbol" = "°F";
-"fahrenheit.shortName" = "°F";
-"fahrenheit.longName" = "fahrenheit";
+"fahrenheit.shortName" = "Fahrenheit";
+"fahrenheit.longName" = "Fahrenheit";
 
-/* Volume Units */
+// TemperatureDifference
+"celsiusDelta.symbol" = "°CΔ";
+"celsiusDelta.shortName" = "Celsius Delta";
+"celsiusDelta.longName" = "Celsius Delta";
+"fahrenheitDelta.symbol" = "°FΔ";
+"fahrenheitDelta.shortName" = "Fahrenheit Delta";
+"fahrenheitDelta.longName" = "Fahrenheit Delta";
+
+// Mass
+"kilograms.symbol" = "kg";
+"kilograms.shortName" = "Kilograms";
+"kilograms.longName" = "Kilograms";
+"grams.symbol" = "g";
+"grams.shortName" = "Grams";
+"grams.longName" = "Grams";
+"decigrams.symbol" = "dg";
+"decigrams.shortName" = "Decigrams";
+"decigrams.longName" = "Decigrams";
+"centigrams.symbol" = "cg";
+"centigrams.shortName" = "Centigrams";
+"centigrams.longName" = "Centigrams";
+"milligrams.symbol" = "mg";
+"milligrams.shortName" = "Milligrams";
+"milligrams.longName" = "Milligrams";
+"micrograms.symbol" = "µg";
+"micrograms.shortName" = "Micrograms";
+"micrograms.longName" = "Micrograms";
+"nanograms.symbol" = "ng";
+"nanograms.shortName" = "Nanograms";
+"nanograms.longName" = "Nanograms";
+"picograms.symbol" = "pg";
+"picograms.shortName" = "Picograms";
+"picograms.longName" = "Picograms";
+"ounces.symbol" = "oz";
+"ounces.shortName" = "Ounces";
+"ounces.longName" = "Ounces";
+"pounds.symbol" = "lb";
+"pounds.shortName" = "Pounds";
+"pounds.longName" = "Pounds";
+"stones.symbol" = "st";
+"stones.shortName" = "Stones";
+"stones.longName" = "Stones";
+"metricTons.symbol" = "t";
+"metricTons.shortName" = "Metric Tons";
+"metricTons.longName" = "Metric Tons";
+"shortTons.symbol" = "sh tn";
+"shortTons.shortName" = "Short Tons";
+"shortTons.longName" = "Short Tons";
+"carats.symbol" = "ct";
+"carats.shortName" = "Carats";
+"carats.longName" = "Carats";
+"ouncesTroy.symbol" = "oz t";
+"ouncesTroy.shortName" = "Troy Ounces";
+"ouncesTroy.longName" = "Troy Ounces";
+"slugs.symbol" = "slug";
+"slugs.shortName" = "Slugs";
+"slugs.longName" = "Slugs";
+
+// Volume
 "liters.symbol" = "L";
-"liters.shortName" = "L";
-"liters.longName" = "liters";
-
-"cubicMeters.symbol" = "m³";
-"cubicMeters.shortName" = "m³";
-"cubicMeters.longName" = "cubic meters";
-
-"cubicCentimeters.symbol" = "cm³";
-"cubicCentimeters.shortName" = "cm³";
-"cubicCentimeters.longName" = "cubic centimeters";
-
-"gallons.symbol" = "gal";
-"gallons.shortName" = "gal";
-"gallons.longName" = "gallons";
-
-"megaliters.symbol" = "ML";
-"megaliters.shortName" = "ML";
-"megaliters.longName" = "megaliters";
-
-"kiloliters.symbol" = "kL";
-"kiloliters.shortName" = "kL";
-"kiloliters.longName" = "kiloliters";
-
-"deciliters.symbol" = "dL";
-"deciliters.shortName" = "dL";
-"deciliters.longName" = "deciliters";
-
-"centiliters.symbol" = "cL";
-"centiliters.shortName" = "cL";
-"centiliters.longName" = "centiliters";
-
-"milliliters.symbol" = "mL";
-"milliliters.shortName" = "mL";
-"milliliters.longName" = "milliliters";
-
-"cubicKilometers.symbol" = "km³";
-"cubicKilometers.shortName" = "km³";
-"cubicKilometers.longName" = "cubic kilometers";
-
-"cubicDecimeters.symbol" = "dm³";
-"cubicDecimeters.shortName" = "dm³";
-"cubicDecimeters.longName" = "cubic decimeters";
-
-"cubicMillimeters.symbol" = "mm³";
-"cubicMillimeters.shortName" = "mm³";
-"cubicMillimeters.longName" = "cubic millimeters";
-
-"cubicInches.symbol" = "in³";
-"cubicInches.shortName" = "in³";
-"cubicInches.longName" = "cubic inches";
-
-"cubicFeet.symbol" = "ft³";
-"cubicFeet.shortName" = "ft³";
-"cubicFeet.longName" = "cubic feet";
-
-"cubicYards.symbol" = "yd³";
-"cubicYards.shortName" = "yd³";
-"cubicYards.longName" = "cubic yards";
-
-"cubicMiles.symbol" = "mi³";
-"cubicMiles.shortName" = "mi³";
-"cubicMiles.longName" = "cubic miles";
-
-"acreFeet.symbol" = "ac ft";
-"acreFeet.shortName" = "ac ft";
-"acreFeet.longName" = "acre feet";
-
-"bushels.symbol" = "bu";
-"bushels.shortName" = "bu";
-"bushels.longName" = "bushels";
-
-"teaspoons.symbol" = "tsp";
-"teaspoons.shortName" = "tsp";
-"teaspoons.longName" = "teaspoons";
-
-"tablespoons.symbol" = "tbsp";
-"tablespoons.shortName" = "tbsp";
-"tablespoons.longName" = "tablespoons";
-
-"fluidOunces.symbol" = "fl oz";
-"fluidOunces.shortName" = "fl oz";
-"fluidOunces.longName" = "fluid ounces";
-
-"cups.symbol" = "cup";
-"cups.shortName" = "cup";
-"cups.longName" = "cups";
-
-"pints.symbol" = "pt";
-"pints.shortName" = "pt";
-"pints.longName" = "pints";
-
+"liters.shortName" = "Liters";
+"liters.longName" = "Liters";
 "quarts.symbol" = "qt";
-"quarts.shortName" = "qt";
-"quarts.longName" = "quarts";
-
-"imperialTeaspoons.symbol" = "imp tsp";
-"imperialTeaspoons.shortName" = "imp tsp";
-"imperialTeaspoons.longName" = "imperial teaspoons";
-
-"imperialTablespoons.symbol" = "imp tbsp";
-"imperialTablespoons.shortName" = "imp tbsp";
-"imperialTablespoons.longName" = "imperial tablespoons";
-
-"imperialFluidOunces.symbol" = "imp fl oz";
-"imperialFluidOunces.shortName" = "imp fl oz";
-"imperialFluidOunces.longName" = "imperial fluid ounces";
-
-"imperialPints.symbol" = "imp pt";
-"imperialPints.shortName" = "imp pt";
-"imperialPints.longName" = "imperial pints";
-
-"imperialQuarts.symbol" = "imp qt";
-"imperialQuarts.shortName" = "imp qt";
-"imperialQuarts.longName" = "imperial quarts";
-
-"imperialGallons.symbol" = "imp gal";
-"imperialGallons.shortName" = "imp gal";
-"imperialGallons.longName" = "imperial gallons";
-
+"quarts.shortName" = "Quarts";
+"quarts.longName" = "Quarts";
+"cubicMeters.symbol" = "m³";
+"cubicMeters.shortName" = "Cubic Meters";
+"cubicMeters.longName" = "Cubic Meters";
+"cubicCentimeters.symbol" = "cm³";
+"cubicCentimeters.shortName" = "Cubic Centimeters";
+"cubicCentimeters.longName" = "Cubic Centimeters";
+"gallons.symbol" = "gal";
+"gallons.shortName" = "Gallons";
+"gallons.longName" = "Gallons";
+"megaliters.symbol" = "ML";
+"megaliters.shortName" = "Megaliters";
+"megaliters.longName" = "Megaliters";
+"kiloliters.symbol" = "kL";
+"kiloliters.shortName" = "Kiloliters";
+"kiloliters.longName" = "Kiloliters";
+"deciliters.symbol" = "dL";
+"deciliters.shortName" = "Deciliters";
+"deciliters.longName" = "Deciliters";
+"centiliters.symbol" = "cL";
+"centiliters.shortName" = "Centiliters";
+"centiliters.longName" = "Centiliters";
+"milliliters.symbol" = "mL";
+"milliliters.shortName" = "Milliliters";
+"milliliters.longName" = "Milliliters";
+"cubicKilometers.symbol" = "km³";
+"cubicKilometers.shortName" = "Cubic Kilometers";
+"cubicKilometers.longName" = "Cubic Kilometers";
+"cubicDecimeters.symbol" = "dm³";
+"cubicDecimeters.shortName" = "Cubic Decimeters";
+"cubicDecimeters.longName" = "Cubic Decimeters";
+"cubicMillimeters.symbol" = "mm³";
+"cubicMillimeters.shortName" = "Cubic Millimeters";
+"cubicMillimeters.longName" = "Cubic Millimeters";
+"cubicInches.symbol" = "in³";
+"cubicInches.shortName" = "Cubic Inches";
+"cubicInches.longName" = "Cubic Inches";
+"cubicFeet.symbol" = "ft³";
+"cubicFeet.shortName" = "Cubic Feet";
+"cubicFeet.longName" = "Cubic Feet";
+"cubicYards.symbol" = "yd³";
+"cubicYards.shortName" = "Cubic Yards";
+"cubicYards.longName" = "Cubic Yards";
+"cubicMiles.symbol" = "mi³";
+"cubicMiles.shortName" = "Cubic Miles";
+"cubicMiles.longName" = "Cubic Miles";
+"acreFeet.symbol" = "af";
+"acreFeet.shortName" = "Acre-Feet";
+"acreFeet.longName" = "Acre-Feet";
+"bushels.symbol" = "bu";
+"bushels.shortName" = "Bushels";
+"bushels.longName" = "Bushels";
+"teaspoons.symbol" = "tsp";
+"teaspoons.shortName" = "Teaspoons";
+"teaspoons.longName" = "Teaspoons";
+"tablespoons.symbol" = "tbsp";
+"tablespoons.shortName" = "Tablespoons";
+"tablespoons.longName" = "Tablespoons";
+"fluidOunces.symbol" = "fl oz";
+"fluidOunces.shortName" = "Fluid Ounces";
+"fluidOunces.longName" = "Fluid Ounces";
+"cups.symbol" = "cup";
+"cups.shortName" = "Cups";
+"cups.longName" = "Cups";
+"pints.symbol" = "pt";
+"pints.shortName" = "Pints";
+"pints.longName" = "Pints";
+"imperialTeaspoons.symbol" = "tsp";
+"imperialTeaspoons.shortName" = "Imperial Teaspoons";
+"imperialTeaspoons.longName" = "Imperial Teaspoons";
+"imperialTablespoons.symbol" = "tbsp";
+"imperialTablespoons.shortName" = "Imperial Tablespoons";
+"imperialTablespoons.longName" = "Imperial Tablespoons";
+"imperialFluidOunces.symbol" = "fl oz";
+"imperialFluidOunces.shortName" = "Imperial Fluid Ounces";
+"imperialFluidOunces.longName" = "Imperial Fluid Ounces";
+"imperialPints.symbol" = "pt";
+"imperialPints.shortName" = "Imperial Pints";
+"imperialPints.longName" = "Imperial Pints";
+"imperialQuarts.symbol" = "qt";
+"imperialQuarts.shortName" = "Imperial Quarts";
+"imperialQuarts.longName" = "Imperial Quarts";
+"imperialGallons.symbol" = "gal";
+"imperialGallons.shortName" = "Imperial Gallons";
+"imperialGallons.longName" = "Imperial Gallons";
 "metricCups.symbol" = "cup";
-"metricCups.shortName" = "cup";
-"metricCups.longName" = "metric cups";
+"metricCups.shortName" = "Metric Cups";
+"metricCups.longName" = "Metric Cups";
+
+// Acceleration
+"metersPerSecondSquared.symbol" = "m/s²";
+"metersPerSecondSquared.shortName" = "Meters per Second Squared";
+"metersPerSecondSquared.longName" = "Meters per Second Squared";
+"gravity.symbol" = "g";
+"gravity.shortName" = "Gravity";
+"gravity.longName" = "Gravity";
+
+// Power
+"terawatts.symbol" = "TW";
+"terawatts.shortName" = "Terawatts";
+"terawatts.longName" = "Terawatts";
+"gigawatts.symbol" = "GW";
+"gigawatts.shortName" = "Gigawatts";
+"gigawatts.longName" = "Gigawatts";
+"megawatts.symbol" = "MW";
+"megawatts.shortName" = "Megawatts";
+"megawatts.longName" = "Megawatts";
+"kilowatts.symbol" = "kW";
+"kilowatts.shortName" = "Kilowatts";
+"kilowatts.longName" = "Kilowatts";
+"watts.symbol" = "W";
+"watts.shortName" = "Watts";
+"watts.longName" = "Watts";
+"milliwatts.symbol" = "mW";
+"milliwatts.shortName" = "Milliwatts";
+"milliwatts.longName" = "Milliwatts";
+"microwatts.symbol" = "µW";
+"microwatts.shortName" = "Microwatts";
+"microwatts.longName" = "Microwatts";
+"nanowatts.symbol" = "nW";
+"nanowatts.shortName" = "Nanowatts";
+"nanowatts.longName" = "Nanowatts";
+"picowatts.symbol" = "pW";
+"picowatts.shortName" = "Picowatts";
+"picowatts.longName" = "Picowatts";
+"femtowatts.symbol" = "fW";
+"femtowatts.shortName" = "Femtowatts";
+"femtowatts.longName" = "Femtowatts";
+"horsepower.symbol" = "hp";
+"horsepower.shortName" = "Horsepower";
+"horsepower.longName" = "Horsepower";
+
+// Angle
+"degrees.symbol" = "°";
+"degrees.shortName" = "Degrees";
+"degrees.longName" = "Degrees";
+"arcMinutes.symbol" = "'";
+"arcMinutes.shortName" = "Arc Minutes";
+"arcMinutes.longName" = "Arc Minutes";
+"arcSeconds.symbol" = "\"";
+"arcSeconds.shortName" = "Arc Seconds";
+"arcSeconds.longName" = "Arc Seconds";
+"radians.symbol" = "rad";
+"radians.shortName" = "Radians";
+"radians.longName" = "Radians";
+"gradians.symbol" = "grad";
+"gradians.shortName" = "Gradians";
+"gradians.longName" = "Gradians";
+"revolutions.symbol" = "rev";
+"revolutions.shortName" = "Revolutions";
+"revolutions.longName" = "Revolutions";
+
+// Area
+"squareMegameters.symbol" = "Mm²";
+"squareMegameters.shortName" = "Square Megameters";
+"squareMegameters.longName" = "Square Megameters";
+"squareKilometers.symbol" = "km²";
+"squareKilometers.shortName" = "Square Kilometers";
+"squareKilometers.longName" = "Square Kilometers";
+"squareMeters.symbol" = "m²";
+"squareMeters.shortName" = "Square Meters";
+"squareMeters.longName" = "Square Meters";
+"squareCentimeters.symbol" = "cm²";
+"squareCentimeters.shortName" = "Square Centimeters";
+"squareCentimeters.longName" = "Square Centimeters";
+"squareMillimeters.symbol" = "mm²";
+"squareMillimeters.shortName" = "Square Millimeters";
+"squareMillimeters.longName" = "Square Millimeters";
+"squareMicrometers.symbol" = "µm²";
+"squareMicrometers.shortName" = "Square Micrometers";
+"squareMicrometers.longName" = "Square Micrometers";
+"squareNanometers.symbol" = "nm²";
+"squareNanometers.shortName" = "Square Nanometers";
+"squareNanometers.longName" = "Square Nanometers";
+"squareInches.symbol" = "in²";
+"squareInches.shortName" = "Square Inches";
+"squareInches.longName" = "Square Inches";
+"squareFeet.symbol" = "ft²";
+"squareFeet.shortName" = "Square Feet";
+"squareFeet.longName" = "Square Feet";
+"squareYards.symbol" = "yd²";
+"squareYards.shortName" = "Square Yards";
+"squareYards.longName" = "Square Yards";
+"squareMiles.symbol" = "mi²";
+"squareMiles.shortName" = "Square Miles";
+"squareMiles.longName" = "Square Miles";
+"acres.symbol" = "ac";
+"acres.shortName" = "Acres";
+"acres.longName" = "Acres";
+"ares.symbol" = "a";
+"ares.shortName" = "Ares";
+"ares.longName" = "Ares";
+"hectares.symbol" = "ha";
+"hectares.shortName" = "Hectares";
+"hectares.longName" = "Hectares";
+
+// Concentration
+"gramsPerLiter.symbol" = "g/L";
+"gramsPerLiter.shortName" = "Grams per Liter";
+"gramsPerLiter.longName" = "Grams per Liter";
+"milligramsPerDeciliter.symbol" = "mg/dL";
+"milligramsPerDeciliter.shortName" = "Milligrams per Deciliter";
+"milligramsPerDeciliter.longName" = "Milligrams per Deciliter";
+"partsPerMillion.symbol" = "ppm";
+"partsPerMillion.shortName" = "Parts per Million";
+"partsPerMillion.longName" = "Parts per Million";
+
+// Time
+"hours.symbol" = "h";
+"hours.shortName" = "Hours";
+"hours.longName" = "Hours";
+"minutes.symbol" = "min";
+"minutes.shortName" = "Minutes";
+"minutes.longName" = "Minutes";
+"seconds.symbol" = "s";
+"seconds.shortName" = "Seconds";
+"seconds.longName" = "Seconds";
+"milliseconds.symbol" = "ms";
+"milliseconds.shortName" = "Milliseconds";
+"milliseconds.longName" = "Milliseconds";
+"microseconds.symbol" = "µs";
+"microseconds.shortName" = "Microseconds";
+"microseconds.longName" = "Microseconds";
+"nanoseconds.symbol" = "ns";
+"nanoseconds.shortName" = "Nanoseconds";
+"nanoseconds.longName" = "Nanoseconds";
+"picoseconds.symbol" = "ps";
+"picoseconds.shortName" = "Picoseconds";
+"picoseconds.longName" = "Picoseconds";
+
+// ElectricChargeCapacity
+"megaampereHours.symbol" = "MAh";
+"megaampereHours.shortName" = "Megaampere Hours";
+"megaampereHours.longName" = "Megaampere Hours";
+"kiloampereHours.symbol" = "kAh";
+"kiloampereHours.shortName" = "Kiloampere Hours";
+"kiloampereHours.longName" = "Kiloampere Hours";
+"ampereHours.symbol" = "Ah";
+"ampereHours.shortName" = "Ampere Hours";
+"ampereHours.longName" = "Ampere Hours";
+"milliampereHours.symbol" = "mAh";
+"milliampereHours.shortName" = "Milliampere Hours";
+"milliampereHours.longName" = "Milliampere Hours";
+"microampereHours.symbol" = "µAh";
+"microampereHours.shortName" = "Microampere Hours";
+"microampereHours.longName" = "Microampere Hours";
+
+// ElectricCurrent
+"megaamperes.symbol" = "MA";
+"megaamperes.shortName" = "Megaamperes";
+"megaamperes.longName" = "Megaamperes";
+"kiloamperes.symbol" = "kA";
+"kiloamperes.shortName" = "Kiloamperes";
+"kiloamperes.longName" = "Kiloamperes";
+"amperes.symbol" = "A";
+"amperes.shortName" = "Amperes";
+"amperes.longName" = "Amperes";
+"milliamperes.symbol" = "mA";
+"milliamperes.shortName" = "Milliamperes";
+"milliamperes.longName" = "Milliamperes";
+"microamperes.symbol" = "µA";
+"microamperes.shortName" = "Microamperes";
+"microamperes.longName" = "Microamperes";
+
+// ElectricPotential
+"megavolts.symbol" = "MV";
+"megavolts.shortName" = "Megavolts";
+"megavolts.longName" = "Megavolts";
+"kilovolts.symbol" = "kV";
+"kilovolts.shortName" = "Kilovolts";
+"kilovolts.longName" = "Kilovolts";
+"volts.symbol" = "V";
+"volts.shortName" = "Volts";
+"volts.longName" = "Volts";
+"millivolts.symbol" = "mV";
+"millivolts.shortName" = "Millivolts";
+"millivolts.longName" = "Millivolts";
+"microvolts.symbol" = "µV";
+"microvolts.shortName" = "Microvolts";
+"microvolts.longName" = "Microvolts";
+
+// ElectricResistance
+"megaohms.symbol" = "MΩ";
+"megaohms.shortName" = "Megaohms";
+"megaohms.longName" = "Megaohms";
+"kiloohms.symbol" = "kΩ";
+"kiloohms.shortName" = "Kiloohms";
+"kiloohms.longName" = "Kiloohms";
+"ohms.symbol" = "Ω";
+"ohms.shortName" = "Ohms";
+"ohms.longName" = "Ohms";
+"milliohms.symbol" = "mΩ";
+"milliohms.shortName" = "Milliohms";
+"milliohms.longName" = "Milliohms";
+"microohms.symbol" = "µΩ";
+"microohms.shortName" = "Microohms";
+"microohms.longName" = "Microohms";
+
+// Energy
+"kilojoules.symbol" = "kJ";
+"kilojoules.shortName" = "Kilojoules";
+"kilojoules.longName" = "Kilojoules";
+"joules.symbol" = "J";
+"joules.shortName" = "Joules";
+"joules.longName" = "Joules";
+"kilocalories.symbol" = "kcal";
+"kilocalories.shortName" = "Kilocalories";
+"kilocalories.longName" = "Kilocalories";
+"calories.symbol" = "cal";
+"calories.shortName" = "Calories";
+"calories.longName" = "Calories";
+"kilowattHours.symbol" = "kWh";
+"kilowattHours.shortName" = "Kilowatt Hours";
+"kilowattHours.longName" = "Kilowatt Hours";
+
+// Frequency
+"terahertz.symbol" = "THz";
+"terahertz.shortName" = "Terahertz";
+"terahertz.longName" = "Terahertz";
+"gigahertz.symbol" = "GHz";
+"gigahertz.shortName" = "Gigahertz";
+"gigahertz.longName" = "Gigahertz";
+"megahertz.symbol" = "MHz";
+"megahertz.shortName" = "Megahertz";
+"megahertz.longName" = "Megahertz";
+"kilohertz.symbol" = "kHz";
+"kilohertz.shortName" = "Kilohertz";
+"kilohertz.longName" = "Kilohertz";
+"hertz.symbol" = "Hz";
+"hertz.shortName" = "Hertz";
+"hertz.longName" = "Hertz";
+"millihertz.symbol" = "mHz";
+"millihertz.shortName" = "Millihertz";
+"millihertz.longName" = "Millihertz";
+"microhertz.symbol" = "µHz";
+"microhertz.shortName" = "Microhertz";
+"microhertz.longName" = "Microhertz";
+"nanohertz.symbol" = "nHz";
+"nanohertz.shortName" = "Nanohertz";
+"nanohertz.longName" = "Nanohertz";
+"framesPerSecond.symbol" = "fps";
+"framesPerSecond.shortName" = "Frames per Second";
+"framesPerSecond.longName" = "Frames per Second";
+
+// FuelEfficiency
+"litersPer100Kilometers.symbol" = "L/100km";
+"litersPer100Kilometers.shortName" = "Liters per 100 Kilometers";
+"litersPer100Kilometers.longName" = "Liters per 100 Kilometers";
+"milesPerImperialGallon.symbol" = "mpg";
+"milesPerImperialGallon.shortName" = "Miles per Imperial Gallon";
+"milesPerImperialGallon.longName" = "Miles per Imperial Gallon";
+"milesPerGallon.symbol" = "mpg";
+"milesPerGallon.shortName" = "Miles per Gallon";
+"milesPerGallon.longName" = "Miles per Gallon";
+
+// Data
+"bytes.symbol" = "B";
+"bytes.shortName" = "Bytes";
+"bytes.longName" = "Bytes";
+"bits.symbol" = "b";
+"bits.shortName" = "Bits";
+"bits.longName" = "Bits";
+"nibbles.symbol" = "n";
+"nibbles.shortName" = "Nibbles";
+"nibbles.longName" = "Nibbles";
+"yottabytes.symbol" = "YB";
+"yottabytes.shortName" = "Yottabytes";
+"yottabytes.longName" = "Yottabytes";
+"zettabytes.symbol" = "ZB";
+"zettabytes.shortName" = "Zettabytes";
+"zettabytes.longName" = "Zettabytes";
+"exabytes.symbol" = "EB";
+"exabytes.shortName" = "Exabytes";
+"exabytes.longName" = "Exabytes";
+"petabytes.symbol" = "PB";
+"petabytes.shortName" = "Petabytes";
+"petabytes.longName" = "Petabytes";
+"terabytes.symbol" = "TB";
+"terabytes.shortName" = "Terabytes";
+"terabytes.longName" = "Terabytes";
+"gigabytes.symbol" = "GB";
+"gigabytes.shortName" = "Gigabytes";
+"gigabytes.longName" = "Gigabytes";
+"megabytes.symbol" = "MB";
+"megabytes.shortName" = "Megabytes";
+"megabytes.longName" = "Megabytes";
+"kilobytes.symbol" = "KB";
+"kilobytes.shortName" = "Kilobytes";
+"kilobytes.longName" = "Kilobytes";
+"yottabits.symbol" = "Yb";
+"yottabits.shortName" = "Yottabits";
+"yottabits.longName" = "Yottabits";
+"zettabits.symbol" = "Zb";
+"zettabits.shortName" = "Zettabits";
+"zettabits.longName" = "Zettabits";
+"exabits.symbol" = "Eb";
+"exabits.shortName" = "Exabits";
+"exabits.longName" = "Exabits";
+"petabits.symbol" = "Pb";
+"petabits.shortName" = "Petabits";
+"petabits.longName" = "Petabits";
+"terabits.symbol" = "Tb";
+"terabits.shortName" = "Terabits";
+"terabits.longName" = "Terabits";
+"gigabits.symbol" = "Gb";
+"gigabits.shortName" = "Gigabits";
+"gigabits.longName" = "Gigabits";
+"megabits.symbol" = "Mb";
+"megabits.shortName" = "Megabits";
+"megabits.longName" = "Megabits";
+"kilobits.symbol" = "Kb";
+"kilobits.shortName" = "Kilobits";
+"kilobits.longName" = "Kilobits";
+"yobibytes.symbol" = "YiB";
+"yobibytes.shortName" = "Yobibytes";
+"yobibytes.longName" = "Yobibytes";
+"zebibytes.symbol" = "ZiB";
+"zebibytes.shortName" = "Zebibytes";
+"zebibytes.longName" = "Zebibytes";
+"exbibytes.symbol" = "EiB";
+"exbibytes.shortName" = "Exbibytes";
+"exbibytes.longName" = "Exbibytes";
+"pebibytes.symbol" = "PiB";
+"pebibytes.shortName" = "Pebibytes";
+"pebibytes.longName" = "Pebibytes";
+"tebibytes.symbol" = "TiB";
+"tebibytes.shortName" = "Tebibytes";
+"tebibytes.longName" = "Tebibytes";
+"gibibytes.symbol" = "GiB";
+"gibibytes.shortName" = "Gibibytes";
+"gibibytes.longName" = "Gibibytes";
+"mebibytes.symbol" = "MiB";
+"mebibytes.shortName" = "Mebibytes";
+"mebibytes.longName" = "Mebibytes";
+"kibibytes.symbol" = "KiB";
+"kibibytes.shortName" = "Kibibytes";
+"kibibytes.longName" = "Kibibytes";
+"yobibits.symbol" = "Yib";
+"yobibits.shortName" = "Yobibits";
+"yobibits.longName" = "Yobibits";
+"zebibits.symbol" = "Zib";
+"zebibits.shortName" = "Zebibits";
+"zebibits.longName" = "Zebibits";
+"exbibits.symbol" = "Eib";
+"exbibits.shortName" = "Exbibits";
+"exbibits.longName" = "Exbibits";
+"pebibits.symbol" = "Pib";
+"pebibits.shortName" = "Pebibits";
+"pebibits.longName" = "Pebibits";
+"tebibits.symbol" = "Tib";
+"tebibits.shortName" = "Tebibits";
+"tebibits.longName" = "Tebibits";
+"gibibits.symbol" = "Gib";
+"gibibits.shortName" = "Gibibits";
+"gibibits.longName" = "Gibibits";
+"mebibits.symbol" = "Mib";
+"mebibits.shortName" = "Mebibits";
+"mebibits.longName" = "Mebibits";
+"kibibits.symbol" = "Kib";
+"kibibits.shortName" = "Kibibits";
+"kibibits.longName" = "Kibibits";

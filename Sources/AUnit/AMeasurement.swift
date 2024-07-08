@@ -2,7 +2,7 @@ import Foundation
 
 /// A struct representing a measurement with a specific value and unit.
 /// 表示具有特定值和单位的测量结构。
-public struct AMeasurement: Codable, Sendable, Hashable {
+public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible {
     /// The value of the measurement.
     /// 测量的值。
     public var value: Double

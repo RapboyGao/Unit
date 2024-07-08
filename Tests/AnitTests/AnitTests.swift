@@ -2,7 +2,7 @@
 import XCTest
 
 final class AnitTests: XCTestCase {
-    func testExample() throws {
+    func test1() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
 
@@ -27,6 +27,30 @@ final class AnitTests: XCTestCase {
         let tempDiffCelsius = AMeasurement(value: 1, unit: .celsiusDelta)
         if let tempDiffFahrenheit = tempDiffCelsius.converted(to: .fahrenheitDelta) {
             print("1°C delta in Fahrenheit delta: \(tempDiffFahrenheit.description)") // 应该输出 "1.8 °F"
+        }
+    }
+
+    func test2() throws {
+        let speed = AMeasurement(value: 460, unit: .knots)
+        let time = AMeasurement(value: 1, unit: .hours)
+        let distance = speed.multiplying(by: time, recalculate: false)
+        print(distance?.converted(to: .kilometers) ?? "nil")
+    }
+
+    func testAllNamesNotEmpty() throws {
+        for unit in AUnit.allCases {
+            guard unit.symbol != "\(unit.self).symbol",
+                  unit.shortName != "\(unit.self).shortName",
+                  unit.longName != "\(unit.self).longName"
+            else { throw XCTestError(.timeoutWhileWaiting) }
+            print(unit.symbol, unit.shortName, unit.longName)
+        }
+        for unitType in AUnitType.allCases {
+            guard unitType.symbol != "\(unitType.self).symbol",
+                  unitType.shortName != "\(unitType.self).shortName",
+                  unitType.longName != "\(unitType.self).longName"
+            else { throw XCTestError(.timeoutWhileWaiting) }
+            print(unitType.symbol, unitType.shortName, unitType.longName)
         }
     }
 }
