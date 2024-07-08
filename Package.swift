@@ -4,20 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "Anit",
+    name: "AUnit",
+    defaultLocalization: "en",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "Anit",
-            targets: ["Anit"]),
+        .library(name: "AUnit", targets: ["AUnit"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "Anit",
-            resources: [.process("Resources")]),
-        .testTarget(
-            name: "AnitTests",
-            dependencies: ["Anit"]),
+        .target(name: "AUnit", resources: [.process("Resources")]),
+        .testTarget(name: "AnitTests", dependencies: ["AUnit"]),
     ])
