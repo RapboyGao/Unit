@@ -1,5 +1,3 @@
-以下是你的项目的 README.md 文件内容：
-
 # AUnit Library
 
 AUnit is a Swift library for handling various unit types and performing conversions between them. It includes support for length, speed, pressure, temperature, mass, volume, and more. The library provides enums to represent these units and their types, and allows for easy conversion and manipulation of measurements.
