@@ -1,5 +1,15 @@
 # AUnit
 
+## Languages
+
+- [English](README.md)
+- [中文 (Simplified Chinese)](README.zh.md)
+- [繁體中文 (Traditional Chinese)](README.zh-TW.md)
+- [日本語 (Japanese)](README.ja.md)
+- [한국어 (Korean)](README.ko.md)
+- [Français (French)](README.fr.md)
+- [Deutsch (German)](README.de.md)
+
 ### Introduction
 
 The `AUnit` package provides a comprehensive system for working with units of measurement. It includes support for various unit types, conversion between units, and measurement calculations. This package is ideal for developers needing to handle different units of measurement in their applications.
