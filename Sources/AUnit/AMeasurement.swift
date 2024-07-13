@@ -107,10 +107,17 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
             guard let selfInAmpereHours = self.converted(to: .ampereHours),
                   let otherInVolts = other.converted(to: .volts) else { return nil }
             return AMeasurement(value: selfInAmpereHours.value * otherInVolts.value, unit: .wattHours)
+        case (.angularVelocity, .time):
+            guard let selfInRadiansPerSecond = self.converted(to: .radiansPerSecond),
+                  let otherInSeconds = other.converted(to: .seconds) else { return nil }
+            return AMeasurement(value: selfInRadiansPerSecond.value * otherInSeconds.value, unit: .radians)
+        case (.time, .angularVelocity):
+            guard let selfInSeconds = self.converted(to: .seconds),
+                  let otherInRadiansPerSecond = other.converted(to: .radiansPerSecond) else { return nil }
+            return AMeasurement(value: selfInSeconds.value * otherInRadiansPerSecond.value, unit: .radians)
         // 其他乘法操作（可根据需要扩展）
         default:
-            guard recalculate
-            else { return other.multiplying(by: self, recalculate: true) }
+            guard recalculate else { return other.multiplying(by: self, recalculate: true) }
             return nil
         }
     }
@@ -165,6 +172,10 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
             guard let selfInCubicMeters = self.converted(to: .cubicMeters),
                   let otherInMeters = other.converted(to: .meters) else { return nil }
             return AMeasurement(value: selfInCubicMeters.value / otherInMeters.value, unit: .squareMeters)
+        case (.angle, .time):
+            guard let selfInRadians = self.converted(to: .radians),
+                  let otherInSeconds = other.converted(to: .seconds) else { return nil }
+            return AMeasurement(value: selfInRadians.value / otherInSeconds.value, unit: .radiansPerSecond)
         // 其他除法操作（可根据需要扩展）
         default:
             return nil

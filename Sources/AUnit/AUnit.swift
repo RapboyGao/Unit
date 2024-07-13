@@ -23,6 +23,8 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
     case terawatts, gigawatts, megawatts, kilowatts, watts, milliwatts, microwatts, nanowatts, picowatts, femtowatts, horsepower
     // Angle
     case degrees, arcMinutes, arcSeconds, radians, gradians, revolutions
+    // Angular Velocity
+    case radiansPerSecond, degreesPerSecond, revolutionsPerMinute, revolutionsPerSecond
     // Area
     case squareMegameters, squareKilometers, squareMeters, squareCentimeters, squareMillimeters, squareMicrometers, squareNanometers, squareInches, squareFeet, squareYards, squareMiles, acres, ares, hectares
     // Concentration
@@ -70,6 +72,8 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
             return .power
         case .degrees, .arcMinutes, .arcSeconds, .radians, .gradians, .revolutions:
             return .angle
+        case .radiansPerSecond, .degreesPerSecond, .revolutionsPerMinute, .revolutionsPerSecond:
+            return .angularVelocity
         case .squareMegameters, .squareKilometers, .squareMeters, .squareCentimeters, .squareMillimeters, .squareMicrometers, .squareNanometers, .squareInches, .squareFeet, .squareYards, .squareMiles, .acres, .ares, .hectares:
             return .area
         case .gramsPerLiter, .milligramsPerDeciliter, .partsPerMillion:
@@ -218,6 +222,11 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
         case .radians: return 180.0 / .pi
         case .gradians: return 0.9
         case .revolutions: return 360.0
+        // Angular Velocity
+        case .radiansPerSecond: return 1.0
+        case .degreesPerSecond: return .pi / 180.0
+        case .revolutionsPerMinute: return .pi / 30.0
+        case .revolutionsPerSecond: return 2 * .pi
         // Area
         case .squareMegameters: return 1e12
         case .squareKilometers: return 1_000_000.0
