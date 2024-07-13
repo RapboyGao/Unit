@@ -30,7 +30,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
     // Time
     case hours, minutes, seconds, milliseconds, microseconds, nanoseconds, picoseconds
     // ElectricChargeCapacity
-    case megaampereHours, kiloampereHours, ampereHours, milliampereHours, microampereHours
+    case megaampereHours, kiloampereHours, ampereHours, milliampereHours, microampereHours, ampereSeconds
     // ElectricCurrent
     case megaamperes, kiloamperes, amperes, milliamperes, microamperes
     // ElectricPotential
@@ -38,7 +38,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
     // ElectricResistance
     case megaohms, kiloohms, ohms, milliohms, microohms
     // Energy
-    case kilojoules, joules, kilocalories, calories, kilowattHours
+    case kilojoules, joules, kilocalories, calories, kilowattHours, wattHours
     // Frequency
     case terahertz, gigahertz, megahertz, kilohertz, hertz, millihertz, microhertz, nanohertz, framesPerSecond
     // FuelEfficiency
@@ -76,7 +76,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
             return .concentration
         case .hours, .minutes, .seconds, .milliseconds, .microseconds, .nanoseconds, .picoseconds:
             return .time
-        case .megaampereHours, .kiloampereHours, .ampereHours, .milliampereHours, .microampereHours:
+        case .megaampereHours, .kiloampereHours, .ampereHours, .milliampereHours, .microampereHours, .ampereSeconds:
             return .electricChargeCapacity
         case .megaamperes, .kiloamperes, .amperes, .milliamperes, .microamperes:
             return .electricCurrent
@@ -84,7 +84,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
             return .electricPotential
         case .megaohms, .kiloohms, .ohms, .milliohms, .microohms:
             return .electricResistance
-        case .kilojoules, .joules, .kilocalories, .calories, .kilowattHours:
+        case .kilojoules, .joules, .kilocalories, .calories, .kilowattHours, .wattHours:
             return .energy
         case .terahertz, .gigahertz, .megahertz, .kilohertz, .hertz, .millihertz, .microhertz, .nanohertz, .framesPerSecond:
             return .frequency
@@ -251,6 +251,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
         case .ampereHours: return 3_600.0
         case .milliampereHours: return 3.6
         case .microampereHours: return 0.0036
+        case .ampereSeconds: return 1.0
         // ElectricCurrent
         case .megaamperes: return 1e6
         case .kiloamperes: return 1_000.0
@@ -275,6 +276,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
         case .kilocalories: return 4_184.0
         case .calories: return 4.184
         case .kilowattHours: return 3.6e6
+        case .wattHours: return 3_600.0
         // Frequency
         case .terahertz: return 1e12
         case .gigahertz: return 1e9

@@ -103,6 +103,10 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
             guard let selfInMetersPerSecondSquared = self.converted(to: .metersPerSecondSquared),
                   let otherInSeconds = other.converted(to: .seconds) else { return nil }
             return AMeasurement(value: selfInMetersPerSecondSquared.value * otherInSeconds.value, unit: .metersPerSecond)
+        case (.electricChargeCapacity, .electricPotential):
+            guard let selfInAmpereHours = self.converted(to: .ampereHours),
+                  let otherInVolts = other.converted(to: .volts) else { return nil }
+            return AMeasurement(value: selfInAmpereHours.value * otherInVolts.value, unit: .wattHours)
         // 其他乘法操作（可根据需要扩展）
         default:
             guard recalculate
@@ -145,6 +149,22 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
             guard let selfInMetersPerSecond = self.converted(to: .metersPerSecond),
                   let otherInSeconds = other.converted(to: .seconds) else { return nil }
             return AMeasurement(value: selfInMetersPerSecond.value / otherInSeconds.value, unit: .metersPerSecondSquared)
+        case (.energy, .electricPotential):
+            guard let selfInJoules = self.converted(to: .joules),
+                  let otherInVolts = other.converted(to: .volts) else { return nil }
+            return AMeasurement(value: selfInJoules.value / otherInVolts.value, unit: .ampereHours)
+        case (.energy, .electricChargeCapacity):
+            guard let selfInJoules = self.converted(to: .joules),
+                  let otherInAmpereHours = other.converted(to: .ampereHours) else { return nil }
+            return AMeasurement(value: selfInJoules.value / otherInAmpereHours.value, unit: .volts)
+        case (.volume, .area):
+            guard let selfInCubicMeters = self.converted(to: .cubicMeters),
+                  let otherInSquareMeters = other.converted(to: .squareMeters) else { return nil }
+            return AMeasurement(value: selfInCubicMeters.value / otherInSquareMeters.value, unit: .meters)
+        case (.volume, .length):
+            guard let selfInCubicMeters = self.converted(to: .cubicMeters),
+                  let otherInMeters = other.converted(to: .meters) else { return nil }
+            return AMeasurement(value: selfInCubicMeters.value / otherInMeters.value, unit: .squareMeters)
         // 其他除法操作（可根据需要扩展）
         default:
             return nil
