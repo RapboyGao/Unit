@@ -23,4 +23,10 @@ public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable {
     public var longName: String {
         return NSLocalizedString("\(self).longName", bundle: .module, comment: "")
     }
+    
+    /// The detailed introduction for the unit type.
+    /// 单位类型的详细介绍。
+    public var detailedIntroduction: String {
+        return NSLocalizedString("\(self).detailedIntroduction", bundle: .module, comment: "")
+    }
 }

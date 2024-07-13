@@ -359,14 +359,22 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
 
     /// The short name for the unit.
     /// 单位的短名称。
+    /// 例如 米/秒
     public var shortName: String {
         return NSLocalizedString("\(self).shortName", bundle: .module, comment: "")
     }
 
     /// The long name for the unit.
     /// 单位的全名称。
+    /// 例如 米每秒
     public var longName: String {
         return NSLocalizedString("\(self).longName", bundle: .module, comment: "")
+    }
+
+    /// The detailed introduction for the unit.
+    /// 单位的详细介绍。
+    public var detailedIntroduction: String {
+        return NSLocalizedString("\(self).detailedIntroduction", bundle: .module, comment: "")
     }
 
     /// Converts a value from this unit to another unit.
