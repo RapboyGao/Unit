@@ -343,6 +343,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
 
     /// The symbol for the unit.
     /// 单位的符号。
+    /// 尽可能一个字/词
     public var symbol: String {
         return NSLocalizedString("\(self).symbol", bundle: .module, comment: "")
     }

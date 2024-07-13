@@ -134,7 +134,7 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
                   let otherInSeconds = other.converted(to: .seconds) else { return nil }
             return AMeasurement(value: selfInMeters.value / otherInSeconds.value, unit: .metersPerSecond)
         case (.mass, .volume):
-            guard let selfInKilograms = self.converted(to: .kilograms),
+            guard let selfInKilograms = self.converted(to: .grams),
                   let otherInLiters = other.converted(to: .liters) else { return nil }
             return AMeasurement(value: selfInKilograms.value / otherInLiters.value, unit: .gramsPerLiter)
         case (.electricPotential, .electricCurrent):
@@ -150,11 +150,11 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
                   let otherInSeconds = other.converted(to: .seconds) else { return nil }
             return AMeasurement(value: selfInMetersPerSecond.value / otherInSeconds.value, unit: .metersPerSecondSquared)
         case (.energy, .electricPotential):
-            guard let selfInJoules = self.converted(to: .joules),
+            guard let selfInJoules = self.converted(to: .wattHours),
                   let otherInVolts = other.converted(to: .volts) else { return nil }
             return AMeasurement(value: selfInJoules.value / otherInVolts.value, unit: .ampereHours)
         case (.energy, .electricChargeCapacity):
-            guard let selfInJoules = self.converted(to: .joules),
+            guard let selfInJoules = self.converted(to: .wattHours),
                   let otherInAmpereHours = other.converted(to: .ampereHours) else { return nil }
             return AMeasurement(value: selfInJoules.value / otherInAmpereHours.value, unit: .volts)
         case (.volume, .area):
