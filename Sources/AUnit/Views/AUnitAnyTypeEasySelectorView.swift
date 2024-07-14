@@ -14,7 +14,7 @@ public struct AUnitAnyTypeEasySelectorView: View {
             if let unit = unit {
                 Text(unit.shortName)
             } else {
-                Text("None")
+                Text(Ref.none)
             }
         } onSelect: {
             unit = $0

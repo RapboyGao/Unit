@@ -13,7 +13,7 @@ public struct AUnitAnyTypeSelectorView<Label: View, Content: View>: View {
     public var body: some View {
         Menu {
             if showNil {
-                Button("None") {
+                Button(Ref.none) {
                     onSelect(nil)
                 }
             }
