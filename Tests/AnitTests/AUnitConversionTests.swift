@@ -2,7 +2,7 @@
 import XCTest
 
 final class AUnitConversionTests: XCTestCase {
-    let epsilon = 1e-1 // 设定容忍度，增加精度
+    let epsilon = 1e-10 // 设定容忍度，增加精度
 
     /// 定义测试转换函数
     /// - Parameters:
@@ -249,19 +249,13 @@ final class AUnitConversionTests: XCTestCase {
 
     func testFuelEfficiencyConversions() {
         // 测试从每百公里升到英里每加仑的转换
-        let valueLPer100km = Measurement(value: 100, unit: UnitFuelEfficiency.litersPer100Kilometers)
-        let expectedMPG = valueLPer100km.converted(to: .milesPerGallon).value
-        assertConversion(100, from: .litersPer100Kilometers, to: .milesPerGallon, expected: expectedMPG)
+        assertConversion(100.0, from: .litersPer100Kilometers, to: .milesPerGallon, expected: 2.3521458333333)
 
         // 测试从英里每加仑到每百公里升的转换
-        let valueMPG = Measurement(value: 100, unit: UnitFuelEfficiency.milesPerGallon)
-        let expectedLPer100km = valueMPG.converted(to: .litersPer100Kilometers).value
-        assertConversion(100, from: .milesPerGallon, to: .litersPer100Kilometers, expected: expectedLPer100km)
+        assertConversion(2.3521458333333, from: .milesPerGallon, to: .litersPer100Kilometers, expected: 100.0)
 
         // 测试从英里每英制加仑到每百公里升的转换
-        let valueMPGImperial = Measurement(value: 100, unit: UnitFuelEfficiency.milesPerImperialGallon)
-        let expectedLPer100kmImperial = valueMPGImperial.converted(to: .litersPer100Kilometers).value
-        assertConversion(100, from: .milesPerImperialGallon, to: .litersPer100Kilometers, expected: expectedLPer100kmImperial)
+        assertConversion(100.0, from: .milesPerImperialGallon, to: .litersPer100Kilometers, expected: 2.8248093627961)
     }
 
     func testDataConversions() {
