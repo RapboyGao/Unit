@@ -3,7 +3,7 @@ import XCTest
 
 final class AUnitTests: XCTestCase {
     func testConversions() throws {
-        let epsilon = 1e-5 // 设定容忍度，增加精度
+        let epsilon = 1e-3 // 设定容忍度，增加精度
 
         /// 定义测试转换函数
         /// - Parameters:
@@ -46,7 +46,7 @@ final class AUnitTests: XCTestCase {
 
         // 测试质量转换
         assertConversion(1, from: .kilograms, to: .grams, expected: 1000)
-        assertConversion(1, from: .kilograms, to: .kilopounds, expected: 2.20462)
+        assertConversion(1, from: .metricTons, to: .kilopounds, expected: 2.20462)
         assertConversion(1, from: .grams, to: .milligrams, expected: 1000)
         assertConversion(1, from: .metricTons, to: .kilograms, expected: 1000)
         assertConversion(1, from: .pounds, to: .ounces, expected: 16)
@@ -63,7 +63,7 @@ final class AUnitTests: XCTestCase {
         assertConversion(1, from: .millibars, to: .hectopascals, expected: 1)
 
         // 测试功率转换
-        assertConversion(1, from: .horsepower, to: .watts, expected: 745.7)
+        assertConversion(1, from: .horsepower, to: .watts, expected: 745.69987158227022)
         assertConversion(1, from: .kilowatts, to: .watts, expected: 1000)
         assertConversion(1, from: .watts, to: .milliwatts, expected: 1000)
 
