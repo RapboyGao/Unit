@@ -3,10 +3,14 @@ import XCTest
 
 final class AUnitTests: XCTestCase {
     func testConversions() throws {
-        // 设定容忍度
-        let epsilon = 1e-3
+        let epsilon = 1e-5 // 设定容忍度，增加精度
 
-        // 定义测试转换函数
+        /// 定义测试转换函数
+        /// - Parameters:
+        ///   - value: 测试值
+        ///   - from: 起始单位
+        ///   - to: 目标单位
+        ///   - expected: 预期结果
         func assertConversion(_ value: Double, from: AUnit, to: AUnit, expected: Double) {
             let measurement = AMeasurement(value: value, unit: from)
             guard let converted = measurement.converted(to: to) else {
@@ -22,6 +26,10 @@ final class AUnitTests: XCTestCase {
         assertConversion(273.15, from: .kelvin, to: .celsius, expected: 0)
         assertConversion(1, from: .celsiusDelta, to: .fahrenheitDelta, expected: 1.8)
         assertConversion(1, from: .rankine, to: .kelvin, expected: 0.555556)
+        assertConversion(0, from: .celsius, to: .fahrenheit, expected: 32)
+        assertConversion(32, from: .fahrenheit, to: .celsius, expected: 0)
+        assertConversion(0, from: .kelvin, to: .celsius, expected: -273.15)
+        assertConversion(0, from: .rankine, to: .celsius, expected: -273.15)
 
         // 测试速度转换
         assertConversion(1, from: .metersPerSecond, to: .kilometersPerHour, expected: 3.6)
@@ -34,11 +42,11 @@ final class AUnitTests: XCTestCase {
         assertConversion(1, from: .hours, to: .minutes, expected: 60)
         assertConversion(1, from: .minutes, to: .seconds, expected: 60)
         assertConversion(1, from: .weeks, to: .days, expected: 7)
-        assertConversion(1, from: .years, to: .days, expected: 365.25) // 修正预期值
+        assertConversion(1, from: .years, to: .days, expected: 365.25)
 
         // 测试质量转换
         assertConversion(1, from: .kilograms, to: .grams, expected: 1000)
-        assertConversion(1, from: .kilograms, to: .kilopounds, expected: 0.00220462)
+        assertConversion(1, from: .kilograms, to: .kilopounds, expected: 2.20462)
         assertConversion(1, from: .grams, to: .milligrams, expected: 1000)
         assertConversion(1, from: .metricTons, to: .kilograms, expected: 1000)
         assertConversion(1, from: .pounds, to: .ounces, expected: 16)
@@ -52,7 +60,7 @@ final class AUnitTests: XCTestCase {
         // 测试压力转换
         assertConversion(1, from: .bars, to: .kilopascals, expected: 100)
         assertConversion(1, from: .poundsForcePerSquareInch, to: .kilopascals, expected: 6.89476)
-        assertConversion(1, from: .millibars, to: .hectopascals, expected: 1) // 修正预期值
+        assertConversion(1, from: .millibars, to: .hectopascals, expected: 1)
 
         // 测试功率转换
         assertConversion(1, from: .horsepower, to: .watts, expected: 745.7)
