@@ -149,13 +149,8 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .millibars: return 100.0
         case .poundsForcePerSquareInch: return 6894.757
         // Temperature
-        case .kelvin: return 1.0
-        case .celsius: return 1.0
-        case .fahrenheit: return 5.0 / 9.0
-        case .rankine: return 5.0 / 9.0
-        // TemperatureDifference
-        case .celsiusDelta: return 1.0
-        case .fahrenheitDelta: return 5.0 / 9.0
+        case .kelvin, .celsius, .celsiusDelta: return 1.0
+        case .fahrenheit, .rankine, .fahrenheitDelta: return 5.0 / 9.0
         // Mass
         case .metricTons: return 1.0e6
         case .shortTons: return 907184.74
@@ -354,31 +349,26 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
     /// 温度转换的常数。
     public var constant: Double {
         switch self {
-        case .kelvin: return 0
         case .celsius: return 273.15
         case .fahrenheit: return 459.67
-        case .rankine: return 0
         default: return 0
         }
     }
 
     /// The symbol for the unit.
     /// 单位的符号。
-    /// 尽可能一个字/词
     public var symbol: String {
         return NSLocalizedString("\(self).symbol", bundle: .module, comment: "")
     }
 
     /// The short name for the unit.
     /// 单位的短名称。
-    /// 例如 米/秒
     public var shortName: String {
         return NSLocalizedString("\(self).shortName", bundle: .module, comment: "")
     }
 
     /// The long name for the unit.
     /// 单位的全名称。
-    /// 例如 米每秒
     public var longName: String {
         return NSLocalizedString("\(self).longName", bundle: .module, comment: "")
     }
@@ -398,10 +388,10 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
     public func convert(value: Double, to unit: AUnit) -> Double? {
         guard self.unitType == unit.unitType else { return nil }
         // Temperature conversion
-        if self.unitType == .temperature && unit.unitType == .temperature {
+        if self.unitType == .temperature {
             let valueInKelvin = (value + self.constant) * self.coefficient
             return (valueInKelvin / unit.coefficient) - unit.constant
-        } else if self.unitType == .temperatureDifference && unit.unitType == .temperatureDifference {
+        } else if self.unitType == .temperatureDifference {
             return value * self.coefficient / unit.coefficient
         }
         // Other unit conversion
