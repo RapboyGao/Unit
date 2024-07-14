@@ -2,8 +2,10 @@ import Foundation
 
 /// Enum representing the types of units.
 /// 表示单位类型的枚举。
-public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable {
+public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
     case length, speed, pressure, temperature, temperatureDifference, mass, volume, acceleration, power, angle, angularVelocity, area, concentration, time, electricChargeCapacity, electricCurrent, electricPotential, electricResistance, energy, frequency, fuelEfficiency, data
+
+    public var id: AUnitType { self }
 
     /// The symbol for the unit type.
     /// 单位类型的符号。
@@ -23,7 +25,7 @@ public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable {
     public var longName: String {
         return NSLocalizedString("\(self).longName", bundle: .module, comment: "")
     }
-    
+
     /// The detailed introduction for the unit type.
     /// 单位类型的详细介绍。
     public var detailedIntroduction: String {

@@ -2,7 +2,7 @@ import Foundation
 
 /// Enum representing various units.
 /// 表示各种单位的枚举。
-public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
+public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
     // Length
     case feet, nauticalMiles, meters, kilometers, miles, megameters, hectometers, decameters, decimeters, centimeters, millimeters, micrometers, nanometers, picometers, inches, yards, scandinavianMiles, lightyears, fathoms, furlongs, astronomicalUnits, parsecs
     // Speed
@@ -98,6 +98,8 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable {
             return .data
         }
     }
+
+    public var id: AUnit { self }
 
     /// The coefficient for conversion.
     /// 转换系数。
