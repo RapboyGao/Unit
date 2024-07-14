@@ -32,14 +32,18 @@ public struct AUnitForeachView<Content: View>: View {
     }
 }
 
-@available(iOS 14.0, macOS 11.0, *)
-@available(tvOS, unavailable)
-@available(watchOS, unavailable)
+@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 #Preview {
-    List {
-        AUnitForeachView(typeFilter: .speed) { unit in
-            DisclosureGroup(unit.longName) {
-                Text(unit.detailedIntroduction)
+    List(AUnitType.allCases) { unitType in
+        Section(unitType.shortName) {
+            AUnitForeachView(typeFilter: unitType) { unit in
+                DisclosureGroup(unit.symbol) {
+                    VStack(alignment: .leading) {
+                        Text(unit.shortName)
+                        Text(unit.longName)
+                        Text(unit.detailedIntroduction)
+                    }
+                }
             }
         }
     }
