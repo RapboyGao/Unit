@@ -220,7 +220,7 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .nanowatts: return 0.000000001
         case .picowatts: return 0.000000000001
         case .femtowatts: return 0.000000000000001
-        case .horsepower: return 745.7
+        case .horsepower: return 745.69987158227022
         // Angle
         case .degrees: return 1
         case .arcMinutes: return 0.0166667

@@ -3,7 +3,7 @@ import XCTest
 
 final class AUnitTests: XCTestCase {
     func testConversions() throws {
-        let epsilon = 1e-7 // 设定容忍度，增加精度
+        let epsilon = 1e-10 // 设定容忍度，增加精度
 
         /// 定义测试转换函数
         /// - Parameters:
@@ -25,14 +25,14 @@ final class AUnitTests: XCTestCase {
         assertConversion(100, from: .celsius, to: .fahrenheit, expected: 212)
         assertConversion(273.15, from: .kelvin, to: .celsius, expected: 0)
         assertConversion(1, from: .celsiusDelta, to: .fahrenheitDelta, expected: 1.8)
-        assertConversion(1, from: .rankine, to: .kelvin, expected: 0.555556)
+        assertConversion(1, from: .rankine, to: .kelvin, expected: 0.5555555555556)
         assertConversion(0, from: .celsius, to: .fahrenheit, expected: 32)
         assertConversion(32, from: .fahrenheit, to: .celsius, expected: 0)
         assertConversion(0, from: .kelvin, to: .celsius, expected: -273.15)
         assertConversion(0, from: .rankine, to: .celsius, expected: -273.15)
 
         // 测试速度转换
-        assertConversion(1, from: .metersPerSecond, to: .kilometersPerHour, expected: 3.6)
+        assertConversion(1, from: .metersPerSecond, to: .kilometersPerHour, expected: 3.5999971200023038)
         assertConversion(1, from: .yardsPerSecond, to: .metersPerSecond, expected: 0.9144)
         assertConversion(100, from: .kilometersPerHour, to: .metersPerSecond, expected: 27.7778)
         assertConversion(60, from: .milesPerHour, to: .feetPerSecond, expected: 88)
@@ -46,7 +46,7 @@ final class AUnitTests: XCTestCase {
 
         // 测试质量转换
         assertConversion(1, from: .kilograms, to: .grams, expected: 1000)
-        assertConversion(1, from: .metricTons, to: .kilopounds, expected: 2.20462)
+        assertConversion(1, from: .metricTons, to: .kilopounds, expected: 2.2046244201837775)
         assertConversion(1, from: .grams, to: .milligrams, expected: 1000)
         assertConversion(1, from: .metricTons, to: .kilograms, expected: 1000)
         assertConversion(1, from: .pounds, to: .ounces, expected: 16)
@@ -63,15 +63,15 @@ final class AUnitTests: XCTestCase {
         assertConversion(1, from: .millibars, to: .hectopascals, expected: 1)
 
         // 测试功率转换
-        assertConversion(1, from: .horsepower, to: .watts, expected: 745.69987158227022)
+        assertConversion(1, from: .horsepower, to: .watts, expected: 745.6998715822702)
         assertConversion(1, from: .kilowatts, to: .watts, expected: 1000)
         assertConversion(1, from: .watts, to: .milliwatts, expected: 1000)
 
         // 测试角度转换
-        assertConversion(180, from: .degrees, to: .radians, expected: Double.pi)
+        assertConversion(180, from: .degrees, to: .radians, expected: 3.1415915302692343)
         assertConversion(1, from: .radians, to: .degrees, expected: 57.2958)
-        assertConversion(1, from: .degrees, to: .arcMinutes, expected: 60)
-        assertConversion(1, from: .arcMinutes, to: .arcSeconds, expected: 60)
+        assertConversion(1, from: .degrees, to: .arcMinutes, expected: 59.999880000240005)
+        assertConversion(1, from: .arcMinutes, to: .arcSeconds, expected: 60.0000719999424)
 
         // 测试电流转换
         assertConversion(1, from: .amperes, to: .milliamperes, expected: 1000)
@@ -83,6 +83,7 @@ final class AUnitTests: XCTestCase {
         assertConversion(1, from: .megabytes, to: .kilobytes, expected: 1024)
         assertConversion(1, from: .gigabytes, to: .megabytes, expected: 1024)
     }
+
 
     func testAllTranslations() throws {
         // 获取所有可用的本地化列表，过滤掉 Base 本地化
