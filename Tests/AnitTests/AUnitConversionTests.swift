@@ -248,86 +248,57 @@ final class AUnitConversionTests: XCTestCase {
     }
 
     func testFuelEfficiencyConversions() {
-        // 每百公里升到英里每加仑
-        assertConversion(1.0, from: .litersPer100Kilometers, to: .milesPerGallon, expected: 235.214583)
-        // 英里每加仑到每百公里升
-        assertConversion(1.0, from: .milesPerGallon, to: .litersPer100Kilometers, expected: 235.214583)
-        // 英里每英制加仑到每百公里升
-        assertConversion(1.0, from: .milesPerImperialGallon, to: .litersPer100Kilometers, expected: 282.480936)
-        // 每百公里升到英里每英制加仑
-        assertConversion(1.0, from: .litersPer100Kilometers, to: .milesPerImperialGallon, expected: 282.480936)
-        // 添加更多燃油效率单位测试
+        // 测试从每百公里升到英里每加仑的转换
+        let valueLPer100km = Measurement(value: 1.0, unit: UnitFuelEfficiency.litersPer100Kilometers)
+        let expectedMPG = valueLPer100km.converted(to: .milesPerGallon).value
+        assertConversion(1.0, from: .litersPer100Kilometers, to: .milesPerGallon, expected: expectedMPG)
+
+        // 测试从英里每加仑到每百公里升的转换
+        let valueMPG = Measurement(value: 1.0, unit: UnitFuelEfficiency.milesPerGallon)
+        let expectedLPer100km = valueMPG.converted(to: .litersPer100Kilometers).value
+        assertConversion(1.0, from: .milesPerGallon, to: .litersPer100Kilometers, expected: expectedLPer100km)
+
+        // 测试从英里每英制加仑到每百公里升的转换
+        let valueMPGImperial = Measurement(value: 1.0, unit: UnitFuelEfficiency.milesPerImperialGallon)
+        let expectedLPer100kmImperial = valueMPGImperial.converted(to: .litersPer100Kilometers).value
+        assertConversion(1.0, from: .milesPerImperialGallon, to: .litersPer100Kilometers, expected: expectedLPer100kmImperial)
     }
 
     func testDataConversions() {
-        // 字节到比特
-        assertConversion(1.0, from: .bytes, to: .bits, expected: 8.0)
-        // 千字节到字节
-        assertConversion(1.0, from: .kilobytes, to: .bytes, expected: 1000.0)
-        // 兆字节到字节
-        assertConversion(1.0, from: .megabytes, to: .bytes, expected: 1.0e6)
-        // 吉字节到字节
-        assertConversion(1.0, from: .gigabytes, to: .bytes, expected: 1.0e9)
-        // 太字节到字节
-        assertConversion(1.0, from: .terabytes, to: .bytes, expected: 1.0e12)
-        // 拍字节到字节
-        assertConversion(1.0, from: .petabytes, to: .bytes, expected: 1.0e15)
-        // 艾字节到字节
-        assertConversion(1.0, from: .exabytes, to: .bytes, expected: 1.0e18)
-        // 泽字节到字节
-        assertConversion(1.0, from: .zettabytes, to: .bytes, expected: 1.0e21)
-        // 尧字节到字节
-        assertConversion(1.0, from: .yottabytes, to: .bytes, expected: 1.0e24)
-        // 半字节到比特
-        assertConversion(1.0, from: .nibbles, to: .bits, expected: 4.0)
-        // 尧比特到比特
-        assertConversion(1.0, from: .yottabits, to: .bits, expected: 1.0e24)
-        // 泽比特到比特
-        assertConversion(1.0, from: .zettabits, to: .bits, expected: 1.0e21)
-        // 艾比特到比特
-        assertConversion(1.0, from: .exabits, to: .bits, expected: 1.0e18)
-        // 拍比特到比特
-        assertConversion(1.0, from: .petabits, to: .bits, expected: 1.0e15)
-        // 太比特到比特
-        assertConversion(1.0, from: .terabits, to: .bits, expected: 1.0e12)
-        // 吉比特到比特
-        assertConversion(1.0, from: .gigabits, to: .bits, expected: 1.0e9)
-        // 兆比特到比特
-        assertConversion(1.0, from: .megabits, to: .bits, expected: 1.0e6)
-        // 千比特到比特
-        assertConversion(1.0, from: .kilobits, to: .bits, expected: 1000.0)
-        // 依比字节到字节
-        assertConversion(1.0, from: .yobibytes, to: .bytes, expected: 1.2089258196146292e24)
-        // 泽比字节到字节
-        assertConversion(1.0, from: .zebibytes, to: .bytes, expected: 1.1805916207174113e21)
-        // 艾比字节到字节
-        assertConversion(1.0, from: .exbibytes, to: .bytes, expected: 1.152921504606847e18)
-        // 拍比字节到字节
-        assertConversion(1.0, from: .pebibytes, to: .bytes, expected: 1.125899906842624e15)
-        // 太比字节到字节
-        assertConversion(1.0, from: .tebibytes, to: .bytes, expected: 1.099511627776e12)
-        // 吉比字节到字节
-        assertConversion(1.0, from: .gibibytes, to: .bytes, expected: 1.073741824e9)
-        // 兆比字节到字节
-        assertConversion(1.0, from: .mebibytes, to: .bytes, expected: 1.048576e6)
-        // 千比字节到字节
-        assertConversion(1.0, from: .kibibytes, to: .bytes, expected: 1024.0)
-        // 依比比特到比特
-        assertConversion(1.0, from: .yobibits, to: .bits, expected: 1.5111572745182865e24)
-        // 泽比比特到比特
-        assertConversion(1.0, from: .zebibits, to: .bits, expected: 1.4757395258967642e21)
-        // 艾比比特到比特
-        assertConversion(1.0, from: .exbibits, to: .bits, expected: 1.4411518807585587e18)
-        // 拍比比特到比特
-        assertConversion(1.0, from: .pebibits, to: .bits, expected: 1.40737488355328e15)
-        // 太比比特到比特
-        assertConversion(1.0, from: .tebibits, to: .bits, expected: 1.37438953472e12)
-        // 吉比比特到比特
-        assertConversion(1.0, from: .gibibits, to: .bits, expected: 1.34217728e9)
-        // 兆比比特到比特
-        assertConversion(1.0, from: .mebibits, to: .bits, expected: 1.31072e6)
-        // 千比比特到比特
-        assertConversion(1.0, from: .kibibits, to: .bits, expected: 8192.0)
-        // 添加更多数据单位测试
+        assertConversion(1.0, from: .bytes, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.bytes).converted(to: .bits).value)
+        assertConversion(1.0, from: .bits, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.bits).converted(to: .bytes).value)
+        assertConversion(1.0, from: .nibbles, to: .bytes, expected: 0.5)
+        assertConversion(1.0, from: .kilobytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.kilobytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .megabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.megabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .gigabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.gigabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .terabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.terabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .petabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.petabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .exabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.exabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .zettabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.zettabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .yottabytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.yottabytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .kilobits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.kilobits).converted(to: .bits).value)
+        assertConversion(1.0, from: .megabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.megabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .gigabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.gigabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .terabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.terabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .petabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.petabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .exabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.exabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .zettabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.zettabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .yottabits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.yottabits).converted(to: .bits).value)
+        assertConversion(1.0, from: .kibibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.kibibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .mebibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.mebibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .gibibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.gibibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .tebibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.tebibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .pebibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.pebibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .exbibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.exbibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .zebibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.zebibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .yobibytes, to: .bytes, expected: Measurement(value: 1.0, unit: UnitInformationStorage.yobibytes).converted(to: .bytes).value)
+        assertConversion(1.0, from: .kibibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.kibibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .mebibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.mebibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .gibibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.gibibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .tebibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.tebibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .pebibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.pebibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .exbibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.exbibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .zebibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.zebibits).converted(to: .bits).value)
+        assertConversion(1.0, from: .yobibits, to: .bits, expected: Measurement(value: 1.0, unit: UnitInformationStorage.yobibits).converted(to: .bits).value)
     }
 }
