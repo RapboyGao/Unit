@@ -1,0 +1,234 @@
+"None" = "없음";
+
+// Unit Types
+"length.symbol" = "길이";
+"length.shortName" = "길이";
+"length.longName" = "길이";
+"length.detailedIntroduction" = "길이는 두 지점 사이의 물리적 거리입니다.";
+
+"speed.symbol" = "속도";
+"speed.shortName" = "속도";
+"speed.longName" = "속도";
+"speed.detailedIntroduction" = "속도는 단위 시간당 이동 거리입니다.";
+
+"pressure.symbol" = "압력";
+"pressure.shortName" = "압력";
+"pressure.longName" = "압력";
+"pressure.detailedIntroduction" = "압력은 단위 면적당 가해지는 힘입니다.";
+
+"temperature.symbol" = "온도";
+"temperature.shortName" = "온도";
+"temperature.longName" = "온도";
+"temperature.detailedIntroduction" = "온도는 물질의 열적 상태를 나타내는 척도입니다.";
+
+"temperatureDifference.symbol" = "온도 차이";
+"temperatureDifference.shortName" = "온도 차이";
+"temperatureDifference.longName" = "온도 차이";
+"temperatureDifference.detailedIntroduction" = "온도 차이는 두 지점 간의 온도 차이입니다.";
+
+"mass.symbol" = "질량";
+"mass.shortName" = "질량";
+"mass.longName" = "질량";
+"mass.detailedIntroduction" = "질량은 물체가 가진 물질의 양입니다.";
+
+"volume.symbol" = "부피";
+"volume.shortName" = "부피";
+"volume.longName" = "부피";
+"volume.detailedIntroduction" = "부피는 물체가 차지하는 공간의 크기입니다.";
+
+"acceleration.symbol" = "가속도";
+"acceleration.shortName" = "가속도";
+"acceleration.longName" = "가속도";
+"acceleration.detailedIntroduction" = "가속도는 단위 시간당 속도의 변화율입니다.";
+
+"power.symbol" = "전력";
+"power.shortName" = "전력";
+"power.longName" = "전력";
+"power.detailedIntroduction" = "전력은 단위 시간당 에너지의 양입니다.";
+
+"angle.symbol" = "각도";
+"angle.shortName" = "각도";
+"angle.longName" = "각도";
+"angle.detailedIntroduction" = "각도는 두 직선이 만나는 지점에서의 기하학적 간격입니다.";
+
+"angularVelocity.symbol" = "각속도";
+"angularVelocity.shortName" = "각속도";
+"angularVelocity.longName" = "각속도";
+"angularVelocity.detailedIntroduction" = "각속도는 단위 시간당 회전각도입니다.";
+
+"area.symbol" = "면적";
+"area.shortName" = "면적";
+"area.longName" = "면적";
+"area.detailedIntroduction" = "면적은 2차원 공간에서의 크기입니다.";
+
+"concentration.symbol" = "농도";
+"concentration.shortName" = "농도";
+"concentration.longName" = "농도";
+"concentration.detailedIntroduction" = "농도는 용액에서 특정 성분의 비율입니다.";
+
+"time.symbol" = "시간";
+"time.shortName" = "시간";
+"time.longName" = "시간";
+"time.detailedIntroduction" = "시간은 사건이 발생하는 순서를 나타내는 척도입니다.";
+
+"electricChargeCapacity.symbol" = "전하 용량";
+"electricChargeCapacity.shortName" = "전하 용량";
+"electricChargeCapacity.longName" = "전하 용량";
+"electricChargeCapacity.detailedIntroduction" = "전하 용량은 축적된 전하의 양입니다.";
+
+"electricCurrent.symbol" = "전류";
+"electricCurrent.shortName" = "전류";
+"electricCurrent.longName" = "전류";
+"electricCurrent.detailedIntroduction" = "전류는 단위 시간당 전하의 흐름입니다.";
+
+"electricPotential.symbol" = "전위";
+"electricPotential.shortName" = "전위";
+"electricPotential.longName" = "전위";
+"electricPotential.detailedIntroduction" = "전위는 전하가 전기장을 통해 이동할 수 있는 능력입니다.";
+
+"electricResistance.symbol" = "저항";
+"electricResistance.shortName" = "저항";
+"electricResistance.longName" = "저항";
+"electricResistance.detailedIntroduction" = "저항은 전류의 흐름에 대한 방해 정도입니다.";
+
+"energy.symbol" = "에너지";
+"energy.shortName" = "에너지";
+"energy.longName" = "에너지";
+"energy.detailedIntroduction" = "에너지는 일을 수행할 수 있는 능력입니다.";
+
+"frequency.symbol" = "주파수";
+"frequency.shortName" = "주파수";
+"frequency.longName" = "주파수";
+"frequency.detailedIntroduction" = "주파수는 단위 시간당 반복되는 사건의 횟수입니다.";
+
+"fuelEfficiency.symbol" = "연비";
+"fuelEfficiency.shortName" = "연비";
+"fuelEfficiency.longName" = "연비";
+"fuelEfficiency.detailedIntroduction" = "연비는 주행 거리당 소비되는 연료의 양입니다.";
+
+"data.symbol" = "데이터";
+"data.shortName" = "데이터";
+"data.longName" = "데이터";
+"data.detailedIntroduction" = "데이터는 디지털 정보의 양입니다。";
+
+// Units
+"meters.symbol" = "m";
+"meters.shortName" = "미터";
+"meters.longName" = "미터";
+"meters.detailedIntroduction" = "미터는 길이의 기본 단위로, 1미터는 100센티미터와 같습니다.";
+
+"kilometers.symbol" = "km";
+"kilometers.shortName" = "킬로미터";
+"kilometers.longName" = "킬로미터";
+"kilometers.detailedIntroduction" = "킬로미터는 1000미터와 같으며, 주로 긴 거리 측정에 사용됩니다。";
+
+"grams.symbol" = "g";
+"grams.shortName" = "그램";
+"grams.longName" = "그램";
+"grams.detailedIntroduction" = "그램은 질량의 기본 단위로, 1그램은 1000밀리그램과 같습니다。";
+
+"kilograms.symbol" = "kg";
+"kilograms.shortName" = "킬로그램";
+"kilograms.longName" = "킬로그램";
+"kilograms.detailedIntroduction" = "킬로그램은 1000그램과 같으며, 물체의 무게를 측정할 때 자주 사용됩니다。";
+
+"liters.symbol" = "L";
+"liters.shortName" = "리터";
+"liters.longName" = "리터";
+"liters.detailedIntroduction" = "리터는 부피의 기본 단위로, 1리터는 1000밀리리터와 같습니다。";
+
+"milliliters.symbol" = "mL";
+"milliliters.shortName" = "밀리리터";
+"milliliters.longName" = "밀리리터";
+"milliliters.detailedIntroduction" = "밀리리터는 리터의 1/1000로, 작은 부피 측정에 사용됩니다。";
+
+"seconds.symbol" = "s";
+"seconds.shortName" = "초";
+"seconds.longName" = "초";
+"seconds.detailedIntroduction" = "초는 시간의 기본 단위로, 1분은 60초와 같습니다。";
+
+"minutes.symbol" = "min";
+"minutes.shortName" = "분";
+"minutes.longName" = "분";
+"minutes.detailedIntroduction" = "분은 시간의 단위로, 1분은 60초와 같습니다。";
+
+"hours.symbol" = "h";
+"hours.shortName" = "시간";
+"hours.longName" = "시간";
+"hours.detailedIntroduction" = "시간은 시간의 단위로, 1시간은 60분과 같습니다。";
+
+"days.symbol" = "d";
+"days.shortName" = "일";
+"days.longName" = "일";
+"days.detailedIntroduction" = "일은 시간의 단위로, 1일은 24시간과 같습니다。";
+
+"kelvin.symbol" = "K";
+"kelvin.shortName" = "켈빈";
+"kelvin.longName" = "켈빈";
+"kelvin.detailedIntroduction" = "켈빈은 온도의 기본 단위로, 절대 온도를 나타내는 데 사용됩니다。";
+
+"celsius.symbol" = "°C";
+"celsius.shortName" = "섭씨";
+"celsius.longName" = "섭씨";
+"celsius.detailedIntroduction" = "섭씨는 온도의 단위로, 물의 얼음점과 끓는점을 기준으로 합니다。";
+
+"fahrenheit.symbol" = "°F";
+"fahrenheit.shortName" = "화씨";
+"fahrenheit.longName" = "화씨";
+"fahrenheit.detailedIntroduction" = "화씨는 온도의 단위로, 미국에서 주로 사용됩니다。";
+
+"amperes.symbol" = "A";
+"amperes.symbol" = "A";
+"amperes.shortName" = "암페어";
+"amperes.longName" = "암페어";
+"amperes.detailedIntroduction" = "암페어는 전류의 기본 단위로, 1암페어는 1초 동안 1쿨롱의 전하가 흐르는 것을 의미합니다。";
+
+"volts.symbol" = "V";
+"volts.shortName" = "볼트";
+"volts.longName" = "볼트";
+"volts.detailedIntroduction" = "볼트는 전위차의 단위로, 전기장에서의 전하 이동 능력을 나타냅니다。";
+
+"ohms.symbol" = "Ω";
+"ohms.shortName" = "옴";
+"ohms.longName" = "옴";
+"ohms.detailedIntroduction" = "옴은 전기 저항의 단위로, 전류가 전기 회로를 통과할 때 발생하는 저항을 측정하는 데 사용됩니다。";
+
+"watts.symbol" = "W";
+"watts.shortName" = "와트";
+"watts.longName" = "와트";
+"watts.detailedIntroduction" = "와트는 전력의 단위로, 단위 시간당 일의 양을 측정하는 데 사용됩니다。";
+
+"joules.symbol" = "J";
+"joules.shortName" = "줄";
+"joules.longName" = "줄";
+"joules.detailedIntroduction" = "줄은 에너지의 단위로, 일이나 열의 형태로 발생하는 에너지를 측정하는 데 사용됩니다。";
+
+"newtons.symbol" = "N";
+"newtons.shortName" = "뉴턴";
+"newtons.longName" = "뉴턴";
+"newtons.detailedIntroduction" = "뉴턴은 힘의 단위로, 물체에 작용하는 외부 힘의 크기를 측정하는 데 사용됩니다。";
+
+"hertz.symbol" = "Hz";
+"hertz.shortName" = "헤르츠";
+"hertz.longName" = "헤르츠";
+"hertz.detailedIntroduction" = "헤르츠는 주파수의 단위로, 단위 시간당 반복되는 주기적 사건의 횟수를 측정하는 데 사용됩니다。";
+
+"litersPer100Kilometers.symbol" = "L/100km";
+"litersPer100Kilometers.shortName" = "100킬로미터당 리터";
+"litersPer100Kilometers.longName" = "100킬로미터당 리터";
+"litersPer100Kilometers.detailedIntroduction" = "100킬로미터당 리터는 자동차의 연비를 측정하는 데 사용되며, 주행거리 당 연료 소비량을 표현합니다。";
+
+"bit.symbol" = "비트";
+"bit.shortName" = "비트";
+"bit.longName" = "비트";
+"bit.detailedIntroduction" = "비트는 데이터의 최소 단위로, 0 또는 1의 상태를 나타내는 디지털 정보의 단위입니다。";
+
+"bytes.symbol" = "바이트";
+"bytes.shortName" = "바이트";
+"bytes.longName" = "바이트";
+"bytes.detailedIntroduction" = "바이트는 데이터의 저장 단위로, 여러 비트를 묶어서 데이터를 표현하는 단위입니다。";
+
+// Error Messages
+"error.generic" = "오류가 발생했습니다.";
+"error.invalidInput" = "입력이 유효하지 않습니다.";
+"error.conversionFailed" = "변환에 실패했습니다.";
