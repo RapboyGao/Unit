@@ -18,7 +18,7 @@ public struct AUnitAnyTypeSelectorView<Label: View, Content: View>: View {
                 }
             }
             AUnitAnyTypeForeachMenuView { unitType in
-                Text(unitType.shortName)
+                SwiftUI.Label(unitType.shortName, systemImage: unitType.systemImage)
             } content: { unit in
                 Button {
                     onSelect(unit)

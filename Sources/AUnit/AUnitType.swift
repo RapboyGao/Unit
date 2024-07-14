@@ -31,4 +31,33 @@ public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable, Identi
     public var detailedIntroduction: String {
         return NSLocalizedString("\(self).detailedIntroduction", bundle: .module, comment: "")
     }
+
+    /// The SF Symbol name for the unit type.
+    /// 单位类型的 SF Symbol 名称。
+    public var systemImage: String {
+        switch self {
+        case .length: return "ruler"
+        case .speed: return "speedometer"
+        case .pressure: return "gauge"
+        case .temperature: return "thermometer"
+        case .temperatureDifference: return "thermometer.transmission"
+        case .mass: return "scalemass"
+        case .volume: return "cube.box"
+        case .acceleration: return "arrow.up.and.down.circle"
+        case .power: return "bolt.circle"
+        case .angle: return "angle"
+        case .angularVelocity: return "goforward"
+        case .area: return "square.on.square"
+        case .concentration: return "drop"
+        case .time: return "clock"
+        case .electricChargeCapacity: return "bolt.horizontal.circle"
+        case .electricCurrent: return "bolt"
+        case .electricPotential: return "waveform.path.ecg"
+        case .electricResistance: return "wave.3.right"
+        case .energy: return "flame"
+        case .frequency: return "waveform"
+        case .fuelEfficiency: return "fuelpump"
+        case .data: return "server.rack"
+        }
+    }
 }
