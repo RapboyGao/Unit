@@ -262,9 +262,9 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .picoseconds: return 1e-12
         case .days: return 86_400.0
         case .weeks: return 604_800.0
-        case .years: return 31_536_000.0
-        case .decades: return 315_360_000.0
-        case .centuries: return 3_153_600_000.0
+        case .years: return 31_557_600.0 // 考虑闰年的平均值
+        case .decades: return 315_576_000.0
+        case .centuries: return 3_155_760_000.0
         // ElectricChargeCapacity
         case .megaampereHours: return 3.6e9
         case .kiloampereHours: return 3.6e6

@@ -1067,3 +1067,134 @@
 "yottabytes.shortName" = "Yottaoctet";
 "yottabytes.longName" = "Yottaoctet";
 "yottabytes.detailedIntroduction" = "Le yottaoctet est une unité de mesure de la quantité d'information numérique égale à 1024 zettaoctets.";
+
+"bits.symbol" = "b";
+"bits.shortName" = "Bit";
+"bits.longName" = "Bit";
+"bits.detailedIntroduction" = "Le bit est la plus petite unité de mesure de la quantité d'information numérique.";
+
+"kilobits.symbol" = "kb";
+"kilobits.shortName" = "Kilobit";
+"kilobits.longName" = "Kilobit";
+"kilobits.detailedIntroduction" = "Le kilobit est une unité de mesure de la quantité d'information numérique égale à 1024 bits.";
+
+"megabits.symbol" = "Mb";
+"megabits.shortName" = "Mégabit";
+"megabits.longName" = "Mégabit";
+"megabits.detailedIntroduction" = "Le mégabit est une unité de mesure de la quantité d'information numérique égale à 1024 kilobits.";
+
+"gigabits.symbol" = "Gb";
+"gigabits.shortName" = "Gigabit";
+"gigabits.longName" = "Gigabit";
+"gigabits.detailedIntroduction" = "Le gigabit est une unité de mesure de la quantité d'information numérique égale à 1024 mégabits.";
+
+"terabits.symbol" = "Tb";
+"terabits.shortName" = "Térabit";
+"terabits.longName" = "Térabit";
+"terabits.detailedIntroduction" = "Le térabit est une unité de mesure de la quantité d'information numérique égale à 1024 gigabits.";
+
+"petabits.symbol" = "Pb";
+"petabits.shortName" = "Pétabit";
+"petabits.longName" = "Pétabit";
+"petabits.detailedIntroduction" = "Le pétabit est une unité de mesure de la quantité d'information numérique égale à 1024 térabits.";
+
+"exabits.symbol" = "Eb";
+"exabits.shortName" = "Exabit";
+"exabits.longName" = "Exabit";
+"exabits.detailedIntroduction" = "L'exabit est une unité de mesure de la quantité d'information numérique égale à 1024 pétabits.";
+
+"zettabits.symbol" = "Zb";
+"zettabits.shortName" = "Zettabit";
+"zettabits.longName" = "Zettabit";
+"zettabits.detailedIntroduction" = "Le zettabit est une unité de mesure de la quantité d'information numérique égale à 1024 exabits.";
+
+"yottabits.symbol" = "Yb";
+"yottabits.shortName" = "Yottabit";
+"yottabits.longName" = "Yottabit";
+"yottabits.detailedIntroduction" = "Le yottabit est une unité de mesure de la quantité d'information numérique égale à 1024 zettabits.";
+
+// Autres unités de données
+"nibbles.symbol" = "n";
+"nibbles.shortName" = "Nibble";
+"nibbles.longName" = "Nibble";
+"nibbles.detailedIntroduction" = "Le nibble est une unité de mesure de la quantité d'information numérique égale à 4 bits.";
+
+"yobibytes.symbol" = "YiB";
+"yobibytes.shortName" = "Yobioctet";
+"yobibytes.longName" = "Yobioctet";
+"yobibytes.detailedIntroduction" = "Le yobioctet est une unité de mesure de la quantité d'information numérique égale à 1024 zebioctets.";
+
+"zebibytes.symbol" = "ZiB";
+"zebibytes.shortName" = "Zebioctet";
+"zebibytes.longName" = "Zebioctet";
+"zebibytes.detailedIntroduction" = "Le zebioctet est une unité de mesure de la quantité d'information numérique égale à 1024 exbioctets.";
+
+"exbibytes.symbol" = "EiB";
+"exbibytes.shortName" = "Exbioctet";
+"exbibytes.longName" = "Exbioctet";
+"exbibytes.detailedIntroduction" = "L'exbioctet est une unité de mesure de la quantité d'information numérique égale à 1024 pebioctets.";
+
+"pebibytes.symbol" = "PiB";
+"pebibytes.shortName" = "Pebioctet";
+"pebibytes.longName" = "Pebioctet";
+"pebibytes.detailedIntroduction" = "Le pebioctet est une unité de mesure de la quantité d'information numérique égale à 1024 tébioctets.";
+
+"tebibytes.symbol" = "TiB";
+"tebibytes.shortName" = "Tébioctet";
+"tebibytes.longName" = "Tébioctet";
+"tebibytes.detailedIntroduction" = "Le tébioctet est une unité de mesure de la quantité d'information numérique égale à 1024 gibioctets.";
+
+"gibibytes.symbol" = "GiB";
+"gibibytes.shortName" = "Gibioctet";
+"gibibytes.longName" = "Gibioctet";
+"gibibytes.detailedIntroduction" = "Le gibioctet est une unité de mesure de la quantité d'information numérique égale à 1024 mébioctets.";
+
+"mebibytes.symbol" = "MiB";
+"mebibytes.shortName" = "Mebioctet";
+"mebibytes.longName" = "Mebioctet";
+"mebibytes.detailedIntroduction" = "Le mebioctet est une unité de mesure de la quantité d'information numérique égale à 1024 kibioctets.";
+
+"kibibytes.symbol" = "KiB";
+"kibibytes.shortName" = "Kibioctet";
+"kibibytes.longName" = "Kibioctet";
+"kibibytes.detailedIntroduction" = "Le kibioctet est une unité de mesure de la quantité d'information numérique égale à 1024 octets.";
+
+"yobibits.symbol" = "Yib";
+"yobibits.shortName" = "Yobibit";
+"yobibits.longName" = "Yobibit";
+"yobibits.detailedIntroduction" = "Le yobibit est une unité de mesure de la quantité d'information numérique égale à 1024 zebibits.";
+
+"zebibits.symbol" = "Zib";
+"zebibits.shortName" = "Zebibit";
+"zebibits.longName" = "Zebibit";
+"zebibits.detailedIntroduction" = "Le zebibit est une unité de mesure de la quantité d'information numérique égale à 1024 exbibits.";
+
+"exbibits.symbol" = "Eib";
+"exbibits.shortName" = "Exbibit";
+"exbibits.longName" = "Exbibit";
+"exbibits.detailedIntroduction" = "L'exbibit est une unité de mesure de la quantité d'information numérique égale à 1024 pebibits.";
+
+"pebibits.symbol" = "Pib";
+"pebibits.shortName" = "Pebibit";
+"pebibits.longName" = "Pebibit";
+"pebibits.detailedIntroduction" = "Le pebibit est une unité de mesure de la quantité d'information numérique égale à 1024 tébibits.";
+
+"tebibits.symbol" = "Tib";
+"tebibits.shortName" = "Tébibit";
+"tebibits.longName" = "Tébibit";
+"tebibits.detailedIntroduction" = "Le tébibit est une unité de mesure de la quantité d'information numérique égale à 1024 gibibits.";
+
+"gibibits.symbol" = "Gib";
+"gibibits.shortName" = "Gibibit";
+"gibibits.longName" = "Gibibit";
+"gibibits.detailedIntroduction" = "Le gibibit est une unité de mesure de la quantité d'information numérique égale à 1024 mébibits.";
+
+"mebibits.symbol" = "Mib";
+"mebibits.shortName" = "Mebibit";
+"mebibits.longName" = "Mebibit";
+"mebibits.detailedIntroduction" = "Le mebibit est une unité de mesure de la quantité d'information numérique égale à 1024 kibibits.";
+
+"kibibits.symbol" = "Kib";
+"kibibits.shortName" = "Kibibit";
+"kibibits.longName" = "Kibibit";
+"kibibits.detailedIntroduction" = "Le kibibit est une unité de mesure de la quantité d'information numérique égale à 1024 bits.";
