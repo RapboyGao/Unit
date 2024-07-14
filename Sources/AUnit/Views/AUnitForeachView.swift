@@ -36,7 +36,9 @@ public struct AUnitForeachView<Content: View>: View {
 #Preview {
     List {
         AUnitForeachView(typeFilter: .length) { unit in
-            Text(unit.longName)
+            Button(unit.longName) {
+                print(unit.symbol)
+            }
         }
     }
 }
