@@ -302,8 +302,9 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .microhertz: return 1.0e-6
         case .nanohertz: return 1.0e-9
         case .framesPerSecond: return 1.0
-        // FuelEfficiency
-        case .litersPer100Kilometers: return 1
+        // FuelEfficiency （特殊）
+        // 注意：100公里多少升、和加仑能跑多少英里时反的
+        case .litersPer100Kilometers: return 1.0
         case .milesPerImperialGallon: return 282.4809362796091
         case .milesPerGallon: return 235.2145833333333
         // Data
@@ -391,6 +392,29 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         if self.unitType == .temperature {
             let valueInKelvin = (value + self.constant) * self.coefficient
             return (valueInKelvin / unit.coefficient) - unit.constant
+        }
+
+        // 油效率比较特殊，需要反算
+        if self.unitType == .fuelEfficiency {
+            if self == .litersPer100Kilometers {
+                if unit == .milesPerGallon {
+                    return 235.2145833333333 / value
+                } else if unit == .milesPerImperialGallon {
+                    return 282.4809362796091 / value
+                }
+            } else if self == .milesPerGallon {
+                if unit == .litersPer100Kilometers {
+                    return 235.2145833333333 / value
+                } else if unit == .milesPerImperialGallon {
+                    return (235.2145833333333 / value) * (235.2145833333333 / 282.4809362796091)
+                }
+            } else if self == .milesPerImperialGallon {
+                if unit == .litersPer100Kilometers {
+                    return 282.4809362796091 / value
+                } else if unit == .milesPerGallon {
+                    return (282.4809362796091 / value) * (282.4809362796091 / 235.2145833333333)
+                }
+            }
         }
         // General conversion
         return (value * self.coefficient) / unit.coefficient
