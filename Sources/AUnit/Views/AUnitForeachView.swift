@@ -47,4 +47,5 @@ public struct AUnitForeachView<Content: View>: View {
             }
         }
     }
+    .environment(\.locale, .init(identifier: "zh-Hans"))
 }
