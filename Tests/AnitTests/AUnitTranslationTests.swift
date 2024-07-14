@@ -41,6 +41,10 @@ final class AUnitTranslationTests: XCTestCase {
                 if longName == "\(unit.self).longName" {
                     missingTranslations.append("\(localization): \(unit).longName") // 记录缺失的长名称翻译
                 }
+
+                if longName == "\(unit.self).detailedIntroduction" {
+                    missingTranslations.append("\(localization): \(unit).detailedIntroduction") // 记录缺失的detailedIntroduction
+                }
             }
 
             // 检查每个 AUnitType 的翻译
@@ -61,6 +65,10 @@ final class AUnitTranslationTests: XCTestCase {
                 // 检查长名称翻译是否存在
                 if longName == "\(unitType.self).longName" {
                     missingTranslations.append("\(localization): \(unitType).longName") // 记录缺失的长名称翻译
+                }
+                
+                if longName == "\(unitType.self).detailedIntroduction" {
+                    missingTranslations.append("\(localization): \(unitType).detailedIntroduction") // 记录缺失的detailedIntroduction
                 }
             }
 
