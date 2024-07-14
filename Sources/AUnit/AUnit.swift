@@ -2,7 +2,7 @@ import Foundation
 
 /// Enum representing various units.
 /// 表示各种单位的枚举。
-public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
+public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
     // Length
     case feet, nauticalMiles, meters, kilometers, miles, megameters, hectometers, decameters, decimeters, centimeters, millimeters, micrometers, nanometers, picometers, inches, yards, scandinavianMiles, lightyears, fathoms, furlongs, astronomicalUnits, parsecs
     // Speed
@@ -111,7 +111,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .meters: return 1
         case .kilometers: return 1000
         case .miles: return 1609.344
-        case .megameters: return 1_000_000
+        case .megameters: return 1000000
         case .hectometers: return 100
         case .decameters: return 10
         case .decimeters: return 0.1
@@ -142,20 +142,20 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .inchesOfMercury: return 3386.39
         case .millimetersOfMercury: return 133.322
         case .newtonsPerMetersSquared: return 1
-        case .gigapascals: return 1_000_000_000
-        case .megapascals: return 1_000_000
+        case .gigapascals: return 1000000000
+        case .megapascals: return 1000000
         case .kilopascals: return 1000
-        case .bars: return 100_000
+        case .bars: return 100000
         case .millibars: return 100
         case .poundsForcePerSquareInch: return 6894.76
         // Temperature
         case .kelvin: return 1
         case .celsius: return 1
-        case .fahrenheit: return 0.555556
-        case .rankine: return 0.555556
+        case .fahrenheit: return 0.555555555555556
+        case .rankine: return 0.5555555555556
         // TemperatureDifference
         case .celsiusDelta: return 1
-        case .fahrenheitDelta: return 0.555556
+        case .fahrenheitDelta: return 0.5555555555555556
         // Mass
         case .kilograms: return 1
         case .grams: return 0.001
@@ -180,18 +180,18 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .cubicMeters: return 1000
         case .cubicCentimeters: return 0.001
         case .gallons: return 3.78541
-        case .megaliters: return 1_000_000
+        case .megaliters: return 1000000
         case .kiloliters: return 1000
         case .deciliters: return 0.1
         case .centiliters: return 0.01
         case .milliliters: return 0.001
-        case .cubicKilometers: return 1_000_000_000_000
+        case .cubicKilometers: return 1000000000000
         case .cubicDecimeters: return 1
         case .cubicMillimeters: return 0.000001
         case .cubicInches: return 0.0163871
         case .cubicFeet: return 28.3168
         case .cubicYards: return 764.555
-        case .cubicMiles: return 4_168_181_825_440
+        case .cubicMiles: return 4168181825440
         case .acreFeet: return 1233.48
         case .bushels: return 35.2391
         case .teaspoons: return 0.00492892
@@ -210,9 +210,9 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .metersPerSecondSquared: return 1
         case .gravity: return 9.80665
         // Power
-        case .terawatts: return 1_000_000_000_000
-        case .gigawatts: return 1_000_000_000
-        case .megawatts: return 1_000_000
+        case .terawatts: return 1000000000000
+        case .gigawatts: return 1000000000
+        case .megawatts: return 1000000
         case .kilowatts: return 1000
         case .watts: return 1
         case .milliwatts: return 0.001
@@ -234,8 +234,8 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .revolutionsPerMinute: return 0.10472
         case .revolutionsPerSecond: return 6.28319
         // Area
-        case .squareMegameters: return 1_000_000_000_000
-        case .squareKilometers: return 1_000_000
+        case .squareMegameters: return 1000000000000
+        case .squareKilometers: return 1000000
         case .squareMeters: return 1
         case .squareCentimeters: return 0.0001
         case .squareMillimeters: return 0.000001
@@ -244,7 +244,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .squareInches: return 0.00064516
         case .squareFeet: return 0.092903
         case .squareYards: return 0.836127
-        case .squareMiles: return 2_589_988.11
+        case .squareMiles: return 2589988.11
         case .acres: return 4046.856
         case .ares: return 100
         case .hectares: return 10000
@@ -266,26 +266,26 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .decades: return 315576000
         case .centuries: return 3155760000
         // ElectricChargeCapacity
-        case .megaampereHours: return 3_600_000_000
-        case .kiloampereHours: return 3_600_000
+        case .megaampereHours: return 3600000000
+        case .kiloampereHours: return 3600000
         case .ampereHours: return 3600
         case .milliampereHours: return 3.6
         case .microampereHours: return 0.0036
         case .ampereSeconds: return 1
         // ElectricCurrent
-        case .megaamperes: return 1_000_000
+        case .megaamperes: return 1000000
         case .kiloamperes: return 1000
         case .amperes: return 1
         case .milliamperes: return 0.001
         case .microamperes: return 0.000001
         // ElectricPotential
-        case .megavolts: return 1_000_000
+        case .megavolts: return 1000000
         case .kilovolts: return 1000
         case .volts: return 1
         case .millivolts: return 0.001
         case .microvolts: return 0.000001
         // ElectricResistance
-        case .megaohms: return 1_000_000
+        case .megaohms: return 1000000
         case .kiloohms: return 1000
         case .ohms: return 1
         case .milliohms: return 0.001
@@ -295,12 +295,12 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .joules: return 1
         case .kilocalories: return 4184
         case .calories: return 4.184
-        case .kilowattHours: return 3_600_000
+        case .kilowattHours: return 3600000
         case .wattHours: return 3600
         // Frequency
-        case .terahertz: return 1_000_000_000_000
-        case .gigahertz: return 1_000_000_000
-        case .megahertz: return 1_000_000
+        case .terahertz: return 1000000000000
+        case .gigahertz: return 1000000000
+        case .megahertz: return 1000000
         case .kilohertz: return 1000
         case .hertz: return 1
         case .millihertz: return 0.001
@@ -329,7 +329,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .petabits: return 1.40737488355328e14
         case .terabits: return 1.37438953472e11
         case .gigabits: return 1.34217728e8
-        case .megabits: return 1_048_576
+        case .megabits: return 1048576
         case .kilobits: return 128
         case .yobibytes: return 1.2089258196146292e24
         case .zebibytes: return 1.1805916207174113e21
@@ -345,7 +345,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .pebibits: return 1.40737488355328e14
         case .tebibits: return 1.37438953472e11
         case .gibibits: return 1.34217728e8
-        case .mebibits: return 1_048_576
+        case .mebibits: return 1048576
         case .kibibits: return 128
         }
     }

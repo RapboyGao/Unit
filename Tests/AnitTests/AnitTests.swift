@@ -3,7 +3,7 @@ import XCTest
 
 final class AUnitTests: XCTestCase {
     func testConversions() throws {
-        let epsilon = 1e-3 // 设定容忍度，增加精度
+        let epsilon = 1e-7 // 设定容忍度，增加精度
 
         /// 定义测试转换函数
         /// - Parameters:

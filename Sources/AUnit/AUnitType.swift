@@ -2,7 +2,7 @@ import Foundation
 
 /// Enum representing the types of units.
 /// 表示单位类型的枚举。
-public enum AUnitType: String, Codable, Sendable, Hashable, CaseIterable, Identifiable {
+public enum AUnitType: Codable, Sendable, Hashable, CaseIterable, Identifiable {
     case length, speed, pressure, temperature, temperatureDifference, mass, volume, acceleration, power, angle, angularVelocity, area, concentration, time, electricChargeCapacity, electricCurrent, electricPotential, electricResistance, energy, frequency, fuelEfficiency, data
 
     public var id: AUnitType { self }
