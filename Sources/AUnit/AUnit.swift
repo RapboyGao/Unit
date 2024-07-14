@@ -303,9 +303,9 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .nanohertz: return 1.0e-9
         case .framesPerSecond: return 1.0
         // FuelEfficiency
-        case .litersPer100Kilometers: return 0.01
-        case .milesPerImperialGallon: return 282.4809363
-        case .milesPerGallon: return 425.1437074
+        case .litersPer100Kilometers: return 1
+        case .milesPerImperialGallon: return 282.4809362796091
+        case .milesPerGallon: return 235.2145833333333
         // Data
         case .bytes: return 1.0
         case .bits: return 0.125
@@ -318,13 +318,13 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .gigabytes: return 1.0e9
         case .megabytes: return 1.0e6
         case .kilobytes: return 1000.0
-        case .yottabits: return 1.25e24
-        case .zettabits: return 1.25e21
-        case .exabits: return 1.25e18
-        case .petabits: return 1.25e15
-        case .terabits: return 1.25e12
-        case .gigabits: return 1.25e9
-        case .megabits: return 1.25e6
+        case .yottabits: return 1.0e24 * 0.125
+        case .zettabits: return 1.0e21 * 0.125
+        case .exabits: return 1.0e18 * 0.125
+        case .petabits: return 1.0e15 * 0.125
+        case .terabits: return 1.0e12 * 0.125
+        case .gigabits: return 1.0e9 * 0.125
+        case .megabits: return 1.0e6 * 0.125
         case .kilobits: return 125.0
         case .yobibytes: return 1.2089258196146292e24
         case .zebibytes: return 1.1805916207174113e21
@@ -334,14 +334,14 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .gibibytes: return 1.073741824e9
         case .mebibytes: return 1.048576e6
         case .kibibytes: return 1024.0
-        case .yobibits: return 1.5111572745182865e24
-        case .zebibits: return 1.4757395258967642e21
-        case .exbibits: return 1.4411518807585587e18
-        case .pebibits: return 1.40737488355328e15
-        case .tebibits: return 1.37438953472e12
-        case .gibibits: return 1.34217728e9
-        case .mebibits: return 1.31072e6
-        case .kibibits: return 8192.0
+        case .yobibits: return 1.2089258196146292e24 * 0.125
+        case .zebibits: return 1.1805916207174113e21 * 0.125
+        case .exbibits: return 1.152921504606847e18 * 0.125
+        case .pebibits: return 1.125899906842624e15 * 0.125
+        case .tebibits: return 1.099511627776e12 * 0.125
+        case .gibibits: return 1.073741824e9 * 0.125
+        case .mebibits: return 1.048576e6 * 0.125
+        case .kibibits: return 1024.0 * 0.125
         }
     }
 
@@ -391,11 +391,8 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         if self.unitType == .temperature {
             let valueInKelvin = (value + self.constant) * self.coefficient
             return (valueInKelvin / unit.coefficient) - unit.constant
-        } else if self.unitType == .temperatureDifference {
-            return value * self.coefficient / unit.coefficient
         }
-        // Other unit conversion
-        let valueInBaseUnit = value * self.coefficient
-        return valueInBaseUnit / unit.coefficient
+        // General conversion
+        return (value * self.coefficient) / unit.coefficient
     }
 }
