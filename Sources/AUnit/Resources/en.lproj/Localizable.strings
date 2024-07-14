@@ -1,947 +1,1241 @@
-/* AUnitType symbols */
+/*
+ Localizable.strings
+ */
+
+// General
+"None" = "None";
+
+// AUnitType Translations
 "length.symbol" = "L";
-"speed.symbol" = "S";
-"pressure.symbol" = "P";
-"temperature.symbol" = "T";
-"temperatureDifference.symbol" = "ΔT";
-"mass.symbol" = "M";
-"volume.symbol" = "V";
-"acceleration.symbol" = "A";
-"power.symbol" = "P";
-"angle.symbol" = "θ";
-"angularVelocity.symbol" = "ω";
-"area.symbol" = "A";
-"concentration.symbol" = "C";
-"time.symbol" = "t";
-"electricChargeCapacity.symbol" = "Q";
-"electricCurrent.symbol" = "I";
-"electricPotential.symbol" = "V";
-"electricResistance.symbol" = "R";
-"energy.symbol" = "E";
-"frequency.symbol" = "f";
-"fuelEfficiency.symbol" = "FE";
-"data.symbol" = "D";
-
-/* AUnitType short names */
 "length.shortName" = "Length";
-"speed.shortName" = "Speed";
-"pressure.shortName" = "Pressure";
-"temperature.shortName" = "Temperature";
-"temperatureDifference.shortName" = "Temp Diff";
-"mass.shortName" = "Mass";
-"volume.shortName" = "Volume";
-"acceleration.shortName" = "Acceleration";
-"power.shortName" = "Power";
-"angle.shortName" = "Angle";
-"angularVelocity.shortName" = "Angular Velocity";
-"area.shortName" = "Area";
-"concentration.shortName" = "Concentration";
-"time.shortName" = "Time";
-"electricChargeCapacity.shortName" = "Charge Capacity";
-"electricCurrent.shortName" = "Current";
-"electricPotential.shortName" = "Potential";
-"electricResistance.shortName" = "Resistance";
-"energy.shortName" = "Energy";
-"frequency.shortName" = "Frequency";
-"fuelEfficiency.shortName" = "Fuel Efficiency";
-"data.shortName" = "Data";
-
-/* AUnitType long names */
 "length.longName" = "Length";
+"length.detailedIntroduction" = "Length is a measure of distance. Units of length have been used throughout history, with meters being the standard unit in the International System of Units (SI).";
+
+"speed.symbol" = "S";
+"speed.shortName" = "Speed";
 "speed.longName" = "Speed";
+"speed.detailedIntroduction" = "Speed is the rate at which an object covers distance. Common units include meters per second and kilometers per hour.";
+
+"pressure.symbol" = "P";
+"pressure.shortName" = "Pressure";
 "pressure.longName" = "Pressure";
+"pressure.detailedIntroduction" = "Pressure is the force exerted per unit area. It is measured in units like pascals, bars, and pounds per square inch.";
+
+"temperature.symbol" = "T";
+"temperature.shortName" = "Temperature";
 "temperature.longName" = "Temperature";
+"temperature.detailedIntroduction" = "Temperature is a measure of the thermal energy of a substance. Common units are Celsius, Fahrenheit, and Kelvin.";
+
+"temperatureDifference.symbol" = "ΔT";
+"temperatureDifference.shortName" = "Temp Diff";
 "temperatureDifference.longName" = "Temperature Difference";
+"temperatureDifference.detailedIntroduction" = "Temperature Difference measures the change in temperature between two points. Units include Celsius Delta and Fahrenheit Delta.";
+
+"mass.symbol" = "M";
+"mass.shortName" = "Mass";
 "mass.longName" = "Mass";
+"mass.detailedIntroduction" = "Mass is a measure of the amount of matter in an object. Common units are kilograms, grams, and pounds.";
+
+"volume.symbol" = "V";
+"volume.shortName" = "Volume";
 "volume.longName" = "Volume";
+"volume.detailedIntroduction" = "Volume measures the amount of space an object occupies. Units include liters, cubic meters, and gallons.";
+
+"acceleration.symbol" = "A";
+"acceleration.shortName" = "Acceleration";
 "acceleration.longName" = "Acceleration";
+"acceleration.detailedIntroduction" = "Acceleration is the rate of change of velocity. It is commonly measured in meters per second squared.";
+
+"power.symbol" = "P";
+"power.shortName" = "Power";
 "power.longName" = "Power";
+"power.detailedIntroduction" = "Power is the rate at which work is done or energy is transferred. Common units are watts and horsepower.";
+
+"angle.symbol" = "∠";
+"angle.shortName" = "Angle";
 "angle.longName" = "Angle";
+"angle.detailedIntroduction" = "Angle measures the rotation between two intersecting lines. Units include degrees, radians, and gradians.";
+
+"angularVelocity.symbol" = "ω";
+"angularVelocity.shortName" = "Ang Vel";
 "angularVelocity.longName" = "Angular Velocity";
+"angularVelocity.detailedIntroduction" = "Angular Velocity is the rate of change of an angle. It is measured in units like radians per second.";
+
+"area.symbol" = "A";
+"area.shortName" = "Area";
 "area.longName" = "Area";
+"area.detailedIntroduction" = "Area measures the extent of a two-dimensional surface. Common units include square meters, square feet, and acres.";
+
+"concentration.symbol" = "C";
+"concentration.shortName" = "Concentration";
 "concentration.longName" = "Concentration";
+"concentration.detailedIntroduction" = "Concentration measures the amount of a substance in a given volume. Units include grams per liter and parts per million.";
+
+"time.symbol" = "T";
+"time.shortName" = "Time";
 "time.longName" = "Time";
+"time.detailedIntroduction" = "Time measures the duration of events. Common units are seconds, minutes, and hours.";
+
+"electricChargeCapacity.symbol" = "Q";
+"electricChargeCapacity.shortName" = "Charge Cap";
 "electricChargeCapacity.longName" = "Electric Charge Capacity";
+"electricChargeCapacity.detailedIntroduction" = "Electric Charge Capacity measures the amount of electric charge stored. Units include ampere-hours and milliampere-hours.";
+
+"electricCurrent.symbol" = "I";
+"electricCurrent.shortName" = "Current";
 "electricCurrent.longName" = "Electric Current";
+"electricCurrent.detailedIntroduction" = "Electric Current is the flow of electric charge. It is measured in units like amperes and milliamperes.";
+
+"electricPotential.symbol" = "V";
+"electricPotential.shortName" = "Voltage";
 "electricPotential.longName" = "Electric Potential";
+"electricPotential.detailedIntroduction" = "Electric Potential, or voltage, measures the electric potential difference between two points. It is measured in volts.";
+
+"electricResistance.symbol" = "R";
+"electricResistance.shortName" = "Resistance";
 "electricResistance.longName" = "Electric Resistance";
+"electricResistance.detailedIntroduction" = "Electric Resistance measures how much a material resists the flow of electric current. Units include ohms and kiloohms.";
+
+"energy.symbol" = "E";
+"energy.shortName" = "Energy";
 "energy.longName" = "Energy";
+"energy.detailedIntroduction" = "Energy is the capacity to do work. Common units are joules, kilojoules, and kilowatt-hours.";
+
+"frequency.symbol" = "f";
+"frequency.shortName" = "Frequency";
 "frequency.longName" = "Frequency";
+"frequency.detailedIntroduction" = "Frequency measures the number of occurrences of a repeating event per unit time. It is measured in hertz.";
+
+"fuelEfficiency.symbol" = "FE";
+"fuelEfficiency.shortName" = "Fuel Eff";
 "fuelEfficiency.longName" = "Fuel Efficiency";
+"fuelEfficiency.detailedIntroduction" = "Fuel Efficiency measures how efficiently fuel is used. Units include miles per gallon and liters per 100 kilometers.";
+
+"data.symbol" = "D";
+"data.shortName" = "Data";
 "data.longName" = "Data";
+"data.detailedIntroduction" = "Data measures the amount of information. Common units are bytes, kilobytes, and megabytes.";
 
-/* AUnitType detailed introductions */
-"length.detailedIntroduction" = "Length is a measure of distance.";
-"speed.detailedIntroduction" = "Speed is the rate of change of distance.";
-"pressure.detailedIntroduction" = "Pressure is the force per unit area.";
-"temperature.detailedIntroduction" = "Temperature is a measure of thermal energy.";
-"temperatureDifference.detailedIntroduction" = "Temperature Difference is the difference in temperature.";
-"mass.detailedIntroduction" = "Mass is a measure of the amount of matter.";
-"volume.detailedIntroduction" = "Volume is the amount of space an object occupies.";
-"acceleration.detailedIntroduction" = "Acceleration is the rate of change of velocity.";
-"power.detailedIntroduction" = "Power is the rate of doing work.";
-"angle.detailedIntroduction" = "Angle is the measure of rotation.";
-"angularVelocity.detailedIntroduction" = "Angular Velocity is the rate of change of angle.";
-"area.detailedIntroduction" = "Area is the measure of the surface.";
-"concentration.detailedIntroduction" = "Concentration is the amount of a substance in a given volume.";
-"time.detailedIntroduction" = "Time is the measure of duration.";
-"electricChargeCapacity.detailedIntroduction" = "Electric Charge Capacity is the amount of electric charge a battery can store.";
-"electricCurrent.detailedIntroduction" = "Electric Current is the flow of electric charge.";
-"electricPotential.detailedIntroduction" = "Electric Potential is the amount of electric potential energy per unit charge.";
-"electricResistance.detailedIntroduction" = "Electric Resistance is the opposition to the flow of electric current.";
-"energy.detailedIntroduction" = "Energy is the capacity to do work.";
-"frequency.detailedIntroduction" = "Frequency is the number of occurrences of a repeating event per unit time.";
-"fuelEfficiency.detailedIntroduction" = "Fuel Efficiency is the measure of how efficiently a vehicle uses fuel.";
-"data.detailedIntroduction" = "Data is the information processed or stored by a computer.";
+// AUnit Translations
 
-/* AUnit symbols */
+// Length
 "feet.symbol" = "ft";
-"nauticalMiles.symbol" = "NM";
-"meters.symbol" = "m";
-"kilometers.symbol" = "km";
-"miles.symbol" = "mi";
-"megameters.symbol" = "Mm";
-"hectometers.symbol" = "hm";
-"decameters.symbol" = "dam";
-"decimeters.symbol" = "dm";
-"centimeters.symbol" = "cm";
-"millimeters.symbol" = "mm";
-"micrometers.symbol" = "µm";
-"nanometers.symbol" = "nm";
-"picometers.symbol" = "pm";
-"inches.symbol" = "in";
-"yards.symbol" = "yd";
-"scandinavianMiles.symbol" = "sm";
-"lightyears.symbol" = "ly";
-"fathoms.symbol" = "fm";
-"furlongs.symbol" = "fur";
-"astronomicalUnits.symbol" = "AU";
-"parsecs.symbol" = "pc";
-"feetPerSecond.symbol" = "ft/s";
-"knots.symbol" = "kn";
-"kilometersPerHour.symbol" = "km/h";
-"metersPerSecond.symbol" = "m/s";
-"milesPerHour.symbol" = "mph";
-"feetPerMinute.symbol" = "ft/min";
-"hectopascals.symbol" = "hPa";
-"inchesOfMercury.symbol" = "inHg";
-"millimetersOfMercury.symbol" = "mmHg";
-"newtonsPerMetersSquared.symbol" = "N/m²";
-"gigapascals.symbol" = "GPa";
-"megapascals.symbol" = "MPa";
-"kilopascals.symbol" = "kPa";
-"bars.symbol" = "bar";
-"millibars.symbol" = "mbar";
-"poundsForcePerSquareInch.symbol" = "psi";
-"kelvin.symbol" = "K";
-"celsius.symbol" = "°C";
-"fahrenheit.symbol" = "°F";
-"celsiusDelta.symbol" = "°CΔ";
-"fahrenheitDelta.symbol" = "°FΔ";
-"kilograms.symbol" = "kg";
-"grams.symbol" = "g";
-"decigrams.symbol" = "dg";
-"centigrams.symbol" = "cg";
-"milligrams.symbol" = "mg";
-"micrograms.symbol" = "µg";
-"nanograms.symbol" = "ng";
-"picograms.symbol" = "pg";
-"ounces.symbol" = "oz";
-"pounds.symbol" = "lb";
-"stones.symbol" = "st";
-"metricTons.symbol" = "t";
-"shortTons.symbol" = "st";
-"carats.symbol" = "ct";
-"ouncesTroy.symbol" = "oz t";
-"slugs.symbol" = "slug";
-"liters.symbol" = "L";
-"quarts.symbol" = "qt";
-"cubicMeters.symbol" = "m³";
-"cubicCentimeters.symbol" = "cm³";
-"gallons.symbol" = "gal";
-"megaliters.symbol" = "ML";
-"kiloliters.symbol" = "kL";
-"deciliters.symbol" = "dL";
-"centiliters.symbol" = "cL";
-"milliliters.symbol" = "mL";
-"cubicKilometers.symbol" = "km³";
-"cubicDecimeters.symbol" = "dm³";
-"cubicMillimeters.symbol" = "mm³";
-"cubicInches.symbol" = "in³";
-"cubicFeet.symbol" = "ft³";
-"cubicYards.symbol" = "yd³";
-"cubicMiles.symbol" = "mi³";
-"acreFeet.symbol" = "ac·ft";
-"bushels.symbol" = "bu";
-"teaspoons.symbol" = "tsp";
-"tablespoons.symbol" = "tbsp";
-"fluidOunces.symbol" = "fl oz";
-"cups.symbol" = "cup";
-"pints.symbol" = "pt";
-"imperialTeaspoons.symbol" = "imp tsp";
-"imperialTablespoons.symbol" = "imp tbsp";
-"imperialFluidOunces.symbol" = "imp fl oz";
-"imperialPints.symbol" = "imp pt";
-"imperialQuarts.symbol" = "imp qt";
-"imperialGallons.symbol" = "imp gal";
-"metricCups.symbol" = "metric cup";
-"metersPerSecondSquared.symbol" = "m/s²";
-"gravity.symbol" = "g";
-"terawatts.symbol" = "TW";
-"gigawatts.symbol" = "GW";
-"megawatts.symbol" = "MW";
-"kilowatts.symbol" = "kW";
-"watts.symbol" = "W";
-"milliwatts.symbol" = "mW";
-"microwatts.symbol" = "µW";
-"nanowatts.symbol" = "nW";
-"picowatts.symbol" = "pW";
-"femtowatts.symbol" = "fW";
-"horsepower.symbol" = "hp";
-"degrees.symbol" = "°";
-"arcMinutes.symbol" = "′";
-"arcSeconds.symbol" = "″";
-"radians.symbol" = "rad";
-"gradians.symbol" = "grad";
-"revolutions.symbol" = "rev";
-"radiansPerSecond.symbol" = "rad/s";
-"degreesPerSecond.symbol" = "°/s";
-"revolutionsPerMinute.symbol" = "rpm";
-"revolutionsPerSecond.symbol" = "rps";
-"squareMegameters.symbol" = "Mm²";
-"squareKilometers.symbol" = "km²";
-"squareMeters.symbol" = "m²";
-"squareCentimeters.symbol" = "cm²";
-"squareMillimeters.symbol" = "mm²";
-"squareMicrometers.symbol" = "µm²";
-"squareNanometers.symbol" = "nm²";
-"squareInches.symbol" = "in²";
-"squareFeet.symbol" = "ft²";
-"squareYards.symbol" = "yd²";
-"squareMiles.symbol" = "mi²";
-"acres.symbol" = "ac";
-"ares.symbol" = "a";
-"hectares.symbol" = "ha";
-"gramsPerLiter.symbol" = "g/L";
-"milligramsPerDeciliter.symbol" = "mg/dL";
-"partsPerMillion.symbol" = "ppm";
-"hours.symbol" = "h";
-"minutes.symbol" = "min";
-"seconds.symbol" = "s";
-"milliseconds.symbol" = "ms";
-"microseconds.symbol" = "µs";
-"nanoseconds.symbol" = "ns";
-"picoseconds.symbol" = "ps";
-"megaampereHours.symbol" = "M·Ah";
-"kiloampereHours.symbol" = "k·Ah";
-"ampereHours.symbol" = "Ah";
-"milliampereHours.symbol" = "mAh";
-"microampereHours.symbol" = "µAh";
-"ampereSeconds.symbol" = "As";
-"megaamperes.symbol" = "MA";
-"kiloamperes.symbol" = "kA";
-"amperes.symbol" = "A";
-"milliamperes.symbol" = "mA";
-"microamperes.symbol" = "µA";
-"megavolts.symbol" = "MV";
-"kilovolts.symbol" = "kV";
-"volts.symbol" = "V";
-"millivolts.symbol" = "mV";
-"microvolts.symbol" = "µV";
-"megaohms.symbol" = "MΩ";
-"kiloohms.symbol" = "kΩ";
-"ohms.symbol" = "Ω";
-"milliohms.symbol" = "mΩ";
-"microohms.symbol" = "µΩ";
-"kilojoules.symbol" = "kJ";
-"joules.symbol" = "J";
-"kilocalories.symbol" = "kcal";
-"calories.symbol" = "cal";
-"kilowattHours.symbol" = "kWh";
-"wattHours.symbol" = "Wh";
-"terahertz.symbol" = "THz";
-"gigahertz.symbol" = "GHz";
-"megahertz.symbol" = "MHz";
-"kilohertz.symbol" = "kHz";
-"hertz.symbol" = "Hz";
-"millihertz.symbol" = "mHz";
-"microhertz.symbol" = "µHz";
-"nanohertz.symbol" = "nHz";
-"framesPerSecond.symbol" = "fps";
-"litersPer100Kilometers.symbol" = "L/100km";
-"milesPerImperialGallon.symbol" = "mpg(imp)";
-"milesPerGallon.symbol" = "mpg";
-"bytes.symbol" = "B";
-"bits.symbol" = "b";
-"nibbles.symbol" = "N";
-"yottabytes.symbol" = "YB";
-"zettabytes.symbol" = "ZB";
-"exabytes.symbol" = "EB";
-"petabytes.symbol" = "PB";
-"terabytes.symbol" = "TB";
-"gigabytes.symbol" = "GB";
-"megabytes.symbol" = "MB";
-"kilobytes.symbol" = "kB";
-"yottabits.symbol" = "Yb";
-"zettabits.symbol" = "Zb";
-"exabits.symbol" = "Eb";
-"petabits.symbol" = "Pb";
-"terabits.symbol" = "Tb";
-"gigabits.symbol" = "Gb";
-"megabits.symbol" = "Mb";
-"kilobits.symbol" = "kb";
-"yobibytes.symbol" = "YiB";
-"zebibytes.symbol" = "ZiB";
-"exbibytes.symbol" = "EiB";
-"pebibytes.symbol" = "PiB";
-"tebibytes.symbol" = "TiB";
-"gibibytes.symbol" = "GiB";
-"mebibytes.symbol" = "MiB";
-"kibibytes.symbol" = "KiB";
-"yobibits.symbol" = "Yib";
-"zebibits.symbol" = "Zib";
-"exbibits.symbol" = "Eib";
-"pebibits.symbol" = "Pib";
-"tebibits.symbol" = "Tib";
-"gibibits.symbol" = "Gib";
-"mebibits.symbol" = "Mib";
-"kibibits.symbol" = "Kib";
-
-/* AUnit short names */
 "feet.shortName" = "Feet";
-"nauticalMiles.shortName" = "Nautical Miles";
-"meters.shortName" = "Meters";
-"kilometers.shortName" = "Kilometers";
-"miles.shortName" = "Miles";
-"megameters.shortName" = "Megameters";
-"hectometers.shortName" = "Hectometers";
-"decameters.shortName" = "Decameters";
-"decimeters.shortName" = "Decimeters";
-"centimeters.shortName" = "Centimeters";
-"millimeters.shortName" = "Millimeters";
-"micrometers.shortName" = "Micrometers";
-"nanometers.shortName" = "Nanometers";
-"picometers.shortName" = "Picometers";
-"inches.shortName" = "Inches";
-"yards.shortName" = "Yards";
-"scandinavianMiles.shortName" = "Scandinavian Miles";
-"lightyears.shortName" = "Lightyears";
-"fathoms.shortName" = "Fathoms";
-"furlongs.shortName" = "Furlongs";
-"astronomicalUnits.shortName" = "Astronomical Units";
-"parsecs.shortName" = "Parsecs";
-"feetPerSecond.shortName" = "Feet per Second";
-"knots.shortName" = "Knots";
-"kilometersPerHour.shortName" = "Kilometers per Hour";
-"metersPerSecond.shortName" = "Meters per Second";
-"milesPerHour.shortName" = "Miles per Hour";
-"feetPerMinute.shortName" = "Feet per Minute";
-"hectopascals.shortName" = "Hectopascals";
-"inchesOfMercury.shortName" = "Inches of Mercury";
-"millimetersOfMercury.shortName" = "Millimeters of Mercury";
-"newtonsPerMetersSquared.shortName" = "Newtons per Square Meter";
-"gigapascals.shortName" = "Gigapascals";
-"megapascals.shortName" = "Megapascals";
-"kilopascals.shortName" = "Kilopascals";
-"bars.shortName" = "Bars";
-"millibars.shortName" = "Millibars";
-"poundsForcePerSquareInch.shortName" = "Pounds per Square Inch";
-"kelvin.shortName" = "Kelvin";
-"celsius.shortName" = "Celsius";
-"fahrenheit.shortName" = "Fahrenheit";
-"celsiusDelta.shortName" = "Celsius Delta";
-"fahrenheitDelta.shortName" = "Fahrenheit Delta";
-"kilograms.shortName" = "Kilograms";
-"grams.shortName" = "Grams";
-"decigrams.shortName" = "Decigrams";
-"centigrams.shortName" = "Centigrams";
-"milligrams.shortName" = "Milligrams";
-"micrograms.shortName" = "Micrograms";
-"nanograms.shortName" = "Nanograms";
-"picograms.shortName" = "Picograms";
-"ounces.shortName" = "Ounces";
-"pounds.shortName" = "Pounds";
-"stones.shortName" = "Stones";
-"metricTons.shortName" = "Metric Tons";
-"shortTons.shortName" = "Short Tons";
-"carats.shortName" = "Carats";
-"ouncesTroy.shortName" = "Troy Ounces";
-"slugs.shortName" = "Slugs";
-"liters.shortName" = "Liters";
-"quarts.shortName" = "Quarts";
-"cubicMeters.shortName" = "Cubic Meters";
-"cubicCentimeters.shortName" = "Cubic Centimeters";
-"gallons.shortName" = "Gallons";
-"megaliters.shortName" = "Megaliters";
-"kiloliters.shortName" = "Kiloliters";
-"deciliters.shortName" = "Deciliters";
-"centiliters.shortName" = "Centiliters";
-"milliliters.shortName" = "Milliliters";
-"cubicKilometers.shortName" = "Cubic Kilometers";
-"cubicDecimeters.shortName" = "Cubic Decimeters";
-"cubicMillimeters.shortName" = "Cubic Millimeters";
-"cubicInches.shortName" = "Cubic Inches";
-"cubicFeet.shortName" = "Cubic Feet";
-"cubicYards.shortName" = "Cubic Yards";
-"cubicMiles.shortName" = "Cubic Miles";
-"acreFeet.shortName" = "Acre-Feet";
-"bushels.shortName" = "Bushels";
-"teaspoons.shortName" = "Teaspoons";
-"tablespoons.shortName" = "Tablespoons";
-"fluidOunces.shortName" = "Fluid Ounces";
-"cups.shortName" = "Cups";
-"pints.shortName" = "Pints";
-"imperialTeaspoons.shortName" = "Imperial Teaspoons";
-"imperialTablespoons.shortName" = "Imperial Tablespoons";
-"imperialFluidOunces.shortName" = "Imperial Fluid Ounces";
-"imperialPints.shortName" = "Imperial Pints";
-"imperialQuarts.shortName" = "Imperial Quarts";
-"imperialGallons.shortName" = "Imperial Gallons";
-"metricCups.shortName" = "Metric Cups";
-"metersPerSecondSquared.shortName" = "Meters per Second Squared";
-"gravity.shortName" = "Gravity";
-"terawatts.shortName" = "Terawatts";
-"gigawatts.shortName" = "Gigawatts";
-"megawatts.shortName" = "Megawatts";
-"kilowatts.shortName" = "Kilowatts";
-"watts.shortName" = "Watts";
-"milliwatts.shortName" = "Milliwatts";
-"microwatts.shortName" = "Microwatts";
-"nanowatts.shortName" = "Nanowatts";
-"picowatts.shortName" = "Picowatts";
-"femtowatts.shortName" = "Femtowatts";
-"horsepower.shortName" = "Horsepower";
-"degrees.shortName" = "Degrees";
-"arcMinutes.shortName" = "Arc Minutes";
-"arcSeconds.shortName" = "Arc Seconds";
-"radians.shortName" = "Radians";
-"gradians.shortName" = "Gradians";
-"revolutions.shortName" = "Revolutions";
-"radiansPerSecond.shortName" = "Radians per Second";
-"degreesPerSecond.shortName" = "Degrees per Second";
-"revolutionsPerMinute.shortName" = "Revolutions per Minute";
-"revolutionsPerSecond.shortName" = "Revolutions per Second";
-"squareMegameters.shortName" = "Square Megameters";
-"squareKilometers.shortName" = "Square Kilometers";
-"squareMeters.shortName" = "Square Meters";
-"squareCentimeters.shortName" = "Square Centimeters";
-"squareMillimeters.shortName" = "Square Millimeters";
-"squareMicrometers.shortName" = "Square Micrometers";
-"squareNanometers.shortName" = "Square Nanometers";
-"squareInches.shortName" = "Square Inches";
-"squareFeet.shortName" = "Square Feet";
-"squareYards.shortName" = "Square Yards";
-"squareMiles.shortName" = "Square Miles";
-"acres.shortName" = "Acres";
-"ares.shortName" = "Ares";
-"hectares.shortName" = "Hectares";
-"gramsPerLiter.shortName" = "Grams per Liter";
-"milligramsPerDeciliter.shortName" = "Milligrams per Deciliter";
-"partsPerMillion.shortName" = "Parts per Million";
-"hours.shortName" = "Hours";
-"minutes.shortName" = "Minutes";
-"seconds.shortName" = "Seconds";
-"milliseconds.shortName" = "Milliseconds";
-"microseconds.shortName" = "Microseconds";
-"nanoseconds.shortName" = "Nanoseconds";
-"picoseconds.shortName" = "Picoseconds";
-"megaampereHours.shortName" = "Megaampere Hours";
-"kiloampereHours.shortName" = "Kiloampere Hours";
-"ampereHours.shortName" = "Ampere Hours";
-"milliampereHours.shortName" = "Milliampere Hours";
-"microampereHours.shortName" = "Microampere Hours";
-"ampereSeconds.shortName" = "Ampere Seconds";
-"megaamperes.shortName" = "Megaamperes";
-"kiloamperes.shortName" = "Kiloamperes";
-"amperes.shortName" = "Amperes";
-"milliamperes.shortName" = "Milliamperes";
-"microamperes.shortName" = "Microamperes";
-"megavolts.shortName" = "Megavolts";
-"kilovolts.shortName" = "Kilovolts";
-"volts.shortName" = "Volts";
-"millivolts.shortName" = "Millivolts";
-"microvolts.shortName" = "Microvolts";
-"megaohms.shortName" = "Megaohms";
-"kiloohms.shortName" = "Kiloohms";
-"ohms.shortName" = "Ohms";
-"milliohms.shortName" = "Milliohms";
-"microohms.shortName" = "Microohms";
-"kilojoules.shortName" = "Kilojoules";
-"joules.shortName" = "Joules";
-"kilocalories.shortName" = "Kilocalories";
-"calories.shortName" = "Calories";
-"kilowattHours.shortName" = "Kilowatt Hours";
-"wattHours.shortName" = "Watt Hours";
-"terahertz.shortName" = "Terahertz";
-"gigahertz.shortName" = "Gigahertz";
-"megahertz.shortName" = "Megahertz";
-"kilohertz.shortName" = "Kilohertz";
-"hertz.shortName" = "Hertz";
-"millihertz.shortName" = "Millihertz";
-"microhertz.shortName" = "Microhertz";
-"nanohertz.shortName" = "Nanohertz";
-"framesPerSecond.shortName" = "Frames per Second";
-"litersPer100Kilometers.shortName" = "Liters per 100 Kilometers";
-"milesPerImperialGallon.shortName" = "Miles per Imperial Gallon";
-"milesPerGallon.shortName" = "Miles per Gallon";
-"bytes.shortName" = "Bytes";
-"bits.shortName" = "Bits";
-"nibbles.shortName" = "Nibbles";
-"yottabytes.shortName" = "Yottabytes";
-"zettabytes.shortName" = "Zettabytes";
-"exabytes.shortName" = "Exabytes";
-"petabytes.shortName" = "Petabytes";
-"terabytes.shortName" = "Terabytes";
-"gigabytes.shortName" = "Gigabytes";
-"megabytes.shortName" = "Megabytes";
-"kilobytes.shortName" = "Kilobytes";
-"yottabits.shortName" = "Yottabits";
-"zettabits.shortName" = "Zettabits";
-"exabits.shortName" = "Exabits";
-"petabits.shortName" = "Petabits";
-"terabits.shortName" = "Terabits";
-"gigabits.shortName" = "Gigabits";
-"megabits.shortName" = "Megabits";
-"kilobits.shortName" = "Kilobits";
-"yobibytes.shortName" = "Yobibytes";
-"zebibytes.shortName" = "Zebibytes";
-"exbibytes.shortName" = "Exbibytes";
-"pebibytes.shortName" = "Pebibytes";
-"tebibytes.shortName" = "Tebibytes";
-"gibibytes.shortName" = "Gibibytes";
-"mebibytes.shortName" = "Mebibytes";
-"kibibytes.shortName" = "Kibibytes";
-"yobibits.shortName" = "Yobibits";
-"zebibits.shortName" = "Zebibits";
-"exbibits.shortName" = "Exbibits";
-"pebibits.shortName" = "Pebibits";
-"tebibits.shortName" = "Tebibits";
-"gibibits.shortName" = "Gibibits";
-"mebibits.shortName" = "Mebibits";
-"kibibits.shortName" = "Kibibits";
-
-/* AUnit long names */
 "feet.longName" = "Feet";
-"nauticalMiles.longName" = "Nautical Miles";
-"meters.longName" = "Meters";
-"kilometers.longName" = "Kilometers";
-"miles.longName" = "Miles";
-"megameters.longName" = "Megameters";
-"hectometers.longName" = "Hectometers";
-"decameters.longName" = "Decameters";
-"decimeters.longName" = "Decimeters";
-"centimeters.longName" = "Centimeters";
-"millimeters.longName" = "Millimeters";
-"micrometers.longName" = "Micrometers";
-"nanometers.longName" = "Nanometers";
-"picometers.longName" = "Picometers";
-"inches.longName" = "Inches";
-"yards.longName" = "Yards";
-"scandinavianMiles.longName" = "Scandinavian Miles";
-"lightyears.longName" = "Lightyears";
-"fathoms.longName" = "Fathoms";
-"furlongs.longName" = "Furlongs";
-"astronomicalUnits.longName" = "Astronomical Units";
-"parsecs.longName" = "Parsecs";
-"feetPerSecond.longName" = "Feet per Second";
-"knots.longName" = "Knots";
-"kilometersPerHour.longName" = "Kilometers per Hour";
-"metersPerSecond.longName" = "Meters per Second";
-"milesPerHour.longName" = "Miles per Hour";
-"feetPerMinute.longName" = "Feet per Minute";
-"hectopascals.longName" = "Hectopascals";
-"inchesOfMercury.longName" = "Inches of Mercury";
-"millimetersOfMercury.longName" = "Millimeters of Mercury";
-"newtonsPerMetersSquared.longName" = "Newtons per Square Meter";
-"gigapascals.longName" = "Gigapascals";
-"megapascals.longName" = "Megapascals";
-"kilopascals.longName" = "Kilopascals";
-"bars.longName" = "Bars";
-"millibars.longName" = "Millibars";
-"poundsForcePerSquareInch.longName" = "Pounds per Square Inch";
-"kelvin.longName" = "Kelvin";
-"celsius.longName" = "Celsius";
-"fahrenheit.longName" = "Fahrenheit";
-"celsiusDelta.longName" = "Celsius Delta";
-"fahrenheitDelta.longName" = "Fahrenheit Delta";
-"kilograms.longName" = "Kilograms";
-"grams.longName" = "Grams";
-"decigrams.longName" = "Decigrams";
-"centigrams.longName" = "Centigrams";
-"milligrams.longName" = "Milligrams";
-"micrograms.longName" = "Micrograms";
-"nanograms.longName" = "Nanograms";
-"picograms.longName" = "Picograms";
-"ounces.longName" = "Ounces";
-"pounds.longName" = "Pounds";
-"stones.longName" = "Stones";
-"metricTons.longName" = "Metric Tons";
-"shortTons.longName" = "Short Tons";
-"carats.longName" = "Carats";
-"ouncesTroy.longName" = "Troy Ounces";
-"slugs.longName" = "Slugs";
-"liters.longName" = "Liters";
-"quarts.longName" = "Quarts";
-"cubicMeters.longName" = "Cubic Meters";
-"cubicCentimeters.longName" = "Cubic Centimeters";
-"gallons.longName" = "Gallons";
-"megaliters.longName" = "Megaliters";
-"kiloliters.longName" = "Kiloliters";
-"deciliters.longName" = "Deciliters";
-"centiliters.longName" = "Centiliters";
-"milliliters.longName" = "Milliliters";
-"cubicKilometers.longName" = "Cubic Kilometers";
-"cubicDecimeters.longName" = "Cubic Decimeters";
-"cubicMillimeters.longName" = "Cubic Millimeters";
-"cubicInches.longName" = "Cubic Inches";
-"cubicFeet.longName" = "Cubic Feet";
-"cubicYards.longName" = "Cubic Yards";
-"cubicMiles.longName" = "Cubic Miles";
-"acreFeet.longName" = "Acre-Feet";
-"bushels.longName" = "Bushels";
-"teaspoons.longName" = "Teaspoons";
-"tablespoons.longName" = "Tablespoons";
-"fluidOunces.longName" = "Fluid Ounces";
-"cups.longName" = "Cups";
-"pints.longName" = "Pints";
-"imperialTeaspoons.longName" = "Imperial Teaspoons";
-"imperialTablespoons.longName" = "Imperial Tablespoons";
-"imperialFluidOunces.longName" = "Imperial Fluid Ounces";
-"imperialPints.longName" = "Imperial Pints";
-"imperialQuarts.longName" = "Imperial Quarts";
-"imperialGallons.longName" = "Imperial Gallons";
-"metricCups.longName" = "Metric Cups";
-"metersPerSecondSquared.longName" = "Meters per Second Squared";
-"gravity.longName" = "Gravity";
-"terawatts.longName" = "Terawatts";
-"gigawatts.longName" = "Gigawatts";
-"megawatts.longName" = "Megawatts";
-"kilowatts.longName" = "Kilowatts";
-"watts.longName" = "Watts";
-"milliwatts.longName" = "Milliwatts";
-"microwatts.longName" = "Microwatts";
-"nanowatts.longName" = "Nanowatts";
-"picowatts.longName" = "Picowatts";
-"femtowatts.longName" = "Femtowatts";
-"horsepower.longName" = "Horsepower";
-"degrees.longName" = "Degrees";
-"arcMinutes.longName" = "Arc Minutes";
-"arcSeconds.longName" = "Arc Seconds";
-"radians.longName" = "Radians";
-"gradians.longName" = "Gradians";
-"revolutions.longName" = "Revolutions";
-"radiansPerSecond.longName" = "Radians per Second";
-"degreesPerSecond.longName" = "Degrees per Second";
-"revolutionsPerMinute.longName" = "Revolutions per Minute";
-"revolutionsPerSecond.longName" = "Revolutions per Second";
-"squareMegameters.longName" = "Square Megameters";
-"squareKilometers.longName" = "Square Kilometers";
-"squareMeters.longName" = "Square Meters";
-"squareCentimeters.longName" = "Square Centimeters";
-"squareMillimeters.longName" = "Square Millimeters";
-"squareMicrometers.longName" = "Square Micrometers";
-"squareNanometers.longName" = "Square Nanometers";
-"squareInches.longName" = "Square Inches";
-"squareFeet.longName" = "Square Feet";
-"squareYards.longName" = "Square Yards";
-"squareMiles.longName" = "Square Miles";
-"acres.longName" = "Acres";
-"ares.longName" = "Ares";
-"hectares.longName" = "Hectares";
-"gramsPerLiter.longName" = "Grams per Liter";
-"milligramsPerDeciliter.longName" = "Milligrams per Deciliter";
-"partsPerMillion.longName" = "Parts per Million";
-"hours.longName" = "Hours";
-"minutes.longName" = "Minutes";
-"seconds.longName" = "Seconds";
-"milliseconds.longName" = "Milliseconds";
-"microseconds.longName" = "Microseconds";
-"nanoseconds.longName" = "Nanoseconds";
-"picoseconds.longName" = "Picoseconds";
-"megaampereHours.longName" = "Megaampere Hours";
-"kiloampereHours.longName" = "Kiloampere Hours";
-"ampereHours.longName" = "Ampere Hours";
-"milliampereHours.longName" = "Milliampere Hours";
-"microampereHours.longName" = "Microampere Hours";
-"ampereSeconds.longName" = "Ampere Seconds";
-"megaamperes.longName" = "Megaamperes";
-"kiloamperes.longName" = "Kiloamperes";
-"amperes.longName" = "Amperes";
-"milliamperes.longName" = "Milliamperes";
-"microamperes.longName" = "Microamperes";
-"megavolts.longName" = "Megavolts";
-"kilovolts.longName" = "Kilovolts";
-"volts.longName" = "Volts";
-"millivolts.longName" = "Millivolts";
-"microvolts.longName" = "Microvolts";
-"megaohms.longName" = "Megaohms";
-"kiloohms.longName" = "Kiloohms";
-"ohms.longName" = "Ohms";
-"milliohms.longName" = "Milliohms";
-"microohms.longName" = "Microohms";
-"kilojoules.longName" = "Kilojoules";
-"joules.longName" = "Joules";
-"kilocalories.longName" = "Kilocalories";
-"calories.longName" = "Calories";
-"kilowattHours.longName" = "Kilowatt Hours";
-"wattHours.longName" = "Watt Hours";
-"terahertz.longName" = "Terahertz";
-"gigahertz.longName" = "Gigahertz";
-"megahertz.longName" = "Megahertz";
-"kilohertz.longName" = "Kilohertz";
-"hertz.longName" = "Hertz";
-"millihertz.longName" = "Millihertz";
-"microhertz.longName" = "Microhertz";
-"nanohertz.longName" = "Nanohertz";
-"framesPerSecond.longName" = "Frames per Second";
-"litersPer100Kilometers.longName" = "Liters per 100 Kilometers";
-"milesPerImperialGallon.longName" = "Miles per Imperial Gallon";
-"milesPerGallon.longName" = "Miles per Gallon";
-"bytes.longName" = "Bytes";
-"bits.longName" = "Bits";
-"nibbles.longName" = "Nibbles";
-"yottabytes.longName" = "Yottabytes";
-"zettabytes.longName" = "Zettabytes";
-"exabytes.longName" = "Exabytes";
-"petabytes.longName" = "Petabytes";
-"terabytes.longName" = "Terabytes";
-"gigabytes.longName" = "Gigabytes";
-"megabytes.longName" = "Megabytes";
-"kilobytes.longName" = "Kilobytes";
-"yottabits.longName" = "Yottabits";
-"zettabits.longName" = "Zettabits";
-"exabits.longName" = "Exabits";
-"petabits.longName" = "Petabits";
-"terabits.longName" = "Terabits";
-"gigabits.longName" = "Gigabits";
-"megabits.longName" = "Megabits";
-"kilobits.longName" = "Kilobits";
-"yobibytes.longName" = "Yobibytes";
-"zebibytes.longName" = "Zebibytes";
-"exbibytes.longName" = "Exbibytes";
-"pebibytes.longName" = "Pebibytes";
-"tebibytes.longName" = "Tebibytes";
-"gibibytes.longName" = "Gibibytes";
-"mebibytes.longName" = "Mebibytes";
-"kibibytes.longName" = "Kibibytes";
-"yobibits.longName" = "Yobibits";
-"zebibits.longName" = "Zebibits";
-"exbibits.longName" = "Exbibits";
-"pebibits.longName" = "Pebibits";
-"tebibits.longName" = "Tebibits";
-"gibibits.longName" = "Gibibits";
-"mebibits.longName" = "Mebibits";
-"kibibits.longName" = "Kibibits";
+"feet.detailedIntroduction" = "Feet is a unit of length in the imperial system, commonly used in the United States.";
 
-/* AUnit detailed introductions */
-"feet.detailedIntroduction" = "Feet is a unit of length.";
-"nauticalMiles.detailedIntroduction" = "Nautical Miles is a unit of length used in maritime and aviation contexts.";
-"meters.detailedIntroduction" = "Meters is the base unit of length in the International System of Units (SI).";
-"kilometers.detailedIntroduction" = "Kilometers is a unit of length equal to 1,000 meters.";
-"miles.detailedIntroduction" = "Miles is a unit of length equal to 5,280 feet.";
-"megameters.detailedIntroduction" = "Megameters is a unit of length equal to 1,000,000 meters.";
-"hectometers.detailedIntroduction" = "Hectometers is a unit of length equal to 100 meters.";
-"decameters.detailedIntroduction" = "Decameters is a unit of length equal to 10 meters.";
-"decimeters.detailedIntroduction" = "Decimeters is a unit of length equal to one-tenth of a meter.";
-"centimeters.detailedIntroduction" = "Centimeters is a unit of length equal to one-hundredth of a meter.";
-"millimeters.detailedIntroduction" = "Millimeters is a unit of length equal to one-thousandth of a meter.";
-"micrometers.detailedIntroduction" = "Micrometers is a unit of length equal to one-millionth of a meter.";
-"nanometers.detailedIntroduction" = "Nanometers is a unit of length equal to one-billionth of a meter.";
-"picometers.detailedIntroduction" = "Picometers is a unit of length equal to one-trillionth of a meter.";
-"inches.detailedIntroduction" = "Inches is a unit of length commonly used in the United States.";
-"yards.detailedIntroduction" = "Yards is a unit of length equal to 3 feet.";
-"scandinavianMiles.detailedIntroduction" = "Scandinavian Miles is a unit of length used in some Nordic countries.";
-"lightyears.detailedIntroduction" = "Lightyears is a unit of length used to express astronomical distances.";
-"fathoms.detailedIntroduction" = "Fathoms is a unit of length used in nautical contexts, equal to 6 feet.";
-"furlongs.detailedIntroduction" = "Furlongs is a unit of length used in horse racing, equal to 220 yards.";
-"astronomicalUnits.detailedIntroduction" = "Astronomical Units is a unit of length used in astronomy, roughly the distance from Earth to the Sun.";
-"parsecs.detailedIntroduction" = "Parsecs is a unit of length used in astronomy to measure large distances to objects outside the Solar System.";
-"feetPerSecond.detailedIntroduction" = "Feet per Second is a unit of speed.";
-"knots.detailedIntroduction" = "Knots is a unit of speed used in maritime and aviation contexts.";
-"kilometersPerHour.detailedIntroduction" = "Kilometers per Hour is a unit of speed.";
-"metersPerSecond.detailedIntroduction" = "Meters per Second is a unit of speed.";
-"milesPerHour.detailedIntroduction" = "Miles per Hour is a unit of speed commonly used in the United States.";
-"feetPerMinute.detailedIntroduction" = "Feet per Minute is a unit of speed.";
-"hectopascals.detailedIntroduction" = "Hectopascals is a unit of pressure.";
-"inchesOfMercury.detailedIntroduction" = "Inches of Mercury is a unit of pressure.";
-"millimetersOfMercury.detailedIntroduction" = "Millimeters of Mercury is a unit of pressure.";
-"newtonsPerMetersSquared.detailedIntroduction" = "Newtons per Square Meter is a unit of pressure.";
-"gigapascals.detailedIntroduction" = "Gigapascals is a unit of pressure.";
-"megapascals.detailedIntroduction" = "Megapascals is a unit of pressure.";
-"kilopascals.detailedIntroduction" = "Kilopascals is a unit of pressure.";
-"bars.detailedIntroduction" = "Bars is a unit of pressure.";
-"millibars.detailedIntroduction" = "Millibars is a unit of pressure.";
-"poundsForcePerSquareInch.detailedIntroduction" = "Pounds per Square Inch is a unit of pressure.";
-"kelvin.detailedIntroduction" = "Kelvin is the base unit of temperature in the International System of Units (SI).";
-"celsius.detailedIntroduction" = "Celsius is a unit of temperature.";
-"fahrenheit.detailedIntroduction" = "Fahrenheit is a unit of temperature commonly used in the United States.";
-"celsiusDelta.detailedIntroduction" = "Celsius Delta is a unit of temperature difference.";
-"fahrenheitDelta.detailedIntroduction" = "Fahrenheit Delta is a unit of temperature difference.";
-"kilograms.detailedIntroduction" = "Kilograms is the base unit of mass in the International System of Units (SI).";
-"grams.detailedIntroduction" = "Grams is a unit of mass.";
-"decigrams.detailedIntroduction" = "Decigrams is a unit of mass.";
-"centigrams.detailedIntroduction" = "Centigrams is a unit of mass.";
-"milligrams.detailedIntroduction" = "Milligrams is a unit of mass.";
-"micrograms.detailedIntroduction" = "Micrograms is a unit of mass.";
-"nanograms.detailedIntroduction" = "Nanograms is a unit of mass.";
-"picograms.detailedIntroduction" = "Picograms is a unit of mass.";
-"ounces.detailedIntroduction" = "Ounces is a unit of mass commonly used in the United States.";
-"pounds.detailedIntroduction" = "Pounds is a unit of mass commonly used in the United States.";
-"stones.detailedIntroduction" = "Stones is a unit of mass used in the United Kingdom.";
-"metricTons.detailedIntroduction" = "Metric Tons is a unit of mass.";
-"shortTons.detailedIntroduction" = "Short Tons is a unit of mass commonly used in the United States.";
-"carats.detailedIntroduction" = "Carats is a unit of mass used for gemstones.";
-"ouncesTroy.detailedIntroduction" = "Troy Ounces is a unit of mass used for precious metals.";
-"slugs.detailedIntroduction" = "Slugs is a unit of mass used in the English system.";
-"liters.detailedIntroduction" = "Liters is a unit of volume.";
-"quarts.detailedIntroduction" = "Quarts is a unit of volume.";
-"cubicMeters.detailedIntroduction" = "Cubic Meters is a unit of volume.";
-"cubicCentimeters.detailedIntroduction" = "Cubic Centimeters is a unit of volume.";
-"gallons.detailedIntroduction" = "Gallons is a unit of volume.";
-"megaliters.detailedIntroduction" = "Megaliters is a unit of volume.";
-"kiloliters.detailedIntroduction" = "Kiloliters is a unit of volume.";
-"deciliters.detailedIntroduction" = "Deciliters is a unit of volume.";
-"centiliters.detailedIntroduction" = "Centiliters is a unit of volume.";
-"milliliters.detailedIntroduction" = "Milliliters is a unit of volume.";
-"cubicKilometers.detailedIntroduction" = "Cubic Kilometers is a unit of volume.";
-"cubicDecimeters.detailedIntroduction" = "Cubic Decimeters is a unit of volume.";
-"cubicMillimeters.detailedIntroduction" = "Cubic Millimeters is a unit of volume.";
-"cubicInches.detailedIntroduction" = "Cubic Inches is a unit of volume.";
-"cubicFeet.detailedIntroduction" = "Cubic Feet is a unit of volume.";
-"cubicYards.detailedIntroduction" = "Cubic Yards is a unit of volume.";
-"cubicMiles.detailedIntroduction" = "Cubic Miles is a unit of volume.";
-"acreFeet.detailedIntroduction" = "Acre-Feet is a unit of volume.";
-"bushels.detailedIntroduction" = "Bushels is a unit of volume.";
-"teaspoons.detailedIntroduction" = "Teaspoons is a unit of volume.";
-"tablespoons.detailedIntroduction" = "Tablespoons is a unit of volume.";
-"fluidOunces.detailedIntroduction" = "Fluid Ounces is a unit of volume.";
-"cups.detailedIntroduction" = "Cups is a unit of volume.";
-"pints.detailedIntroduction" = "Pints is a unit of volume.";
-"imperialTeaspoons.detailedIntroduction" = "Imperial Teaspoons is a unit of volume.";
-"imperialTablespoons.detailedIntroduction" = "Imperial Tablespoons is a unit of volume.";
-"imperialFluidOunces.detailedIntroduction" = "Imperial Fluid Ounces is a unit of volume.";
-"imperialPints.detailedIntroduction" = "Imperial Pints is a unit of volume.";
-"imperialQuarts.detailedIntroduction" = "Imperial Quarts is a unit of volume.";
-"imperialGallons.detailedIntroduction" = "Imperial Gallons is a unit of volume.";
-"metricCups.detailedIntroduction" = "Metric Cups is a unit of volume.";
-"metersPerSecondSquared.detailedIntroduction" = "Meters per Second Squared is a unit of acceleration.";
-"gravity.detailedIntroduction" = "Gravity is a unit of acceleration equal to the acceleration due to gravity at Earth's surface.";
-"terawatts.detailedIntroduction" = "Terawatts is a unit of power.";
-"gigawatts.detailedIntroduction" = "Gigawatts is a unit of power.";
-"megawatts.detailedIntroduction" = "Megawatts is a unit of power.";
-"kilowatts.detailedIntroduction" = "Kilowatts is a unit of power.";
-"watts.detailedIntroduction" = "Watts is the base unit of power in the International System of Units (SI).";
-"milliwatts.detailedIntroduction" = "Milliwatts is a unit of power.";
-"microwatts.detailedIntroduction" = "Microwatts is a unit of power.";
-"nanowatts.detailedIntroduction" = "Nanowatts is a unit of power.";
-"picowatts.detailedIntroduction" = "Picowatts is a unit of power.";
-"femtowatts.detailedIntroduction" = "Femtowatts is a unit of power.";
-"horsepower.detailedIntroduction" = "Horsepower is a unit of power commonly used to measure the power output of engines.";
-"degrees.detailedIntroduction" = "Degrees is a unit of angle.";
-"arcMinutes.detailedIntroduction" = "Arc Minutes is a unit of angle.";
-"arcSeconds.detailedIntroduction" = "Arc Seconds is a unit of angle.";
-"radians.detailedIntroduction" = "Radians is the base unit of angle in the International System of Units (SI).";
-"gradians.detailedIntroduction" = "Gradians is a unit of angle.";
-"revolutions.detailedIntroduction" = "Revolutions is a unit of angle.";
-"radiansPerSecond.detailedIntroduction" = "Radians per Second is a unit of angular velocity.";
+"nauticalMiles.symbol" = "NM";
+"nauticalMiles.shortName" = "Nautical Miles";
+"nauticalMiles.longName" = "Nautical Miles";
+"nauticalMiles.detailedIntroduction" = "Nautical miles are used in maritime and aviation contexts to measure distance.";
+
+"meters.symbol" = "m";
+"meters.shortName" = "Meters";
+"meters.longName" = "Meters";
+"meters.detailedIntroduction" = "Meters are the base unit of length in the International System of Units (SI).";
+
+"kilometers.symbol" = "km";
+"kilometers.shortName" = "Kilometers";
+"kilometers.longName" = "Kilometers";
+"kilometers.detailedIntroduction" = "Kilometers are commonly used to measure longer distances.";
+
+"miles.symbol" = "mi";
+"miles.shortName" = "Miles";
+"miles.longName" = "Miles";
+"miles.detailedIntroduction" = "Miles are a unit of length commonly used in the United States.";
+
+"megameters.symbol" = "Mm";
+"megameters.shortName" = "Megameters";
+"megameters.longName" = "Megameters";
+"megameters.detailedIntroduction" = "Megameters are used for measuring extremely large distances.";
+
+"hectometers.symbol" = "hm";
+"hectometers.shortName" = "Hectometers";
+"hectometers.longName" = "Hectometers";
+"hectometers.detailedIntroduction" = "Hectometers are equal to 100 meters.";
+
+"decameters.symbol" = "dam";
+"decameters.shortName" = "Decameters";
+"decameters.longName" = "Decameters";
+"decameters.detailedIntroduction" = "Decameters are equal to 10 meters.";
+
+"decimeters.symbol" = "dm";
+"decimeters.shortName" = "Decimeters";
+"decimeters.longName" = "Decimeters";
+"decimeters.detailedIntroduction" = "Decimeters are equal to one-tenth of a meter.";
+
+"centimeters.symbol" = "cm";
+"centimeters.shortName" = "Centimeters";
+"centimeters.longName" = "Centimeters";
+"centimeters.detailedIntroduction" = "Centimeters are commonly used to measure small lengths.";
+
+"millimeters.symbol" = "mm";
+"millimeters.shortName" = "Millimeters";
+"millimeters.longName" = "Millimeters";
+"millimeters.detailedIntroduction" = "Millimeters are used to measure very small lengths.";
+
+"micrometers.symbol" = "μm";
+"micrometers.shortName" = "Micrometers";
+"micrometers.longName" = "Micrometers";
+"micrometers.detailedIntroduction" = "Micrometers are used to measure extremely small lengths.";
+
+"nanometers.symbol" = "nm";
+"nanometers.shortName" = "Nanometers";
+"nanometers.longName" = "Nanometers";
+"nanometers.detailedIntroduction" = "Nanometers are used in fields like nanotechnology to measure minute lengths.";
+
+"picometers.symbol" = "pm";
+"picometers.shortName" = "Picometers";
+"picometers.longName" = "Picometers";
+"picometers.detailedIntroduction" = "Picometers are used to measure atomic-scale distances.";
+
+"inches.symbol" = "in";
+"inches.shortName" = "Inches";
+"inches.longName" = "Inches";
+"inches.detailedIntroduction" = "Inches are a unit of length in the imperial system, commonly used in the United States.";
+
+"yards.symbol" = "yd";
+"yards.shortName" = "Yards";
+"yards.longName" = "Yards";
+"yards.detailedIntroduction" = "Yards are a unit of length in the imperial system, commonly used in the United States.";
+
+"scandinavianMiles.symbol" = "smi";
+"scandinavianMiles.shortName" = "Scandinavian Miles";
+"scandinavianMiles.longName" = "Scandinavian Miles";
+"scandinavianMiles.detailedIntroduction" = "Scandinavian miles are used in some Scandinavian countries and are equal to 10 kilometers.";
+
+"lightyears.symbol" = "ly";
+"lightyears.shortName" = "Lightyears";
+"lightyears.longName" = "Lightyears";
+"lightyears.detailedIntroduction" = "Lightyears are used to measure astronomical distances, representing the distance light travels in one year.";
+
+"fathoms.symbol" = "ftm";
+"fathoms.shortName" = "Fathoms";
+"fathoms.longName" = "Fathoms";
+"fathoms.detailedIntroduction" = "Fathoms are used in maritime contexts to measure depth.";
+
+"furlongs.symbol" = "fur";
+"furlongs.shortName" = "Furlongs";
+"furlongs.longName" = "Furlongs";
+"furlongs.detailedIntroduction" = "Furlongs are an old unit of length, primarily used in horse racing.";
+
+"astronomicalUnits.symbol" = "AU";
+"astronomicalUnits.shortName" = "Astronomical Units";
+"astronomicalUnits.longName" = "Astronomical Units";
+"astronomicalUnits.detailedIntroduction" = "Astronomical Units are used to measure distances within our solar system.";
+
+"parsecs.symbol" = "pc";
+"parsecs.shortName" = "Parsecs";
+"parsecs.longName" = "Parsecs";
+"parsecs.detailedIntroduction" = "Parsecs are used in astronomy to measure large distances to objects outside the solar system.";
+
+// Speed
+"knots.symbol" = "kn";
+"knots.shortName" = "Knots";
+"knots.longName" = "Knots";
+"knots.detailedIntroduction" = "Knots are used to measure speed in maritime and aviation contexts.";
+
+"metersPerSecond.symbol" = "m/s";
+"metersPerSecond.shortName" = "Meters/Second";
+"metersPerSecond.longName" = "Meters per Second";
+"metersPerSecond.detailedIntroduction" = "Meters per Second is the SI unit for measuring speed.";
+
+"feetPerMinute.symbol" = "ft/min";
+"feetPerMinute.shortName" = "Feet/Minute";
+"feetPerMinute.longName" = "Feet per Minute";
+"feetPerMinute.detailedIntroduction" = "Feet per Minute is a unit used to measure speed in the imperial system.";
+
+"kilometersPerHour.symbol" = "km/h";
+"kilometersPerHour.shortName" = "Kilometers/Hour";
+"kilometersPerHour.longName" = "Kilometers per Hour";
+"kilometersPerHour.detailedIntroduction" = "Kilometers per Hour is a commonly used unit for measuring speed.";
+
+"feetPerSecond.symbol" = "ft/s";
+"feetPerSecond.shortName" = "Feet/Second";
+"feetPerSecond.longName" = "Feet per Second";
+"feetPerSecond.detailedIntroduction" = "Feet per Second is a unit used to measure speed in the imperial system.";
+
+"milesPerHour.symbol" = "mph";
+"milesPerHour.shortName" = "Miles/Hour";
+"milesPerHour.longName" = "Miles per Hour";
+"milesPerHour.detailedIntroduction" = "Miles per Hour is a commonly used unit for measuring speed in the United States.";
+
+"inchesPerSecond.symbol" = "in/s";
+"inchesPerSecond.shortName" = "Inches/Second";
+"inchesPerSecond.longName" = "Inches per Second";
+"inchesPerSecond.detailedIntroduction" = "Inches per Second is a unit used to measure speed in the imperial system.";
+
+"yardsPerSecond.symbol" = "yd/s";
+"yardsPerSecond.shortName" = "Yards/Second";
+"yardsPerSecond.longName" = "Yards per Second";
+"yardsPerSecond.detailedIntroduction" = "Yards per Second is a unit used to measure speed in the imperial system.";
+
+// Pressure
+"hectopascals.symbol" = "hPa";
+"hectopascals.shortName" = "Hectopascals";
+"hectopascals.longName" = "Hectopascals";
+"hectopascals.detailedIntroduction" = "Hectopascals are used in meteorology to measure atmospheric pressure.";
+
+"inchesOfMercury.symbol" = "inHg";
+"inchesOfMercury.shortName" = "Inches of Mercury";
+"inchesOfMercury.longName" = "Inches of Mercury";
+"inchesOfMercury.detailedIntroduction" = "Inches of Mercury are used to measure pressure, commonly in weather reports and aviation.";
+
+"millimetersOfMercury.symbol" = "mmHg";
+"millimetersOfMercury.shortName" = "Millimeters of Mercury";
+"millimetersOfMercury.longName" = "Millimeters of Mercury";
+"millimetersOfMercury.detailedIntroduction" = "Millimeters of Mercury are used to measure pressure, commonly in medical settings.";
+
+"newtonsPerMetersSquared.symbol" = "N/m²";
+"newtonsPerMetersSquared.shortName" = "Newtons per Meter²";
+"newtonsPerMetersSquared.longName" = "Newtons per Square Meter";
+"newtonsPerMetersSquared.detailedIntroduction" = "Newtons per Square Meter is an SI unit for measuring pressure.";
+
+"gigapascals.symbol" = "GPa";
+"gigapascals.shortName" = "Gigapascals";
+"gigapascals.longName" = "Gigapascals";
+"gigapascals.detailedIntroduction" = "Gigapascals are used to measure extremely high pressures.";
+
+"megapascals.symbol" = "MPa";
+"megapascals.shortName" = "Megapascals";
+"megapascals.longName" = "Megapascals";
+"megapascals.detailedIntroduction" = "Megapascals are used to measure high pressures, often in engineering.";
+
+"kilopascals.symbol" = "kPa";
+"kilopascals.shortName" = "Kilopascals";
+"kilopascals.longName" = "Kilopascals";
+"kilopascals.detailedIntroduction" = "Kilopascals are used to measure pressure, commonly in engineering.";
+
+"bars.symbol" = "bar";
+"bars.shortName" = "Bars";
+"bars.longName" = "Bars";
+"bars.detailedIntroduction" = "Bars are a unit of pressure, commonly used in meteorology and engineering.";
+
+"millibars.symbol" = "mbar";
+"millibars.shortName" = "Millibars";
+"millibars.longName" = "Millibars";
+"millibars.detailedIntroduction" = "Millibars are used to measure atmospheric pressure, commonly in weather reports.";
+
+"poundsForcePerSquareInch.symbol" = "psi";
+"poundsForcePerSquareInch.shortName" = "Pounds per Square Inch";
+"poundsForcePerSquareInch.longName" = "Pounds per Square Inch";
+"poundsForcePerSquareInch.detailedIntroduction" = "Pounds per Square Inch is a unit of pressure commonly used in the United States.";
+
+// Temperature
+"kelvin.symbol" = "K";
+"kelvin.shortName" = "Kelvin";
+"kelvin.longName" = "Kelvin";
+"kelvin.detailedIntroduction" = "Kelvin is the SI base unit of temperature, used primarily in scientific contexts.";
+
+"celsius.symbol" = "°C";
+"celsius.shortName" = "Celsius";
+"celsius.longName" = "Celsius";
+"celsius.detailedIntroduction" = "Celsius is a scale and unit of measurement for temperature, commonly used worldwide.";
+
+"fahrenheit.symbol" = "°F";
+"fahrenheit.shortName" = "Fahrenheit";
+"fahrenheit.longName" = "Fahrenheit";
+"fahrenheit.detailedIntroduction" = "Fahrenheit is a temperature scale used primarily in the United States.";
+
+"rankine.symbol" = "°R";
+"rankine.shortName" = "Rankine";
+"rankine.longName" = "Rankine";
+"rankine.detailedIntroduction" = "Rankine is a scale of absolute temperature used in engineering systems.";
+
+// TemperatureDifference
+"celsiusDelta.symbol" = "°C Δ";
+"celsiusDelta.shortName" = "Celsius Delta";
+"celsiusDelta.longName" = "Celsius Delta";
+"celsiusDelta.detailedIntroduction" = "Celsius Delta measures the change in temperature in Celsius.";
+
+"fahrenheitDelta.symbol" = "°F Δ";
+"fahrenheitDelta.shortName" = "Fahrenheit Delta";
+"fahrenheitDelta.longName" = "Fahrenheit Delta";
+"fahrenheitDelta.detailedIntroduction" = "Fahrenheit Delta measures the change in temperature in Fahrenheit.";
+
+// Mass
+"metricTons.symbol" = "t";
+"metricTons.shortName" = "Metric Tons";
+"metricTons.longName" = "Metric Tons";
+"metricTons.detailedIntroduction" = "Metric Tons are a unit of mass equal to 1,000 kilograms.";
+
+"shortTons.symbol" = "ton";
+"shortTons.shortName" = "Short Tons";
+"shortTons.longName" = "Short Tons";
+"shortTons.detailedIntroduction" = "Short Tons are a unit of mass commonly used in the United States, equal to 2,000 pounds.";
+
+"kilograms.symbol" = "kg";
+"kilograms.shortName" = "Kilograms";
+"kilograms.longName" = "Kilograms";
+"kilograms.detailedIntroduction" = "Kilograms are the base unit of mass in the International System of Units (SI).";
+
+"kilopounds.symbol" = "kip";
+"kilopounds.shortName" = "Kilopounds";
+"kilopounds.longName" = "Kilopounds";
+"kilopounds.detailedIntroduction" = "Kilopounds are a unit of force equal to 1,000 pounds.";
+
+"pounds.symbol" = "lb";
+"pounds.shortName" = "Pounds";
+"pounds.longName" = "Pounds";
+"pounds.detailedIntroduction" = "Pounds are a unit of mass commonly used in the United States.";
+
+"ounces.symbol" = "oz";
+"ounces.shortName" = "Ounces";
+"ounces.longName" = "Ounces";
+"ounces.detailedIntroduction" = "Ounces are a unit of mass commonly used in the United States.";
+
+"grams.symbol" = "g";
+"grams.shortName" = "Grams";
+"grams.longName" = "Grams";
+"grams.detailedIntroduction" = "Grams are a metric unit of mass equal to one-thousandth of a kilogram.";
+
+"decigrams.symbol" = "dg";
+"decigrams.shortName" = "Decigrams";
+"decigrams.longName" = "Decigrams";
+"decigrams.detailedIntroduction" = "Decigrams are a metric unit of mass equal to one-tenth of a gram.";
+
+"centigrams.symbol" = "cg";
+"centigrams.shortName" = "Centigrams";
+"centigrams.longName" = "Centigrams";
+"centigrams.detailedIntroduction" = "Centigrams are a metric unit of mass equal to one-hundredth of a gram.";
+
+"milligrams.symbol" = "mg";
+"milligrams.shortName" = "Milligrams";
+"milligrams.longName" = "Milligrams";
+"milligrams.detailedIntroduction" = "Milligrams are a metric unit of mass equal to one-thousandth of a gram.";
+
+"micrograms.symbol" = "µg";
+"micrograms.shortName" = "Micrograms";
+"micrograms.longName" = "Micrograms";
+"micrograms.detailedIntroduction" = "Micrograms are a metric unit of mass equal to one-millionth of a gram.";
+
+"nanograms.symbol" = "ng";
+"nanograms.shortName" = "Nanograms";
+"nanograms.longName" = "Nanograms";
+"nanograms.detailedIntroduction" = "Nanograms are a metric unit of mass equal to one-billionth of a gram.";
+
+"picograms.symbol" = "pg";
+"picograms.shortName" = "Picograms";
+"picograms.longName" = "Picograms";
+"picograms.detailedIntroduction" = "Picograms are a metric unit of mass equal to one-trillionth of a gram.";
+
+"stones.symbol" = "st";
+"stones.shortName" = "Stones";
+"stones.longName" = "Stones";
+"stones.detailedIntroduction" = "Stones are a unit of mass commonly used in the UK, equal to 14 pounds.";
+
+"carats.symbol" = "ct";
+"carats.shortName" = "Carats";
+"carats.longName" = "Carats";
+"carats.detailedIntroduction" = "Carats are a unit of mass used for measuring gemstones, equal to 200 milligrams.";
+
+"ouncesTroy.symbol" = "oz t";
+"ouncesTroy.shortName" = "Troy Ounces";
+"ouncesTroy.longName" = "Troy Ounces";
+"ouncesTroy.detailedIntroduction" = "Troy Ounces are a unit of mass used for precious metals, equal to approximately 31.1035 grams.";
+
+"slugs.symbol" = "slug";
+"slugs.shortName" = "Slugs";
+"slugs.longName" = "Slugs";
+"slugs.detailedIntroduction" = "Slugs are a unit of mass used in the imperial system, primarily in physics.";
+
+// Volume
+"liters.symbol" = "L";
+"liters.shortName" = "Liters";
+"liters.longName" = "Liters";
+"liters.detailedIntroduction" = "Liters are a metric unit of volume.";
+
+"quarts.symbol" = "qt";
+"quarts.shortName" = "Quarts";
+"quarts.longName" = "Quarts";
+"quarts.detailedIntroduction" = "Quarts are a unit of volume in the imperial system, equal to one-fourth of a gallon.";
+
+"cubicMeters.symbol" = "m³";
+"cubicMeters.shortName" = "Cubic Meters";
+"cubicMeters.longName" = "Cubic Meters";
+"cubicMeters.detailedIntroduction" = "Cubic Meters are a unit of volume in the International System of Units (SI).";
+
+"cubicCentimeters.symbol" = "cm³";
+"cubicCentimeters.shortName" = "Cubic Centimeters";
+"cubicCentimeters.longName" = "Cubic Centimeters";
+"cubicCentimeters.detailedIntroduction" = "Cubic Centimeters are a unit of volume equal to one-thousandth of a liter.";
+
+"gallons.symbol" = "gal";
+"gallons.shortName" = "Gallons";
+"gallons.longName" = "Gallons";
+"gallons.detailedIntroduction" = "Gallons are a unit of volume in the imperial system, commonly used in the United States.";
+
+"megaliters.symbol" = "ML";
+"megaliters.shortName" = "Megaliters";
+"megaliters.longName" = "Megaliters";
+"megaliters.detailedIntroduction" = "Megaliters are a unit of volume equal to one million liters.";
+
+"kiloliters.symbol" = "kL";
+"kiloliters.shortName" = "Kiloliters";
+"kiloliters.longName" = "Kiloliters";
+"kiloliters.detailedIntroduction" = "Kiloliters are a unit of volume equal to one thousand liters.";
+
+"deciliters.symbol" = "dL";
+"deciliters.shortName" = "Deciliters";
+"deciliters.longName" = "Deciliters";
+"deciliters.detailedIntroduction" = "Deciliters are a unit of volume equal to one-tenth of a liter.";
+
+"centiliters.symbol" = "cL";
+"centiliters.shortName" = "Centiliters";
+"centiliters.longName" = "Centiliters";
+"centiliters.detailedIntroduction" = "Centiliters are a unit of volume equal to one-hundredth of a liter.";
+
+"milliliters.symbol" = "mL";
+"milliliters.shortName" = "Milliliters";
+"milliliters.longName" = "Milliliters";
+"milliliters.detailedIntroduction" = "Milliliters are a unit of volume equal to one-thousandth of a liter.";
+
+"cubicKilometers.symbol" = "km³";
+"cubicKilometers.shortName" = "Cubic Kilometers";
+"cubicKilometers.longName" = "Cubic Kilometers";
+"cubicKilometers.detailedIntroduction" = "Cubic Kilometers are used to measure large volumes, equal to one billion cubic meters.";
+
+"cubicDecimeters.symbol" = "dm³";
+"cubicDecimeters.shortName" = "Cubic Decimeters";
+"cubicDecimeters.longName" = "Cubic Decimeters";
+"cubicDecimeters.detailedIntroduction" = "Cubic Decimeters are a unit of volume equal to one liter.";
+
+"cubicMillimeters.symbol" = "mm³";
+"cubicMillimeters.shortName" = "Cubic Millimeters";
+"cubicMillimeters.longName" = "Cubic Millimeters";
+"cubicMillimeters.detailedIntroduction" = "Cubic Millimeters are used to measure very small volumes.";
+
+"cubicInches.symbol" = "in³";
+"cubicInches.shortName" = "Cubic Inches";
+"cubicInches.longName" = "Cubic Inches";
+"cubicInches.detailedIntroduction" = "Cubic Inches are a unit of volume in the imperial system.";
+
+"cubicFeet.symbol" = "ft³";
+"cubicFeet.shortName" = "Cubic Feet";
+"cubicFeet.longName" = "Cubic Feet";
+"cubicFeet.detailedIntroduction" = "Cubic Feet are a unit of volume in the imperial system.";
+
+"cubicYards.symbol" = "yd³";
+"cubicYards.shortName" = "Cubic Yards";
+"cubicYards.longName" = "Cubic Yards";
+"cubicYards.detailedIntroduction" = "Cubic Yards are a unit of volume in the imperial system.";
+
+"cubicMiles.symbol" = "mi³";
+"cubicMiles.shortName" = "Cubic Miles";
+"cubicMiles.longName" = "Cubic Miles";
+"cubicMiles.detailedIntroduction" = "Cubic Miles are used to measure extremely large volumes.";
+
+"acreFeet.symbol" = "ac ft";
+"acreFeet.shortName" = "Acre-Feet";
+"acreFeet.longName" = "Acre-Feet";
+"acreFeet.detailedIntroduction" = "Acre-Feet are used to measure large volumes of water, commonly in reservoir management.";
+
+"bushels.symbol" = "bu";
+"bushels.shortName" = "Bushels";
+"bushels.longName" = "Bushels";
+"bushels.detailedIntroduction" = "Bushels are a unit of volume used in agriculture to measure dry commodities.";
+
+"teaspoons.symbol" = "tsp";
+"teaspoons.shortName" = "Teaspoons";
+"teaspoons.longName" = "Teaspoons";
+"teaspoons.detailedIntroduction" = "Teaspoons are a unit of volume used in cooking.";
+
+"tablespoons.symbol" = "tbsp";
+"tablespoons.shortName" = "Tablespoons";
+"tablespoons.longName" = "Tablespoons";
+"tablespoons.detailedIntroduction" = "Tablespoons are a unit of volume used in cooking.";
+
+"fluidOunces.symbol" = "fl oz";
+"fluidOunces.shortName" = "Fluid Ounces";
+"fluidOunces.longName" = "Fluid Ounces";
+"fluidOunces.detailedIntroduction" = "Fluid Ounces are a unit of volume in the imperial system.";
+
+"cups.symbol" = "c";
+"cups.shortName" = "Cups";
+"cups.longName" = "Cups";
+"cups.detailedIntroduction" = "Cups are a unit of volume commonly used in cooking.";
+
+"pints.symbol" = "pt";
+"pints.shortName" = "Pints";
+"pints.longName" = "Pints";
+"pints.detailedIntroduction" = "Pints are a unit of volume in the imperial system.";
+
+"imperialTeaspoons.symbol" = "imp tsp";
+"imperialTeaspoons.shortName" = "Imperial Teaspoons";
+"imperialTeaspoons.longName" = "Imperial Teaspoons";
+"imperialTeaspoons.detailedIntroduction" = "Imperial Teaspoons are a unit of volume used in the UK.";
+
+"imperialTablespoons.symbol" = "imp tbsp";
+"imperialTablespoons.shortName" = "Imperial Tablespoons";
+"imperialTablespoons.longName" = "Imperial Tablespoons";
+"imperialTablespoons.detailedIntroduction" = "Imperial Tablespoons are a unit of volume used in the UK.";
+
+"imperialFluidOunces.symbol" = "imp fl oz";
+"imperialFluidOunces.shortName" = "Imperial Fluid Ounces";
+"imperialFluidOunces.longName" = "Imperial Fluid Ounces";
+"imperialFluidOunces.detailedIntroduction" = "Imperial Fluid Ounces are a unit of volume used in the UK.";
+
+"imperialPints.symbol" = "imp pt";
+"imperialPints.shortName" = "Imperial Pints";
+"imperialPints.longName" = "Imperial Pints";
+"imperialPints.detailedIntroduction" = "Imperial Pints are a unit of volume used in the UK.";
+
+"imperialQuarts.symbol" = "imp qt";
+"imperialQuarts.shortName" = "Imperial Quarts";
+"imperialQuarts.longName" = "Imperial Quarts";
+"imperialQuarts.detailedIntroduction" = "Imperial Quarts are a unit of volume used in the UK.";
+
+"imperialGallons.symbol" = "imp gal";
+"imperialGallons.shortName" = "Imperial Gallons";
+"imperialGallons.longName" = "Imperial Gallons";
+"imperialGallons.detailedIntroduction" = "Imperial Gallons are a unit of volume used in the UK.";
+
+"metricCups.symbol" = "c";
+"metricCups.shortName" = "Metric Cups";
+"metricCups.longName" = "Metric Cups";
+"metricCups.detailedIntroduction" = "Metric Cups are a unit of volume used in cooking, equal to 250 milliliters.";
+
+// Acceleration
+"metersPerSecondSquared.symbol" = "m/s²";
+"metersPerSecondSquared.shortName" = "Meters/Second²";
+"metersPerSecondSquared.longName" = "Meters per Second Squared";
+"metersPerSecondSquared.detailedIntroduction" = "Meters per Second Squared is the SI unit of acceleration.";
+
+"gravity.symbol" = "g";
+"gravity.shortName" = "Gravity";
+"gravity.longName" = "Gravity";
+"gravity.detailedIntroduction" = "Gravity is the acceleration due to gravity at the Earth's surface, approximately 9.81 m/s².";
+
+// Power
+"terawatts.symbol" = "TW";
+"terawatts.shortName" = "Terawatts";
+"terawatts.longName" = "Terawatts";
+"terawatts.detailedIntroduction" = "Terawatts are a unit of power equal to one trillion watts.";
+
+"gigawatts.symbol" = "GW";
+"gigawatts.shortName" = "Gigawatts";
+"gigawatts.longName" = "Gigawatts";
+"gigawatts.detailedIntroduction" = "Gigawatts are a unit of power equal to one billion watts.";
+
+"megawatts.symbol" = "MW";
+"megawatts.shortName" = "Megawatts";
+"megawatts.longName" = "Megawatts";
+"megawatts.detailedIntroduction" = "Megawatts are a unit of power equal to one million watts.";
+
+"kilowatts.symbol" = "kW";
+"kilowatts.shortName" = "Kilowatts";
+"kilowatts.longName" = "Kilowatts";
+"kilowatts.detailedIntroduction" = "Kilowatts are a unit of power equal to one thousand watts.";
+
+"watts.symbol" = "W";
+"watts.shortName" = "Watts";
+"watts.longName" = "Watts";
+"watts.detailedIntroduction" = "Watts are the SI base unit of power.";
+
+"milliwatts.symbol" = "mW";
+"milliwatts.shortName" = "Milliwatts";
+"milliwatts.longName" = "Milliwatts";
+"milliwatts.detailedIntroduction" = "Milliwatts are a unit of power equal to one-thousandth of a watt.";
+
+"microwatts.symbol" = "µW";
+"microwatts.shortName" = "Microwatts";
+"microwatts.longName" = "Microwatts";
+"microwatts.detailedIntroduction" = "Microwatts are a unit of power equal to one-millionth of a watt.";
+
+"nanowatts.symbol" = "nW";
+"nanowatts.shortName" = "Nanowatts";
+"nanowatts.longName" = "Nanowatts";
+"nanowatts.detailedIntroduction" = "Nanowatts are a unit of power equal to one-billionth of a watt.";
+
+"picowatts.symbol" = "pW";
+"picowatts.shortName" = "Picowatts";
+"picowatts.longName" = "Picowatts";
+"picowatts.detailedIntroduction" = "Picowatts are a unit of power equal to one-trillionth of a watt.";
+
+"femtowatts.symbol" = "fW";
+"femtowatts.shortName" = "Femtowatts";
+"femtowatts.longName" = "Femtowatts";
+"femtowatts.detailedIntroduction" = "Femtowatts are a unit of power equal to one-quadrillionth of a watt.";
+
+"horsepower.symbol" = "hp";
+"horsepower.shortName" = "Horsepower";
+"horsepower.longName" = "Horsepower";
+"horsepower.detailedIntroduction" = "Horsepower is a unit of power commonly used to measure the power of engines.";
+
+// Angle
+"degrees.symbol" = "°";
+"degrees.shortName" = "Degrees";
+"degrees.longName" = "Degrees";
+"degrees.detailedIntroduction" = "Degrees are a unit of angular measurement.";
+
+"arcMinutes.symbol" = "'";
+"arcMinutes.shortName" = "Arc Minutes";
+"arcMinutes.longName" = "Arc Minutes";
+"arcMinutes.detailedIntroduction" = "Arc Minutes are a unit of angular measurement equal to one-sixtieth of a degree.";
+
+"arcSeconds.symbol" = "\"";
+"arcSeconds.shortName" = "Arc Seconds";
+"arcSeconds.longName" = "Arc Seconds";
+"arcSeconds.detailedIntroduction" = "Arc Seconds are a unit of angular measurement equal to one-sixtieth of an arc minute.";
+
+"radians.symbol" = "rad";
+"radians.shortName" = "Radians";
+"radians.longName" = "Radians";
+"radians.detailedIntroduction" = "Radians are the SI unit of angular measurement.";
+
+"gradians.symbol" = "gon";
+"gradians.shortName" = "Gradians";
+"gradians.longName" = "Gradians";
+"gradians.detailedIntroduction" = "Gradians are a unit of angular measurement equal to one-hundredth of a right angle.";
+
+"revolutions.symbol" = "rev";
+"revolutions.shortName" = "Revolutions";
+"revolutions.longName" = "Revolutions";
+"revolutions.detailedIntroduction" = "Revolutions are a unit of angular measurement equal to a full 360-degree rotation.";
+
+// Angular Velocity
+"radiansPerSecond.symbol" = "rad/s";
+"radiansPerSecond.shortName" = "Radians/Second";
+"radiansPerSecond.longName" = "Radians per Second";
+"radiansPerSecond.detailedIntroduction" = "Radians per Second is a unit of angular velocity in the International System of Units (SI).";
+
+"degreesPerSecond.symbol" = "°/s";
+"degreesPerSecond.shortName" = "Degrees/Second";
+"degreesPerSecond.longName" = "Degrees per Second";
 "degreesPerSecond.detailedIntroduction" = "Degrees per Second is a unit of angular velocity.";
-"revolutionsPerMinute.detailedIntroduction" = "Revolutions per Minute is a unit of angular velocity.";
+
+"revolutionsPerMinute.symbol" = "rpm";
+"revolutionsPerMinute.shortName" = "Revolutions/Minute";
+"revolutionsPerMinute.longName" = "Revolutions per Minute";
+"revolutionsPerMinute.detailedIntroduction" = "Revolutions per Minute is a unit of angular velocity, commonly used in mechanical contexts.";
+
+"revolutionsPerSecond.symbol" = "rps";
+"revolutionsPerSecond.shortName" = "Revolutions/Second";
+"revolutionsPerSecond.longName" = "Revolutions per Second";
 "revolutionsPerSecond.detailedIntroduction" = "Revolutions per Second is a unit of angular velocity.";
-"squareMegameters.detailedIntroduction" = "Square Megameters is a unit of area.";
-"squareKilometers.detailedIntroduction" = "Square Kilometers is a unit of area.";
-"squareMeters.detailedIntroduction" = "Square Meters is the base unit of area in the International System of Units (SI).";
-"squareCentimeters.detailedIntroduction" = "Square Centimeters is a unit of area.";
-"squareMillimeters.detailedIntroduction" = "Square Millimeters is a unit of area.";
-"squareMicrometers.detailedIntroduction" = "Square Micrometers is a unit of area.";
-"squareNanometers.detailedIntroduction" = "Square Nanometers is a unit of area.";
-"squareInches.detailedIntroduction" = "Square Inches is a unit of area.";
-"squareFeet.detailedIntroduction" = "Square Feet is a unit of area.";
-"squareYards.detailedIntroduction" = "Square Yards is a unit of area.";
-"squareMiles.detailedIntroduction" = "Square Miles is a unit of area.";
-"acres.detailedIntroduction" = "Acres is a unit of area.";
-"ares.detailedIntroduction" = "Ares is a unit of area.";
-"hectares.detailedIntroduction" = "Hectares is a unit of area.";
-"gramsPerLiter.detailedIntroduction" = "Grams per Liter is a unit of concentration.";
-"milligramsPerDeciliter.detailedIntroduction" = "Milligrams per Deciliter is a unit of concentration.";
-"partsPerMillion.detailedIntroduction" = "Parts per Million is a unit of concentration.";
-"hours.detailedIntroduction" = "Hours is a unit of time.";
-"minutes.detailedIntroduction" = "Minutes is a unit of time.";
-"seconds.detailedIntroduction" = "Seconds is the base unit of time in the International System of Units (SI).";
-"milliseconds.detailedIntroduction" = "Milliseconds is a unit of time.";
-"microseconds.detailedIntroduction" = "Microseconds is a unit of time.";
-"nanoseconds.detailedIntroduction" = "Nanoseconds is a unit of time.";
-"picoseconds.detailedIntroduction" = "Picoseconds is a unit of time.";
-"megaampereHours.detailedIntroduction" = "Megaampere Hours is a unit of electric charge capacity.";
-"kiloampereHours.detailedIntroduction" = "Kiloampere Hours is a unit of electric charge capacity.";
-"ampereHours.detailedIntroduction" = "Ampere Hours is a unit of electric charge capacity.";
-"milliampereHours.detailedIntroduction" = "Milliampere Hours is a unit of electric charge capacity.";
-"microampereHours.detailedIntroduction" = "Microampere Hours is a unit of electric charge capacity.";
-"ampereSeconds.detailedIntroduction" = "Ampere Seconds is a unit of electric charge capacity.";
-"megaamperes.detailedIntroduction" = "Megaamperes is a unit of electric current.";
-"kiloamperes.detailedIntroduction" = "Kiloamperes is a unit of electric current.";
-"amperes.detailedIntroduction" = "Amperes is the base unit of electric current in the International System of Units (SI).";
-"milliamperes.detailedIntroduction" = "Milliamperes is a unit of electric current.";
-"microamperes.detailedIntroduction" = "Microamperes is a unit of electric current.";
-"megavolts.detailedIntroduction" = "Megavolts is a unit of electric potential.";
-"kilovolts.detailedIntroduction" = "Kilovolts is a unit of electric potential.";
-"volts.detailedIntroduction" = "Volts is the base unit of electric potential in the International System of Units (SI).";
-"millivolts.detailedIntroduction" = "Millivolts is a unit of electric potential.";
-"microvolts.detailedIntroduction" = "Microvolts is a unit of electric potential.";
-"megaohms.detailedIntroduction" = "Megaohms is a unit of electric resistance.";
-"kiloohms.detailedIntroduction" = "Kiloohms is a unit of electric resistance.";
-"ohms.detailedIntroduction" = "Ohms is the base unit of electric resistance in the International System of Units (SI).";
-"milliohms.detailedIntroduction" = "Milliohms is a unit of electric resistance.";
-"microohms.detailedIntroduction" = "Microohms is a unit of electric resistance.";
-"kilojoules.detailedIntroduction" = "Kilojoules is a unit of energy.";
-"joules.detailedIntroduction" = "Joules is the base unit of energy in the International System of Units (SI).";
-"kilocalories.detailedIntroduction" = "Kilocalories is a unit of energy.";
-"calories.detailedIntroduction" = "Calories is a unit of energy.";
-"kilowattHours.detailedIntroduction" = "Kilowatt Hours is a unit of energy.";
-"wattHours.detailedIntroduction" = "Watt Hours is a unit of energy.";
-"terahertz.detailedIntroduction" = "Terahertz is a unit of frequency.";
-"gigahertz.detailedIntroduction" = "Gigahertz is a unit of frequency.";
-"megahertz.detailedIntroduction" = "Megahertz is a unit of frequency.";
-"kilohertz.detailedIntroduction" = "Kilohertz is a unit of frequency.";
-"hertz.detailedIntroduction" = "Hertz is the base unit of frequency in the International System of Units (SI).";
-"millihertz.detailedIntroduction" = "Millihertz is a unit of frequency.";
-"microhertz.detailedIntroduction" = "Microhertz is a unit of frequency.";
-"nanohertz.detailedIntroduction" = "Nanohertz is a unit of frequency.";
-"framesPerSecond.detailedIntroduction" = "Frames per Second is a unit of frequency.";
-"litersPer100Kilometers.detailedIntroduction" = "Liters per 100 Kilometers is a unit of fuel efficiency.";
-"milesPerImperialGallon.detailedIntroduction" = "Miles per Imperial Gallon is a unit of fuel efficiency.";
-"milesPerGallon.detailedIntroduction" = "Miles per Gallon is a unit of fuel efficiency.";
-"bytes.detailedIntroduction" = "Bytes is a unit of data.";
-"bits.detailedIntroduction" = "Bits is a unit of data.";
-"nibbles.detailedIntroduction" = "Nibbles is a unit of data.";
-"yottabytes.detailedIntroduction" = "Yottabytes is a unit of data.";
-"zettabytes.detailedIntroduction" = "Zettabytes is a unit of data.";
-"exabytes.detailedIntroduction" = "Exabytes is a unit of data.";
-"petabytes.detailedIntroduction" = "Petabytes is a unit of data.";
-"terabytes.detailedIntroduction" = "Terabytes is a unit of data.";
-"gigabytes.detailedIntroduction" = "Gigabytes is a unit of data.";
-"megabytes.detailedIntroduction" = "Megabytes is a unit of data.";
-"kilobytes.detailedIntroduction" = "Kilobytes is a unit of data.";
-"yottabits.detailedIntroduction" = "Yottabits is a unit of data.";
-"zettabits.detailedIntroduction" = "Zettabits is a unit of data.";
-"exabits.detailedIntroduction" = "Exabits is a unit of data.";
-"petabits.detailedIntroduction" = "Petabits is a unit of data.";
-"terabits.detailedIntroduction" = "Terabits is a unit of data.";
-"gigabits.detailedIntroduction" = "Gigabits is a unit of data.";
-"megabits.detailedIntroduction" = "Megabits is a unit of data.";
-"kilobits.detailedIntroduction" = "Kilobits is a unit of data.";
-"yobibytes.detailedIntroduction" = "Yobibytes is a unit of data.";
-"zebibytes.detailedIntroduction" = "Zebibytes is a unit of data.";
-"exbibytes.detailedIntroduction" = "Exbibytes is a unit of data.";
-"pebibytes.detailedIntroduction" = "Pebibytes is a unit of data.";
-"tebibytes.detailedIntroduction" = "Tebibytes is a unit of data.";
-"gibibytes.detailedIntroduction" = "Gibibytes is a unit of data.";
-"mebibytes.detailedIntroduction" = "Mebibytes is a unit of data.";
-"kibibytes.detailedIntroduction" = "Kibibytes is a unit of data.";
-"yobibits.detailedIntroduction" = "Yobibits is a unit of data.";
-"zebibits.detailedIntroduction" = "Zebibits is a unit of data.";
-"exbibits.detailedIntroduction" = "Exbibits is a unit of data.";
-"pebibits.detailedIntroduction" = "Pebibits is a unit of data.";
-"tebibits.detailedIntroduction" = "Tebibits is a unit of data.";
-"gibibits.detailedIntroduction" = "Gibibits is a unit of data.";
-"mebibits.detailedIntroduction" = "Mebibits is a unit of data.";
-"kibibits.detailedIntroduction" = "Kibibits is a unit of data.";
+
+// Area
+"squareMegameters.symbol" = "Mm²";
+"squareMegameters.shortName" = "Square Megameters";
+"squareMegameters.longName" = "Square Megameters";
+"squareMegameters.detailedIntroduction" = "Square Megameters are used to measure extremely large areas.";
+
+"squareKilometers.symbol" = "km²";
+"squareKilometers.shortName" = "Square Kilometers";
+"squareKilometers.longName" = "Square Kilometers";
+"squareKilometers.detailedIntroduction" = "Square Kilometers are commonly used to measure large areas.";
+
+"squareMeters.symbol" = "m²";
+"squareMeters.shortName" = "Square Meters";
+"squareMeters.longName" = "Square Meters";
+"squareMeters.detailedIntroduction" = "Square Meters are the SI unit of area.";
+
+"squareCentimeters.symbol" = "cm²";
+"squareCentimeters.shortName" = "Square Centimeters";
+"squareCentimeters.longName" = "Square Centimeters";
+"squareCentimeters.detailedIntroduction" = "Square Centimeters are used to measure small areas.";
+
+"squareMillimeters.symbol" = "mm²";
+"squareMillimeters.shortName" = "Square Millimeters";
+"squareMillimeters.longName" = "Square Millimeters";
+"squareMillimeters.detailedIntroduction" = "Square Millimeters are used to measure very small areas.";
+
+"squareMicrometers.symbol" = "µm²";
+"squareMicrometers.shortName" = "Square Micrometers";
+"squareMicrometers.longName" = "Square Micrometers";
+"squareMicrometers.detailedIntroduction" = "Square Micrometers are used in fields like microscopy to measure minute areas.";
+
+"squareNanometers.symbol" = "nm²";
+"squareNanometers.shortName" = "Square Nanometers";
+"squareNanometers.longName" = "Square Nanometers";
+"squareNanometers.detailedIntroduction" = "Square Nanometers are used to measure extremely small areas.";
+
+"squareInches.symbol" = "in²";
+"squareInches.shortName" = "Square Inches";
+"squareInches.longName" = "Square Inches";
+"squareInches.detailedIntroduction" = "Square Inches are a unit of area in the imperial system.";
+
+"squareFeet.symbol" = "ft²";
+"squareFeet.shortName" = "Square Feet";
+"squareFeet.longName" = "Square Feet";
+"squareFeet.detailedIntroduction" = "Square Feet are a unit of area in the imperial system.";
+
+"squareYards.symbol" = "yd²";
+"squareYards.shortName" = "Square Yards";
+"squareYards.longName" = "Square Yards";
+"squareYards.detailedIntroduction" = "Square Yards are a unit of area in the imperial system.";
+
+"squareMiles.symbol" = "mi²";
+"squareMiles.shortName" = "Square Miles";
+"squareMiles.longName" = "Square Miles";
+"squareMiles.detailedIntroduction" = "Square Miles are used to measure large areas, commonly in the United States.";
+
+"acres.symbol" = "ac";
+"acres.shortName" = "Acres";
+"acres.longName" = "Acres";
+"acres.detailedIntroduction" = "Acres are a unit of area used in land measurement.";
+
+"ares.symbol" = "a";
+"ares.shortName" = "Ares";
+"ares.longName" = "Ares";
+"ares.detailedIntroduction" = "Ares are a unit of area used to measure land, equal to 100 square meters.";
+
+"hectares.symbol" = "ha";
+"hectares.shortName" = "Hectares";
+"hectares.longName" = "Hectares";
+"hectares.detailedIntroduction" = "Hectares are commonly used in land measurement, equal to 10,000 square meters.";
+
+// Concentration
+"gramsPerLiter.symbol" = "g/L";
+"gramsPerLiter.shortName" = "Grams/Liter";
+"gramsPerLiter.longName" = "Grams per Liter";
+"gramsPerLiter.detailedIntroduction" = "Grams per Liter is a unit of concentration commonly used in chemistry.";
+
+"milligramsPerDeciliter.symbol" = "mg/dL";
+"milligramsPerDeciliter.shortName" = "Milligrams/Deciliter";
+"milligramsPerDeciliter.longName" = "Milligrams per Deciliter";
+"milligramsPerDeciliter.detailedIntroduction" = "Milligrams per Deciliter is a unit of concentration commonly used in medical settings.";
+
+"partsPerMillion.symbol" = "ppm";
+"partsPerMillion.shortName" = "Parts per Million";
+"partsPerMillion.longName" = "Parts per Million";
+"partsPerMillion.detailedIntroduction" = "Parts per Million is a unit of concentration used to measure very dilute solutions.";
+
+// Time
+"hours.symbol" = "h";
+"hours.shortName" = "Hours";
+"hours.longName" = "Hours";
+"hours.detailedIntroduction" = "Hours are a unit of time commonly used worldwide.";
+
+"minutes.symbol" = "min";
+"minutes.shortName" = "Minutes";
+"minutes.longName" = "Minutes";
+"minutes.detailedIntroduction" = "Minutes are a unit of time equal to one-sixtieth of an hour.";
+
+"seconds.symbol" = "s";
+"seconds.shortName" = "Seconds";
+"seconds.longName" = "Seconds";
+"seconds.detailedIntroduction" = "Seconds are the SI base unit of time.";
+
+"milliseconds.symbol" = "ms";
+"milliseconds.shortName" = "Milliseconds";
+"milliseconds.longName" = "Milliseconds";
+"milliseconds.detailedIntroduction" = "Milliseconds are a unit of time equal to one-thousandth of a second.";
+
+"microseconds.symbol" = "µs";
+"microseconds.shortName" = "Microseconds";
+"microseconds.longName" = "Microseconds";
+"microseconds.detailedIntroduction" = "Microseconds are a unit of time equal to one-millionth of a second.";
+
+"nanoseconds.symbol" = "ns";
+"nanoseconds.shortName" = "Nanoseconds";
+"nanoseconds.longName" = "Nanoseconds";
+"nanoseconds.detailedIntroduction" = "Nanoseconds are a unit of time equal to one-billionth of a second.";
+
+"picoseconds.symbol" = "ps";
+"picoseconds.shortName" = "Picoseconds";
+"picoseconds.longName" = "Picoseconds";
+"picoseconds.detailedIntroduction" = "Picoseconds are a unit of time equal to one-trillionth of a second.";
+
+"days.symbol" = "d";
+"days.shortName" = "Days";
+"days.longName" = "Days";
+"days.detailedIntroduction" = "Days are a unit of time equal to 24 hours.";
+
+"weeks.symbol" = "wk";
+"weeks.shortName" = "Weeks";
+"weeks.longName" = "Weeks";
+"weeks.detailedIntroduction" = "Weeks are a unit of time equal to seven days.";
+
+"years.symbol" = "yr";
+"years.shortName" = "Years";
+"years.longName" = "Years";
+"years.detailedIntroduction" = "Years are a unit of time commonly used to measure longer durations.";
+
+"decades.symbol" = "dec";
+"decades.shortName" = "Decades";
+"decades.longName" = "Decades";
+"decades.detailedIntroduction" = "Decades are a unit of time equal to ten years.";
+
+"centuries.symbol" = "cen";
+"centuries.shortName" = "Centuries";
+"centuries.longName" = "Centuries";
+"centuries.detailedIntroduction" = "Centuries are a unit of time equal to one hundred years.";
+
+// ElectricChargeCapacity
+"megaampereHours.symbol" = "MAh";
+"megaampereHours.shortName" = "Megaampere Hours";
+"megaampereHours.longName" = "Megaampere Hours";
+"megaampereHours.detailedIntroduction" = "Megaampere Hours are a unit of electric charge capacity equal to one million ampere hours.";
+
+"kiloampereHours.symbol" = "kAh";
+"kiloampereHours.shortName" = "Kiloampere Hours";
+"kiloampereHours.longName" = "Kiloampere Hours";
+"kiloampereHours.detailedIntroduction" = "Kiloampere Hours are a unit of electric charge capacity equal to one thousand ampere hours.";
+
+"ampereHours.symbol" = "Ah";
+"ampereHours.shortName" = "Ampere Hours";
+"ampereHours.longName" = "Ampere Hours";
+"ampereHours.detailedIntroduction" = "Ampere Hours are a unit of electric charge capacity.";
+
+"milliampereHours.symbol" = "mAh";
+"milliampereHours.shortName" = "Milliampere Hours";
+"milliampereHours.longName" = "Milliampere Hours";
+"milliampereHours.detailedIntroduction" = "Milliampere Hours are a unit of electric charge capacity equal to one-thousandth of an ampere hour.";
+
+"microampereHours.symbol" = "µAh";
+"microampereHours.shortName" = "Microampere Hours";
+"microampereHours.longName" = "Microampere Hours";
+"microampereHours.detailedIntroduction" = "Microampere Hours are a unit of electric charge capacity equal to one-millionth of an ampere hour.";
+
+"ampereSeconds.symbol" = "As";
+"ampereSeconds.shortName" = "Ampere Seconds";
+"ampereSeconds.longName" = "Ampere Seconds";
+"ampereSeconds.detailedIntroduction" = "Ampere Seconds are a unit of electric charge capacity.";
+
+// ElectricCurrent
+"megaamperes.symbol" = "MA";
+"megaamperes.shortName" = "Megaamperes";
+"megaamperes.longName" = "Megaamperes";
+"megaamperes.detailedIntroduction" = "Megaamperes are a unit of electric current equal to one million amperes.";
+
+"kiloamperes.symbol" = "kA";
+"kiloamperes.shortName" = "Kiloamperes";
+"kiloamperes.longName" = "Kiloamperes";
+"kiloamperes.detailedIntroduction" = "Kiloamperes are a unit of electric current equal to one thousand amperes.";
+
+"amperes.symbol" = "A";
+"amperes.shortName" = "Amperes";
+"amperes.longName" = "Amperes";
+"amperes.detailedIntroduction" = "Amperes are the SI base unit of electric current.";
+
+"milliamperes.symbol" = "mA";
+"milliamperes.shortName" = "Milliamperes";
+"milliamperes.longName" = "Milliamperes";
+"milliamperes.detailedIntroduction" = "Milliamperes are a unit of electric current equal to one-thousandth of an ampere.";
+
+"microamperes.symbol" = "µA";
+"microamperes.shortName" = "Microamperes";
+"microamperes.longName" = "Microamperes";
+"microamperes.detailedIntroduction" = "Microamperes are a unit of electric current equal to one-millionth of an ampere.";
+
+// ElectricPotential
+"megavolts.symbol" = "MV";
+"megavolts.shortName" = "Megavolts";
+"megavolts.longName" = "Megavolts";
+"megavolts.detailedIntroduction" = "Megavolts are a unit of electric potential equal to one million volts.";
+
+"kilovolts.symbol" = "kV";
+"kilovolts.shortName" = "Kilovolts";
+"kilovolts.longName" = "Kilovolts";
+"kilovolts.detailedIntroduction" = "Kilovolts are a unit of electric potential equal to one thousand volts.";
+
+"volts.symbol" = "V";
+"volts.shortName" = "Volts";
+"volts.longName" = "Volts";
+"volts.detailedIntroduction" = "Volts are the SI base unit of electric potential.";
+
+"millivolts.symbol" = "mV";
+"millivolts.shortName" = "Millivolts";
+"millivolts.longName" = "Millivolts";
+"millivolts.detailedIntroduction" = "Millivolts are a unit of electric potential equal to one-thousandth of a volt.";
+
+"microvolts.symbol" = "µV";
+"microvolts.shortName" = "Microvolts";
+"microvolts.longName" = "Microvolts";
+"microvolts.detailedIntroduction" = "Microvolts are a unit of electric potential equal to one-millionth of a volt.";
+
+// ElectricResistance
+"megaohms.symbol" = "MΩ";
+"megaohms.shortName" = "Megaohms";
+"megaohms.longName" = "Megaohms";
+"megaohms.detailedIntroduction" = "Megaohms are a unit of electrical resistance equal to one million ohms.";
+
+"kiloohms.symbol" = "kΩ";
+"kiloohms.shortName" = "Kiloohms";
+"kiloohms.longName" = "Kiloohms";
+"kiloohms.detailedIntroduction" = "Kiloohms are a unit of electrical resistance equal to one thousand ohms.";
+
+"ohms.symbol" = "Ω";
+"ohms.shortName" = "Ohms";
+"ohms.longName" = "Ohms";
+"ohms.detailedIntroduction" = "Ohms are the SI base unit of electrical resistance.";
+
+"milliohms.symbol" = "mΩ";
+"milliohms.shortName" = "Milliohms";
+"milliohms.longName" = "Milliohms";
+"milliohms.detailedIntroduction" = "Milliohms are a unit of electrical resistance equal to one-thousandth of an ohm.";
+
+"microohms.symbol" = "µΩ";
+"microohms.shortName" = "Microohms";
+"microohms.longName" = "Microohms";
+"microohms.detailedIntroduction" = "Microohms are a unit of electrical resistance equal to one-millionth of an ohm.";
+
+// Energy
+"kilojoules.symbol" = "kJ";
+"kilojoules.shortName" = "Kilojoules";
+"kilojoules.longName" = "Kilojoules";
+"kilojoules.detailedIntroduction" = "Kilojoules are a unit of energy equal to one thousand joules.";
+
+"joules.symbol" = "J";
+"joules.shortName" = "Joules";
+"joules.longName" = "Joules";
+"joules.detailedIntroduction" = "Joules are the SI base unit of energy.";
+
+"kilocalories.symbol" = "kcal";
+"kilocalories.shortName" = "Kilocalories";
+"kilocalories.longName" = "Kilocalories";
+"kilocalories.detailedIntroduction" = "Kilocalories are a unit of energy commonly used in nutrition.";
+
+"calories.symbol" = "cal";
+"calories.shortName" = "Calories";
+"calories.longName" = "Calories";
+"calories.detailedIntroduction" = "Calories are a unit of energy commonly used in nutrition.";
+
+"kilowattHours.symbol" = "kWh";
+"kilowattHours.shortName" = "Kilowatt Hours";
+"kilowattHours.longName" = "Kilowatt Hours";
+"kilowattHours.detailedIntroduction" = "Kilowatt Hours are a unit of energy equal to one thousand watt hours.";
+
+"wattHours.symbol" = "Wh";
+"wattHours.shortName" = "Watt Hours";
+"wattHours.longName" = "Watt Hours";
+"wattHours.detailedIntroduction" = "Watt Hours are a unit of energy equal to one watt of power expended for one hour.";
+
+// Frequency
+"terahertz.symbol" = "THz";
+"terahertz.shortName" = "Terahertz";
+"terahertz.longName" = "Terahertz";
+"terahertz.detailedIntroduction" = "Terahertz are a unit of frequency equal to one trillion hertz.";
+
+"gigahertz.symbol" = "GHz";
+"gigahertz.shortName" = "Gigahertz";
+"gigahertz.longName" = "Gigahertz";
+"gigahertz.detailedIntroduction" = "Gigahertz are a unit of frequency equal to one billion hertz.";
+
+"megahertz.symbol" = "MHz";
+"megahertz.shortName" = "Megahertz";
+"megahertz.longName" = "Megahertz";
+"megahertz.detailedIntroduction" = "Megahertz are a unit of frequency equal to one million hertz.";
+
+"kilohertz.symbol" = "kHz";
+"kilohertz.shortName" = "Kilohertz";
+"kilohertz.longName" = "Kilohertz";
+"kilohertz.detailedIntroduction" = "Kilohertz are a unit of frequency equal to one thousand hertz.";
+
+"hertz.symbol" = "Hz";
+"hertz.shortName" = "Hertz";
+"hertz.longName" = "Hertz";
+"hertz.detailedIntroduction" = "Hertz are the SI base unit of frequency.";
+
+"millihertz.symbol" = "mHz";
+"millihertz.shortName" = "Millihertz";
+"millihertz.longName" = "Millihertz";
+"millihertz.detailedIntroduction" = "Millihertz are a unit of frequency equal to one-thousandth of a hertz.";
+
+"microhertz.symbol" = "µHz";
+"microhertz.shortName" = "Microhertz";
+"microhertz.longName" = "Microhertz";
+"microhertz.detailedIntroduction" = "Microhertz are a unit of frequency equal to one-millionth of a hertz.";
+
+"nanohertz.symbol" = "nHz";
+"nanohertz.shortName" = "Nanohertz";
+"nanohertz.longName" = "Nanohertz";
+"nanohertz.detailedIntroduction" = "Nanohertz are a unit of frequency equal to one-billionth of a hertz.";
+
+"framesPerSecond.symbol" = "fps";
+"framesPerSecond.shortName" = "Frames/Second";
+"framesPerSecond.longName" = "Frames per Second";
+"framesPerSecond.detailedIntroduction" = "Frames per Second is a unit of frequency used to measure frame rate in video and animation.";
+
+// FuelEfficiency
+"litersPer100Kilometers.symbol" = "L/100km";
+"litersPer100Kilometers.shortName" = "Liters/100km";
+"litersPer100Kilometers.longName" = "Liters per 100 Kilometers";
+"litersPer100Kilometers.detailedIntroduction" = "Liters per 100 Kilometers is a unit of fuel efficiency commonly used in Europe.";
+
+"milesPerImperialGallon.symbol" = "mpg imp";
+"milesPerImperialGallon.shortName" = "Miles/Imperial Gallon";
+"milesPerImperialGallon.longName" = "Miles per Imperial Gallon";
+"milesPerImperialGallon.detailedIntroduction" = "Miles per Imperial Gallon is a unit of fuel efficiency used in the UK.";
+
+"milesPerGallon.symbol" = "mpg";
+"milesPerGallon.shortName" = "Miles/Gallon";
+"milesPerGallon.longName" = "Miles per Gallon";
+"milesPerGallon.detailedIntroduction" = "Miles per Gallon is a unit of fuel efficiency commonly used in the United States.";
+
+// Data
+"bytes.symbol" = "B";
+"bytes.shortName" = "Bytes";
+"bytes.longName" = "Bytes";
+"bytes.detailedIntroduction" = "Bytes are a unit of digital information storage.";
+
+"bits.symbol" = "b";
+"bits.shortName" = "Bits";
+"bits.longName" = "Bits";
+"bits.detailedIntroduction" = "Bits are the basic unit of information in computing and digital communications.";
+
+"nibbles.symbol" = "nibble";
+"nibbles.shortName" = "Nibbles";
+"nibbles.longName" = "Nibbles";
+"nibbles.detailedIntroduction" = "Nibbles are a unit of digital information storage equal to half a byte.";
+
+"yottabytes.symbol" = "YB";
+"yottabytes.shortName" = "Yottabytes";
+"yottabytes.longName" = "Yottabytes";
+"yottabytes.detailedIntroduction" = "Yottabytes are a unit of digital information storage equal to one septillion bytes.";
+
+"zettabytes.symbol" = "ZB";
+"zettabytes.shortName" = "Zettabytes";
+"zettabytes.longName" = "Zettabytes";
+"zettabytes.detailedIntroduction" = "Zettabytes are a unit of digital information storage equal to one sextillion bytes.";
+
+"exabytes.symbol" = "EB";
+"exabytes.shortName" = "Exabytes";
+"exabytes.longName" = "Exabytes";
+"exabytes.detailedIntroduction" = "Exabytes are a unit of digital information storage equal to one quintillion bytes.";
+
+"petabytes.symbol" = "PB";
+"petabytes.shortName" = "Petabytes";
+"petabytes.longName" = "Petabytes";
+"petabytes.detailedIntroduction" = "Petabytes are a unit of digital information storage equal to one quadrillion bytes.";
+
+"terabytes.symbol" = "TB";
+"terabytes.shortName" = "Terabytes";
+"terabytes.longName" = "Terabytes";
+"terabytes.detailedIntroduction" = "Terabytes are a unit of digital information storage equal to one trillion bytes.";
+
+"gigabytes.symbol" = "GB";
+"gigabytes.shortName" = "Gigabytes";
+"gigabytes.longName" = "Gigabytes";
+"gigabytes.detailedIntroduction" = "Gigabytes are a unit of digital information storage equal to one billion bytes.";
+
+"megabytes.symbol" = "MB";
+"megabytes.shortName" = "Megabytes";
+"megabytes.longName" = "Megabytes";
+"megabytes.detailedIntroduction" = "Megabytes are a unit of digital information storage equal to one million bytes.";
+
+"kilobytes.symbol" = "kB";
+"kilobytes.shortName" = "Kilobytes";
+"kilobytes.longName" = "Kilobytes";
+"kilobytes.detailedIntroduction" = "Kilobytes are a unit of digital information storage equal to one thousand bytes.";
+
+"yottabits.symbol" = "Yb";
+"yottabits.shortName" = "Yottabits";
+"yottabits.longName" = "Yottabits";
+"yottabits.detailedIntroduction" = "Yottabits are a unit of digital information storage equal to one septillion bits.";
+
+"zettabits.symbol" = "Zb";
+"zettabits.shortName" = "Zettabits";
+"zettabits.longName" = "Zettabits";
+"zettabits.detailedIntroduction" = "Zettabits are a unit of digital information storage equal to one sextillion bits.";
+
+"exabits.symbol" = "Eb";
+"exabits.shortName" = "Exabits";
+"exabits.longName" = "Exabits";
+"exabits.detailedIntroduction" = "Exabits are a unit of digital information storage equal to one quintillion bits.";
+
+"petabits.symbol" = "Pb";
+"petabits.shortName" = "Petabits";
+"petabits.longName" = "Petabits";
+"petabits.detailedIntroduction" = "Petabits are a unit of digital information storage equal to one quadrillion bits.";
+
+"terabits.symbol" = "Tb";
+"terabits.shortName" = "Terabits";
+"terabits.longName" = "Terabits";
+"terabits.detailedIntroduction" = "Terabits are a unit of digital information storage equal to one trillion bits.";
+
+"gigabits.symbol" = "Gb";
+"gigabits.shortName" = "Gigabits";
+"gigabits.longName" = "Gigabits";
+"gigabits.detailedIntroduction" = "Gigabits are a unit of digital information storage equal to one billion bits.";
+
+"megabits.symbol" = "Mb";
+"megabits.shortName" = "Megabits";
+"megabits.longName" = "Megabits";
+"megabits.detailedIntroduction" = "Megabits are a unit of digital information storage equal to one million bits.";
+
+"kilobits.symbol" = "kb";
+"kilobits.shortName" = "Kilobits";
+"kilobits.longName" = "Kilobits";
+"kilobits.detailedIntroduction" = "Kilobits are a unit of digital information storage equal to one thousand bits.";
+
+"yobibytes.symbol" = "YiB";
+"yobibytes.shortName" = "Yobibytes";
+"yobibytes.longName" = "Yobibytes";
+"yobibytes.detailedIntroduction" = "Yobibytes are a unit of digital information storage equal to 2^80 bytes.";
+
+"zebibytes.symbol" = "ZiB";
+"zebibytes.shortName" = "Zebibytes";
+"zebibytes.longName" = "Zebibytes";
+"zebibytes.detailedIntroduction" = "Zebibytes are a unit of digital information storage equal to 2^70 bytes.";
+
+"exbibytes.symbol" = "EiB";
+"exbibytes.shortName" = "Exbibytes";
+"exbibytes.longName" = "Exbibytes";
+"exbibytes.detailedIntroduction" = "Exbibytes are a unit of digital information storage equal to 2^60 bytes.";
+
+"pebibytes.symbol" = "PiB";
+"pebibytes.shortName" = "Pebibytes";
+"pebibytes.longName" = "Pebibytes";
+"pebibytes.detailedIntroduction" = "Pebibytes are a unit of digital information storage equal to 2^50 bytes.";
+
+"tebibytes.symbol" = "TiB";
+"tebibytes.shortName" = "Tebibytes";
+"tebibytes.longName" = "Tebibytes";
+"tebibytes.detailedIntroduction" = "Tebibytes are a unit of digital information storage equal to 2^40 bytes.";
+
+"gibibytes.symbol" = "GiB";
+"gibibytes.shortName" = "Gibibytes";
+"gibibytes.longName" = "Gibibytes";
+"gibibytes.detailedIntroduction" = "Gibibytes are a unit of digital information storage equal to 2^30 bytes.";
+
+"mebibytes.symbol" = "MiB";
+"mebibytes.shortName" = "Mebibytes";
+"mebibytes.longName" = "Mebibytes";
+"mebibytes.detailedIntroduction" = "Mebibytes are a unit of digital information storage equal to 2^20 bytes.";
+
+"kibibytes.symbol" = "KiB";
+"kibibytes.shortName" = "Kibibytes";
+"kibibytes.longName" = "Kibibytes";
+"kibibytes.detailedIntroduction" = "Kibibytes are a unit of digital information storage equal to 2^10 bytes.";
+
+"yobibits.symbol" = "Yibit";
+"yobibits.shortName" = "Yobibits";
+"yobibits.longName" = "Yobibits";
+"yobibits.detailedIntroduction" = "Yobibits are a unit of digital information storage equal to 2^80 bits.";
+
+"zebibits.symbol" = "Zibit";
+"zebibits.shortName" = "Zebibits";
+"zebibits.longName" = "Zebibits";
+"zebibits.detailedIntroduction" = "Zebibits are a unit of digital information storage equal to 2^70 bits.";
+
+"exbibits.symbol" = "Eibit";
+"exbibits.shortName" = "Exbibits";
+"exbibits.longName" = "Exbibits";
+"exbibits.detailedIntroduction" = "Exbibits are a unit of digital information storage equal to 2^60 bits.";
+
+"pebibits.symbol" = "Pibit";
+"pebibits.shortName" = "Pebibits";
+"pebibits.longName" = "Pebibits";
+"pebibits.detailedIntroduction" = "Pebibits are a unit of digital information storage equal to 2^50 bits.";
+
+"tebibits.symbol" = "Tibit";
+"tebibits.shortName" = "Tebibits";
+"tebibits.longName" = "Tebibits";
+"tebibits.detailedIntroduction" = "Tebibits are a unit of digital information storage equal to 2^40 bits.";
+
+"gibibits.symbol" = "Gibit";
+"gibibits.shortName" = "Gibibits";
+"gibibits.longName" = "Gibibits";
+"gibibits.detailedIntroduction" = "Gibibits are a unit of digital information storage equal to 2^30 bits.";
+
+"mebibits.symbol" = "Mibit";
+"mebibits.shortName" = "Mebibits";
+"mebibits.longName" = "Mebibits";
+"mebibits.detailedIntroduction" = "Mebibits are a unit of digital information storage equal to 2^20 bits.";
+
+"kibibits.symbol" = "Kibit";
+"kibibits.shortName" = "Kibibits";
+"kibibits.longName" = "Kibibits";
+"kibibits.detailedIntroduction" = "Kibibits are a unit of digital information storage equal to 2^10 bits.";

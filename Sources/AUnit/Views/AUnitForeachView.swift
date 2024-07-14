@@ -32,12 +32,14 @@ public struct AUnitForeachView<Content: View>: View {
     }
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, macOS 11.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
 #Preview {
     List {
-        AUnitForeachView(typeFilter: .length) { unit in
-            Button(unit.longName) {
-                print(unit.symbol)
+        AUnitForeachView(typeFilter: .speed) { unit in
+            DisclosureGroup(unit.longName) {
+                Text(unit.detailedIntroduction)
             }
         }
     }
