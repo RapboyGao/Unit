@@ -1,7 +1,7 @@
 @testable import AUnit
 import XCTest
 
-final class AnitTests: XCTestCase {
+final class AUnitTests: XCTestCase {
     func test1() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
@@ -35,6 +35,34 @@ final class AnitTests: XCTestCase {
         let time = AMeasurement(value: 1, unit: .hours)
         let distance = speed.multiplying(by: time, recalculate: false)
         print(distance?.converted(to: .kilometers) ?? "nil")
+    }
+
+    func test3() throws {
+        let mass = AMeasurement(value: 1, unit: .kilograms)
+        if let massInKilopounds = mass.converted(to: .kilopounds) {
+            print("1 kg in kilopounds: \(massInKilopounds.description)") // 应该输出 "0.00220462 kilopounds"
+        }
+    }
+
+    func test4() throws {
+        let time = AMeasurement(value: 1, unit: .days)
+        if let timeInSeconds = time.converted(to: .seconds) {
+            print("1 day in seconds: \(timeInSeconds.description)") // 应该输出 "86400 seconds"
+        }
+    }
+
+    func test5() throws {
+        let temperature = AMeasurement(value: 1, unit: .rankine)
+        if let temperatureInKelvin = temperature.converted(to: .kelvin) {
+            print("1°R in Kelvin: \(temperatureInKelvin.description)") // 应该输出 "0.555556 K"
+        }
+    }
+
+    func test6() throws {
+        let speed = AMeasurement(value: 1, unit: .yardsPerSecond)
+        if let speedInMetersPerSecond = speed.converted(to: .metersPerSecond) {
+            print("1 yard/second in meters/second: \(speedInMetersPerSecond.description)") // 应该输出 "0.9144 m/s"
+        }
     }
 
     func testAllNamesNotEmpty() throws {

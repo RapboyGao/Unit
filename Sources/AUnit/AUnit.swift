@@ -6,15 +6,15 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
     // Length
     case feet, nauticalMiles, meters, kilometers, miles, megameters, hectometers, decameters, decimeters, centimeters, millimeters, micrometers, nanometers, picometers, inches, yards, scandinavianMiles, lightyears, fathoms, furlongs, astronomicalUnits, parsecs
     // Speed
-    case feetPerSecond, knots, kilometersPerHour, metersPerSecond, milesPerHour, feetPerMinute
+    case knots, metersPerSecond, feetPerMinute, kilometersPerHour, feetPerSecond, milesPerHour, inchesPerSecond, yardsPerSecond
     // Pressure
     case hectopascals, inchesOfMercury, millimetersOfMercury, newtonsPerMetersSquared, gigapascals, megapascals, kilopascals, bars, millibars, poundsForcePerSquareInch
     // Temperature
-    case kelvin, celsius, fahrenheit
+    case kelvin, celsius, fahrenheit, rankine
     // TemperatureDifference
     case celsiusDelta, fahrenheitDelta
     // Mass
-    case kilograms, grams, decigrams, centigrams, milligrams, micrograms, nanograms, picograms, ounces, pounds, stones, metricTons, shortTons, carats, ouncesTroy, slugs
+    case metricTons, shortTons, kilograms, kilopounds, pounds, ounces, grams, decigrams, centigrams, milligrams, micrograms, nanograms, picograms, stones, carats, ouncesTroy, slugs
     // Volume
     case liters, quarts, cubicMeters, cubicCentimeters, gallons, megaliters, kiloliters, deciliters, centiliters, milliliters, cubicKilometers, cubicDecimeters, cubicMillimeters, cubicInches, cubicFeet, cubicYards, cubicMiles, acreFeet, bushels, teaspoons, tablespoons, fluidOunces, cups, pints, imperialTeaspoons, imperialTablespoons, imperialFluidOunces, imperialPints, imperialQuarts, imperialGallons, metricCups
     // Acceleration
@@ -30,7 +30,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
     // Concentration
     case gramsPerLiter, milligramsPerDeciliter, partsPerMillion
     // Time
-    case hours, minutes, seconds, milliseconds, microseconds, nanoseconds, picoseconds
+    case hours, minutes, seconds, milliseconds, microseconds, nanoseconds, picoseconds, days, weeks, years, decades, centuries
     // ElectricChargeCapacity
     case megaampereHours, kiloampereHours, ampereHours, milliampereHours, microampereHours, ampereSeconds
     // ElectricCurrent
@@ -54,15 +54,15 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         switch self {
         case .feet, .nauticalMiles, .meters, .kilometers, .miles, .megameters, .hectometers, .decameters, .decimeters, .centimeters, .millimeters, .micrometers, .nanometers, .picometers, .inches, .yards, .scandinavianMiles, .lightyears, .fathoms, .furlongs, .astronomicalUnits, .parsecs:
             return .length
-        case .feetPerSecond, .knots, .kilometersPerHour, .metersPerSecond, .milesPerHour, .feetPerMinute:
+        case .feetPerSecond, .knots, .kilometersPerHour, .metersPerSecond, .milesPerHour, .feetPerMinute, .inchesPerSecond, .yardsPerSecond:
             return .speed
         case .hectopascals, .inchesOfMercury, .millimetersOfMercury, .newtonsPerMetersSquared, .gigapascals, .megapascals, .kilopascals, .bars, .millibars, .poundsForcePerSquareInch:
             return .pressure
-        case .kelvin, .celsius, .fahrenheit:
+        case .kelvin, .celsius, .fahrenheit, .rankine:
             return .temperature
         case .celsiusDelta, .fahrenheitDelta:
             return .temperatureDifference
-        case .kilograms, .grams, .decigrams, .centigrams, .milligrams, .micrograms, .nanograms, .picograms, .ounces, .pounds, .stones, .metricTons, .shortTons, .carats, .ouncesTroy, .slugs:
+        case .kilograms, .grams, .decigrams, .centigrams, .milligrams, .micrograms, .nanograms, .picograms, .ounces, .pounds, .stones, .metricTons, .shortTons, .carats, .ouncesTroy, .slugs, .kilopounds:
             return .mass
         case .liters, .quarts, .cubicMeters, .cubicCentimeters, .gallons, .megaliters, .kiloliters, .deciliters, .centiliters, .milliliters, .cubicKilometers, .cubicDecimeters, .cubicMillimeters, .cubicInches, .cubicFeet, .cubicYards, .cubicMiles, .acreFeet, .bushels, .teaspoons, .tablespoons, .fluidOunces, .cups, .pints, .imperialTeaspoons, .imperialTablespoons, .imperialFluidOunces, .imperialPints, .imperialQuarts, .imperialGallons, .metricCups:
             return .volume
@@ -78,7 +78,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
             return .area
         case .gramsPerLiter, .milligramsPerDeciliter, .partsPerMillion:
             return .concentration
-        case .hours, .minutes, .seconds, .milliseconds, .microseconds, .nanoseconds, .picoseconds:
+        case .hours, .minutes, .seconds, .milliseconds, .microseconds, .nanoseconds, .picoseconds, .days, .weeks, .years, .decades, .centuries:
             return .time
         case .megaampereHours, .kiloampereHours, .ampereHours, .milliampereHours, .microampereHours, .ampereSeconds:
             return .electricChargeCapacity
@@ -135,6 +135,8 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .metersPerSecond: return 1.0
         case .milesPerHour: return 0.44704
         case .feetPerMinute: return 0.00508
+        case .inchesPerSecond: return 0.0254
+        case .yardsPerSecond: return 0.9144
         // Pressure
         case .hectopascals: return 100.0
         case .inchesOfMercury: return 3_386.39
@@ -150,6 +152,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .kelvin: return 1.0
         case .celsius: return 1.0
         case .fahrenheit: return 5.0 / 9.0
+        case .rankine: return 5.0 / 9.0
         // TemperatureDifference
         case .celsiusDelta: return 1.0
         case .fahrenheitDelta: return 5.0 / 9.0
@@ -170,6 +173,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .carats: return 0.0002
         case .ouncesTroy: return 0.0311035
         case .slugs: return 14.5939
+        case .kilopounds: return 453.592
         // Volume
         case .liters: return 1.0
         case .quarts: return 0.946353
@@ -256,6 +260,11 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .microseconds: return 1e-6
         case .nanoseconds: return 1e-9
         case .picoseconds: return 1e-12
+        case .days: return 86_400.0
+        case .weeks: return 604_800.0
+        case .years: return 31_536_000.0
+        case .decades: return 315_360_000.0
+        case .centuries: return 3_153_600_000.0
         // ElectricChargeCapacity
         case .megaampereHours: return 3.6e9
         case .kiloampereHours: return 3.6e6
@@ -348,6 +357,7 @@ public enum AUnit: String, Codable, Sendable, Hashable, CaseIterable, Identifiab
         case .kelvin: return 0.0
         case .celsius: return 273.15
         case .fahrenheit: return 459.67
+        case .rankine: return 0.0
         default: return 0.0
         }
     }
