@@ -1,0 +1,439 @@
+/* None translation */
+"None" = "Nessuno";
+
+/* Unit Types translations with detailed introduction */
+"UnitTypes.length.symbol" = "Lunghezza";
+"UnitTypes.length.shortName" = "Lung";
+"UnitTypes.length.longName" = "Lunghezza";
+"UnitTypes.length.detailedIntroduction" = "La lunghezza è una misura della distanza tra due punti.";
+
+"UnitTypes.speed.symbol" = "Velocità";
+"UnitTypes.speed.shortName" = "Vel";
+"UnitTypes.speed.longName" = "Velocità";
+"UnitTypes.speed.detailedIntroduction" = "La velocità è la misura di quanto velocemente un oggetto si muove.";
+
+"UnitTypes.pressure.symbol" = "Pressione";
+"UnitTypes.pressure.shortName" = "Press";
+"UnitTypes.pressure.longName" = "Pressione";
+"UnitTypes.pressure.detailedIntroduction" = "La pressione è la forza esercitata per unità di superficie.";
+
+"UnitTypes.temperature.symbol" = "Temperatura";
+"UnitTypes.temperature.shortName" = "Temp";
+"UnitTypes.temperature.longName" = "Temperatura";
+"UnitTypes.temperature.detailedIntroduction" = "La temperatura misura quanto è caldo o freddo un oggetto.";
+
+"UnitTypes.temperatureDifference.symbol" = "Delta Temp";
+"UnitTypes.temperatureDifference.shortName" = "Delta T";
+"UnitTypes.temperatureDifference.longName" = "Differenza di Temperatura";
+"UnitTypes.temperatureDifference.detailedIntroduction" = "La differenza di temperatura misura il cambiamento di temperatura tra due punti.";
+
+"UnitTypes.mass.symbol" = "Massa";
+"UnitTypes.mass.shortName" = "Mass";
+"UnitTypes.mass.longName" = "Massa";
+"UnitTypes.mass.detailedIntroduction" = "La massa è una misura della quantità di materia in un oggetto.";
+
+"UnitTypes.volume.symbol" = "Volume";
+"UnitTypes.volume.shortName" = "Vol";
+"UnitTypes.volume.longName" = "Volume";
+"UnitTypes.volume.detailedIntroduction" = "Il volume misura la quantità di spazio che un oggetto occupa.";
+
+"UnitTypes.acceleration.symbol" = "Accelerazione";
+"UnitTypes.acceleration.shortName" = "Acc";
+"UnitTypes.acceleration.longName" = "Accelerazione";
+"UnitTypes.acceleration.detailedIntroduction" = "L'accelerazione è la misura della variazione della velocità di un oggetto nel tempo.";
+
+"UnitTypes.power.symbol" = "Potenza";
+"UnitTypes.power.shortName" = "Pot";
+"UnitTypes.power.longName" = "Potenza";
+"UnitTypes.power.detailedIntroduction" = "La potenza è la misura della velocità con cui viene svolto un lavoro.";
+
+"UnitTypes.angle.symbol" = "Angolo";
+"UnitTypes.angle.shortName" = "Ang";
+"UnitTypes.angle.longName" = "Angolo";
+"UnitTypes.angle.detailedIntroduction" = "L'angolo misura la separazione tra due linee che si incontrano in un punto.";
+
+"UnitTypes.angularVelocity.symbol" = "Velocità Angolare";
+"UnitTypes.angularVelocity.shortName" = "Vel Ang";
+"UnitTypes.angularVelocity.longName" = "Velocità Angolare";
+"UnitTypes.angularVelocity.detailedIntroduction" = "La velocità angolare misura quanto velocemente ruota un oggetto.";
+
+"UnitTypes.area.symbol" = "Area";
+"UnitTypes.area.shortName" = "Area";
+"UnitTypes.area.longName" = "Area";
+"UnitTypes.area.detailedIntroduction" = "L'area misura la superficie di una forma bidimensionale.";
+
+"UnitTypes.concentration.symbol" = "Concentrazione";
+"UnitTypes.concentration.shortName" = "Conc";
+"UnitTypes.concentration.longName" = "Concentrazione";
+"UnitTypes.concentration.detailedIntroduction" = "La concentrazione misura la quantità di una sostanza in una miscela.";
+
+"UnitTypes.time.symbol" = "Tempo";
+"UnitTypes.time.shortName" = "Temp";
+"UnitTypes.time.longName" = "Tempo";
+"UnitTypes.time.detailedIntroduction" = "Il tempo misura la durata degli eventi.";
+
+"UnitTypes.electricChargeCapacity.symbol" = "Capacità di Carica";
+"UnitTypes.electricChargeCapacity.shortName" = "Cap Carica";
+"UnitTypes.electricChargeCapacity.longName" = "Capacità di Carica Elettrica";
+"UnitTypes.electricChargeCapacity.detailedIntroduction" = "La capacità di carica elettrica misura la quantità di carica elettrica immagazzinata.";
+
+"UnitTypes.electricCurrent.symbol" = "Corrente Elettrica";
+"UnitTypes.electricCurrent.shortName" = "Corr Elettr";
+"UnitTypes.electricCurrent.longName" = "Corrente Elettrica";
+"UnitTypes.electricCurrent.detailedIntroduction" = "La corrente elettrica misura il flusso di carica elettrica.";
+
+"UnitTypes.electricPotential.symbol" = "Potenziale Elettrico";
+"UnitTypes.electricPotential.shortName" = "Pot Elettr";
+"UnitTypes.electricPotential.longName" = "Potenziale Elettrico";
+"UnitTypes.electricPotential.detailedIntroduction" = "Il potenziale elettrico misura il lavoro necessario per spostare una carica elettrica.";
+
+"UnitTypes.electricResistance.symbol" = "Resistenza Elettrica";
+"UnitTypes.electricResistance.shortName" = "Res Elettr";
+"UnitTypes.electricResistance.longName" = "Resistenza Elettrica";
+"UnitTypes.electricResistance.detailedIntroduction" = "La resistenza elettrica misura la difficoltà con cui una corrente elettrica passa attraverso un conduttore.";
+
+"UnitTypes.energy.symbol" = "Energia";
+"UnitTypes.energy.shortName" = "Ener";
+"UnitTypes.energy.longName" = "Energia";
+"UnitTypes.energy.detailedIntroduction" = "L'energia misura la capacità di compiere un lavoro.";
+
+"UnitTypes.frequency.symbol" = "Frequenza";
+"UnitTypes.frequency.shortName" = "Freq";
+"UnitTypes.frequency.longName" = "Frequenza";
+"UnitTypes.frequency.detailedIntroduction" = "La frequenza misura il numero di cicli per unità di tempo.";
+
+"UnitTypes.fuelEfficiency.symbol" = "Efficienza del Carburante";
+"UnitTypes.fuelEfficiency.shortName" = "Eff Carbur";
+"UnitTypes.fuelEfficiency.longName" = "Efficienza del Carburante";
+"UnitTypes.fuelEfficiency.detailedIntroduction" = "L'efficienza del carburante misura quanto lontano può andare un veicolo con una quantità di carburante.";
+
+"UnitTypes.data.symbol" = "Dati";
+"UnitTypes.data.shortName" = "Dati";
+"UnitTypes.data.longName" = "Dati";
+"UnitTypes.data.detailedIntroduction" = "I dati misurano le informazioni memorizzate o trasmesse.";
+
+/* Unit translations with detailed introduction */
+"Unit.feet.symbol" = "ft";
+"Unit.feet.shortName" = "Piedi";
+"Unit.feet.longName" = "Piedi";
+"Unit.feet.detailedIntroduction" = "Un piede è una misura della lunghezza, equivalente a 0.3048 metri.";
+
+"Unit.nauticalMiles.symbol" = "NM";
+"Unit.nauticalMiles.shortName" = "Miglia Nautiche";
+"Unit.nauticalMiles.longName" = "Miglia Nautiche";
+"Unit.nauticalMiles.detailedIntroduction" = "Una miglia nautica è una misura della distanza utilizzata principalmente in navigazione marittima e aerea, equivalente a 1852 metri.";
+
+"Unit.meters.symbol" = "m";
+"Unit.meters.shortName" = "Metri";
+"Unit.meters.longName" = "Metri";
+"Unit.meters.detailedIntroduction" = "Un metro è la base unità di misura della lunghezza nel Sistema Internazionale di Unità (SI), equivalente a 100 centimetri.";
+
+"Unit.kilometers.symbol" = "km";
+"Unit.kilometers.shortName" = "Chilometri";
+"Unit.kilometers.longName" = "Chilometri";
+"Unit.kilometers.detailedIntroduction" = "Un chilometro è una misura della lunghezza, equivalente a 1000 metri.";
+
+"Unit.miles.symbol" = "mi";
+"Unit.miles.shortName" = "Miglia";
+"Unit.miles.longName" = "Miglia";
+"Unit.miles.detailedIntroduction" = "Una miglia è una misura della lunghezza, equivalente a 1609.344 metri.";
+
+"Unit.inches.symbol" = "in";
+"Unit.inches.shortName" = "Pollici";
+"Unit.inches.longName" = "Pollici";
+"Unit.inches.detailedIntroduction" = "Un pollice è una misura della lunghezza, equivalente a 0.0254 metri.";
+
+"Unit.yards.symbol" = "yd";
+"Unit.yards.shortName" = "Iarde";
+"Unit.yards.longName" = "Iarde";
+"Unit.yards.detailedIntroduction" = "Una iarda è una misura della lunghezza, equivalente a 0.9144 metri.";
+
+"Unit.lightyears.symbol" = "ly";
+"Unit.lightyears.shortName" = "Anni Luce";
+"Unit.lightyears.longName" = "Anni Luce";
+"Unit.lightyears.detailedIntroduction" = "Un anno luce è una misura della lunghezza utilizzata per descrivere la distanza nello spazio, equivalente a circa 9.4607304725808e15 metri.";
+
+"Unit.kilograms.symbol" = "kg";
+"Unit.kilograms.shortName" = "Chilogrammi";
+"Unit.kilograms.longName" = "Chilogrammi";
+"Unit.kilograms.detailedIntroduction" = "Un chilogrammo è la base unità di misura della massa nel Sistema Internazionale di Unità (SI), equivalente a 1000 grammi.";
+
+"Unit.grams.symbol" = "g";
+"Unit.grams.shortName" = "Grammi";
+"Unit.grams.longName" = "Grammi";
+"Unit.grams.detailedIntroduction" = "Un grammo è una misura della massa, equivalente a 0.001 chilogrammi.";
+
+"Unit.pounds.symbol" = "lb";
+"Unit.pounds.shortName" = "Libbre";
+"Unit.pounds.longName" = "Libbre";
+"Unit.pounds.detailedIntroduction" = "Una libbra è una misura della massa utilizzata principalmente negli Stati Uniti, equivalente a 453.59237 grammi.";
+
+"Unit.ounces.symbol" = "oz";
+"Unit.ounces.shortName" = "Once";
+"Unit.ounces.longName" = "Once";
+"Unit.ounces.detailedIntroduction" = "Un'oncia è una misura della massa utilizzata principalmente negli Stati Uniti, equivalente a 28.349523125 grammi.";
+
+"Unit.metricTons.symbol" = "t";
+"Unit.metricTons.shortName" = "Tonnellate";
+"Unit.metricTons.longName" = "Tonnellate Metriche";
+"Unit.metricTons.detailedIntroduction" = "Una tonnellata metrica è una misura della massa, equivalente a 1000 chilogrammi.";
+
+"Unit.liters.symbol" = "l";
+"Unit.liters.shortName" = "Litri";
+"Unit.liters.longName" = "Litri";
+"Unit.liters.detailedIntroduction" = "Un litro è una misura del volume, equivalente a 0.001 metri cubi.";
+
+"Unit.gallons.symbol" = "gal";
+"Unit.gallons.shortName" = "Galloni";
+"Unit.gallons.longName" = "Galloni";
+"Unit.gallons.detailedIntroduction" = "Un gallone è una misura del volume utilizzata principalmente negli Stati Uniti, equivalente a 3.785411784 litri.";
+
+"Unit.cubicMeters.symbol" = "m³";
+"Unit.cubicMeters.shortName" = "Metri Cubi";
+"Unit.cubicMeters.longName" = "Metri Cubi";
+"Unit.cubicMeters.detailedIntroduction" = "Un metro cubo è una misura del volume, equivalente a 1000 litri.";
+
+"Unit.quarts.symbol" = "qt";
+"Unit.quarts.shortName" = "Quartine";
+"Unit.quarts.longName" = "Quartine";
+"Unit.quarts.detailedIntroduction" = "Una quartina è una misura del volume utilizzata principalmente negli Stati Uniti, equivalente a 0.946352946 litri.";
+
+"Unit.metersPerSecond.symbol" = "m/s";
+"Unit.metersPerSecond.shortName" = "Metri al Secondo";
+"Unit.metersPerSecond.longName" = "Metri al Secondo";
+"Unit.metersPerSecond.detailedIntroduction" = "Il metro al secondo è una misura della velocità nel Sistema Internazionale di Unità (SI), che rappresenta la distanza in metri percorsa in un secondo.";
+
+"Unit.kilometersPerHour.symbol" = "km/h";
+"Unit.kilometersPerHour.shortName" = "Chilometri all'Ora";
+"Unit.kilometersPerHour.longName" = "Chilometri all'Ora";
+"Unit.kilometersPerHour.detailedIntroduction" = "Il chilometro all'ora è una misura della velocità, che rappresenta la distanza in chilometri percorsa in un'ora.";
+
+"Unit.milesPerHour.symbol" = "mph";
+"Unit.milesPerHour.shortName" = "Miglia all'Ora";
+"Unit.milesPerHour.longName" = "Miglia all'Ora";
+"Unit.milesPerHour.detailedIntroduction" = "La miglia all'ora è una misura della velocità utilizzata principalmente negli Stati Uniti e nel Regno Unito, che rappresenta la distanza in miglia percorsa in un'ora.";
+
+"Unit.knots.symbol" = "kn";
+"Unit.knots.shortName" = "Nodi";
+"Unit.knots.longName" = "Nodi";
+"Unit.knots.detailedIntroduction" = "Il nodo è una misura della velocità utilizzata principalmente in navigazione marittima e aerea, equivalente a un miglio nautico all'ora.";
+
+"Unit.hectopascals.symbol" = "hPa";
+"Unit.hectopascals.shortName" = "Ettopascal";
+"Unit.hectopascals.longName" = "Ettopascal";
+"Unit.hectopascals.detailedIntroduction" = "L'ettopascal è una misura della pressione, equivalente a 100 pascal.";
+
+"Unit.inchesOfMercury.symbol" = "inHg";
+"Unit.inchesOfMercury.shortName" = "Pollici di Mercurio";
+"Unit.inchesOfMercury.longName" = "Pollici di Mercurio";
+"Unit.inchesOfMercury.detailedIntroduction" = "Il pollice di mercurio è una misura della pressione, utilizzata principalmente negli Stati Uniti, equivalente a circa 3386.39 pascal.";
+
+"Unit.millimetersOfMercury.symbol" = "mmHg";
+"Unit.millimetersOfMercury.shortName" = "Millimetri di Mercurio";
+"Unit.millimetersOfMercury.longName" = "Millimetri di Mercurio";
+"Unit.millimetersOfMercury.detailedIntroduction" = "Il millimetro di mercurio è una misura della pressione, utilizzata principalmente in medicina, equivalente a circa 133.322 pascal.";
+
+"Unit.newtonsPerMetersSquared.symbol" = "N/m²";
+"Unit.newtonsPerMetersSquared.shortName" = "Newton per Metro Quadrato";
+"Unit.newtonsPerMetersSquared.longName" = "Newton per Metro Quadrato";
+"Unit.newtonsPerMetersSquared.detailedIntroduction" = "Il newton per metro quadrato è una misura della pressione, equivalente a un pascal.";
+
+"Unit.kelvin.symbol" = "K";
+"Unit.kelvin.shortName" = "Kelvin";
+"Unit.kelvin.longName" = "Kelvin";
+"Unit.kelvin.detailedIntroduction" = "Il kelvin è l'unità base di misura della temperatura nel Sistema Internazionale di Unità (SI), utilizzata per misurare la temperatura termodinamica.";
+
+"Unit.celsius.symbol" = "°C";
+"Unit.celsius.shortName" = "Celsius";
+"Unit.celsius.longName" = "Celsius";
+"Unit.celsius.detailedIntroduction" = "Il grado Celsius è una misura della temperatura, utilizzata comunemente per misurare la temperatura ambientale.";
+
+"Unit.fahrenheit.symbol" = "°F";
+"Unit.fahrenheit.shortName" = "Fahrenheit";
+"Unit.fahrenheit.longName" = "Fahrenheit";
+"Unit.fahrenheit.detailedIntroduction" = "Il grado Fahrenheit è una misura della temperatura, utilizzata principalmente negli Stati Uniti.";
+
+"Unit.rankine.symbol" = "°R";
+"Unit.rankine.shortName" = "Rankine";
+"Unit.rankine.longName" = "Rankine";
+"Unit.rankine.detailedIntroduction" = "Il grado Rankine è una misura della temperatura utilizzata principalmente nei campi della termodinamica e dell'ingegneria.";
+
+"Unit.celsiusDelta.symbol" = "Δ°C";
+"Unit.celsiusDelta.shortName" = "Delta Celsius";
+"Unit.celsiusDelta.longName" = "Delta Celsius";
+"Unit.celsiusDelta.detailedIntroduction" = "La differenza di temperatura in gradi Celsius misura il cambiamento di temperatura tra due punti.";
+
+"Unit.fahrenheitDelta.symbol" = "Δ°F";
+"Unit.fahrenheitDelta.shortName" = "Delta Fahrenheit";
+"Unit.fahrenheitDelta.longName" = "Delta Fahrenheit";
+"Unit.fahrenheitDelta.detailedIntroduction" = "La differenza di temperatura in gradi Fahrenheit misura il cambiamento di temperatura tra due punti.";
+
+"Unit.terawatts.symbol" = "TW";
+"Unit.terawatts.shortName" = "Terawatt";
+"Unit.terawatts.longName" = "Terawatt";
+"Unit.terawatts.detailedIntroduction" = "Il terawatt è una misura della potenza, equivalente a 10^12 watt.";
+
+"Unit.gigawatts.symbol" = "GW";
+"Unit.gigawatts.shortName" = "Gigawatt";
+"Unit.gigawatts.longName" = "Gigawatt";
+"Unit.gigawatts.detailedIntroduction" = "Il gigawatt è una misura della potenza, equivalente a 10^9 watt.";
+
+"Unit.megawatts.symbol" = "MW";
+"Unit.megawatts.shortName" = "Megawatt";
+"Unit.megawatts.longName" = "Megawatt";
+"Unit.megawatts.detailedIntroduction" = "Il megawatt è una misura della potenza, equivalente a 10^6 watt.";
+
+"Unit.kilowatts.symbol" = "kW";
+"Unit.kilowatts.shortName" = "Chilowatt";
+"Unit.kilowatts.longName" = "Chilowatt";
+"Unit.kilowatts.detailedIntroduction" = "Il chilowatt è una misura della potenza, equivalente a 10^3 watt.";
+
+"Unit.watts.symbol" = "W";
+"Unit.watts.shortName" = "Watt";
+"Unit.watts.longName" = "Watt";
+"Unit.watts.detailedIntroduction" = "Il watt è una misura della potenza nel Sistema Internazionale di Unità (SI), che rappresenta la quantità di energia trasferita o convertita per unità di tempo.";
+
+"Unit.joules.symbol" = "J";
+"Unit.joules.shortName" = "Joule";
+"Unit.joules.longName" = "Joule";
+"Unit.joules.detailedIntroduction" = "Il joule è una misura dell'energia nel Sistema Internazionale di Unità (SI), equivalente alla quantità di lavoro svolta quando una forza di un newton sposta un oggetto di un metro.";
+
+"Unit.kilojoules.symbol" = "kJ";
+"Unit.kilojoules.shortName" = "Chilojoule";
+"Unit.kilojoules.longName" = "Chilojoule";
+"Unit.kilojoules.detailedIntroduction" = "Il chilojoule è una misura dell'energia, equivalente a 10^3 joule.";
+
+"Unit.megajoules.symbol" = "MJ";
+"Unit.megajoules.shortName" = "Megajoule";
+"Unit.megajoules.longName" = "Megajoule";
+"Unit.megajoules.detailedIntroduction" = "Il megajoule è una misura dell'energia, equivalente a 10^6 joule.";
+
+"Unit.britishThermalUnits.symbol" = "BTU";
+"Unit.britishThermalUnits.shortName" = "Unità Termiche Britanniche";
+"Unit.britishThermalUnits.longName" = "Unità Termiche Britanniche";
+"Unit.britishThermalUnits.detailedIntroduction" = "L'unità termica britannica è una misura dell'energia utilizzata principalmente negli Stati Uniti, equivalente alla quantità di energia necessaria per riscaldare una libbra d'acqua di un grado Fahrenheit.";
+
+"Unit.volts.symbol" = "V";
+"Unit.volts.shortName" = "Volt";
+"Unit.volts.longName" = "Volt";
+"Unit.volts.detailedIntroduction" = "Il volt è una misura del potenziale elettrico nel Sistema Internazionale di Unità (SI), che rappresenta la differenza di potenziale che produce una corrente di un ampere attraverso una resistenza di un ohm.";
+
+"Unit.millivolts.symbol" = "mV";
+"Unit.millivolts.shortName" = "Millivolt";
+"Unit.millivolts.longName" = "Millivolt";
+"Unit.millivolts.detailedIntroduction" = "Il millivolt è una misura del potenziale elettrico, equivalente a 0.001 volt.";
+
+"Unit.amperes.symbol" = "A";
+"Unit.amperes.shortName" = "Ampere";
+"Unit.amperes.longName" = "Ampere";
+"Unit.amperes.detailedIntroduction" = "L'ampere è la base unità di misura della corrente elettrica nel Sistema Internazionale di Unità (SI).";
+
+"Unit.milliamperes.symbol" = "mA";
+"Unit.milliamperes.shortName" = "Milliampere";
+"Unit.milliamperes.longName" = "Milliampere";
+"Unit.milliamperes.detailedIntroduction" = "Il milliampere è una misura della corrente elettrica, equivalente a 0.001 ampere.";
+
+"Unit.ohms.symbol" = "Ω";
+"Unit.ohms.shortName" = "Ohm";
+"Unit.ohms.longName" = "Ohm";
+"Unit.ohms.detailedIntroduction" = "L'ohm è una misura della resistenza elettrica nel Sistema Internazionale di Unità (SI), che rappresenta la resistenza tra due punti di un conduttore quando una differenza di potenziale di un volt produce una corrente di un ampere.";
+
+"Unit.kelvinPerWatt.symbol" = "K/W";
+"Unit.kelvinPerWatt.shortName" = "Kelvin per Watt";
+"Unit.kelvinPerWatt.longName" = "Kelvin per Watt";
+"Unit.kelvinPerWatt.detailedIntroduction" = "Il kelvin per watt è una misura della resistenza termica, che rappresenta la differenza di temperatura in kelvin per unità di potenza in watt.";
+
+"Unit.newtons.symbol" = "N";
+"Unit.newtons.shortName" = "Newton";
+"Unit.newtons.longName" = "Newton";
+"Unit.newtons.detailedIntroduction" = "Il newton è una misura della forza nel Sistema Internazionale di Unità (SI), equivalente alla forza necessaria per accelerare una massa di un chilogrammo di un metro al secondo quadrato.";
+
+"Unit.hertz.symbol" = "Hz";
+"Unit.hertz.shortName" = "Hertz";
+"Unit.hertz.longName" = "Hertz";
+"Unit.hertz.detailedIntroduction" = "L'hertz è una misura della frequenza nel Sistema Internazionale di Unità (SI), che rappresenta il numero di cicli per secondo.";
+
+"Unit.kilohertz.symbol" = "kHz";
+"Unit.kilohertz.shortName" = "Chilohertz";
+"Unit.kilohertz.longName" = "Chilohertz";
+"Unit.kilohertz.detailedIntroduction" = "Il chilohertz è una misura della frequenza, equivalente a 10^3 hertz.";
+
+"Unit.megahertz.symbol" = "MHz";
+"Unit.megahertz.shortName" = "Megahertz";
+"Unit.megahertz.longName" = "Megahertz";
+"Unit.megahertz.detailedIntroduction" = "Il megahertz è una misura della frequenza, equivalente a 10^6 hertz.";
+
+"Unit.gigahertz.symbol" = "GHz";
+"Unit.gigahertz.shortName" = "Gigahertz";
+"Unit.gigahertz.longName" = "Gigahertz";
+"Unit.gigahertz.detailedIntroduction" = "Il gigahertz è una misura della frequenza, equivalente a 10^9 hertz.";
+
+"Unit.bps.symbol" = "bps";
+"Unit.bps.shortName" = "Bit al Secondo";
+"Unit.bps.longName" = "Bit al Secondo";
+"Unit.bps.detailedIntroduction" = "Il bit al secondo è una misura della velocità di trasferimento dei dati, che rappresenta il numero di bit trasmessi per secondo.";
+
+"Unit.kbps.symbol" = "kbps";
+"Unit.kbps.shortName" = "Kilobit al Secondo";
+"Unit.kbps.longName" = "Kilobit al Secondo";
+"Unit.kbps.detailedIntroduction" = "Il kilobit al secondo è una misura della velocità di trasferimento dei dati, equivalente a 10^3 bit per secondo.";
+
+"Unit.Mbps.symbol" = "Mbps";
+"Unit.Mbps.shortName" = "Megabit al Secondo";
+"Unit.Mbps.longName" = "Megabit al Secondo";
+"Unit.Mbps.detailedIntroduction" = "Il megabit al secondo è una misura della velocità di trasferimento dei dati, equivalente a 10^6 bit per secondo.";
+
+"Unit.Gbps.symbol" = "Gbps";
+"Unit.Gbps.shortName" = "Gigabit al Secondo";
+"Unit.Gbps.longName" = "Gigabit al Secondo";
+"Unit.Gbps.detailedIntroduction" = "Il gigabit al secondo è una misura della velocità di trasferimento dei dati, equivalente a 10^9 bit per secondo.";
+
+"Unit.bytes.symbol" = "B";
+"Unit.bytes.shortName" = "Byte";
+"Unit.bytes.longName" = "Byte";
+"Unit.bytes.detailedIntroduction" = "Il byte è una misura della quantità di dati, equivalente a 8 bit.";
+
+"Unit.kilobytes.symbol" = "kB";
+"Unit.kilobytes.shortName" = "Kilobyte";
+"Unit.kilobytes.longName" = "Kilobyte";
+"Unit.kilobytes.detailedIntroduction" = "Il kilobyte è una misura della quantità di dati, equivalente a 10^3 byte.";
+
+"Unit.megabytes.symbol" = "MB";
+"Unit.megabytes.shortName" = "Megabyte";
+"Unit.megabytes.longName" = "Megabyte";
+"Unit.megabytes.detailedIntroduction" = "Il megabyte è una misura della quantità di dati, equivalente a 10^6 byte.";
+
+"Unit.gigabytes.symbol" = "GB";
+"Unit.gigabytes.shortName" = "Gigabyte";
+"Unit.gigabytes.longName" = "Gigabyte";
+"Unit.gigabytes.detailedIntroduction" = "Il gigabyte è una misura della quantità di dati, equivalente a 10^9 byte.";
+
+"Unit.terabytes.symbol" = "TB";
+"Unit.terabytes.shortName" = "Terabyte";
+"Unit.terabytes.longName" = "Terabyte";
+"Unit.terabytes.detailedIntroduction" = "Il terabyte è una misura della quantità di dati, equivalente a 10^12 byte.";
+
+"Unit.revolutionsPerMinute.symbol" = "rpm";
+"Unit.revolutionsPerMinute.shortName" = "Giri al Minuto";
+"Unit.revolutionsPerMinute.longName" = "Giri al Minuto";
+"Unit.revolutionsPerMinute.detailedIntroduction" = "Il giro al minuto è una misura della velocità angolare, che rappresenta il numero di giri completi in un minuto.";
+
+"Unit.litersPer100Kilometers.symbol" = "L/100km";
+"Unit.litersPer100Kilometers.shortName" = "Litri per 100 Chilometri";
+"Unit.litersPer100Kilometers.longName" = "Litri per 100 Chilometri";
+"Unit.litersPer100Kilometers.detailedIntroduction" = "Il litro per 100 chilometri è una misura dell'efficienza del carburante, che rappresenta la quantità di carburante consumata per percorrere 100 chilometri.";
+
+"Unit.milesPerGallon.symbol" = "mpg";
+"Unit.milesPerGallon.shortName" = "Miglia per Gallone";
+"Unit.milesPerGallon.longName" = "Miglia per Gallone";
+"Unit.milesPerGallon.detailedIntroduction" = "La miglia per gallone è una misura dell'efficienza del carburante utilizzata principalmente negli Stati Uniti, che rappresenta la distanza percorsa in miglia per ogni gallone di carburante consumato.";
+
+"Unit.kilogramsPerCubicMeter.symbol" = "kg/m³";
+"Unit.kilogramsPerCubicMeter.shortName" = "Chilogrammi per Metro Cubo";
+"Unit.kilogramsPerCubicMeter.longName" = "Chilogrammi per Metro Cubo";
+"Unit.kilogramsPerCubicMeter.detailedIntroduction" = "Il chilogrammo per metro cubo è una misura della densità, che rappresenta la massa in chilogrammi per unità di volume in metri cubi.";
+
+"Unit.gramsPerLiter.symbol" = "g/L";
+"Unit.gramsPerLiter.shortName" = "Grammi per Litro";
+"Unit.gramsPerLiter.longName" = "Grammi per Litro";
+"Unit.gramsPerLiter.detailedIntroduction" = "Il grammo per litro è una misura della concentrazione, che rappresenta la massa in grammi di una sostanza per unità di volume in litri.";
