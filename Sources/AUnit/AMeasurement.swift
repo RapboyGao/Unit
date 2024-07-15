@@ -40,20 +40,22 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
     /// - Parameter other: The other measurement to add.
     /// - Returns: A new measurement representing the sum, or nil if the units are incompatible.
     public func adding(_ other: AMeasurement) -> AMeasurement? {
-        if unit.unitType == .temperature && other.unit.unitType == .temperatureDifference {
-            if let otherConverted = other.converted(to: unit) {
-                return AMeasurement(value: value + otherConverted.value, unit: unit)
-            }
-        } else if unit.unitType == .temperatureDifference && other.unit.unitType == .temperature {
-            if let selfConverted = converted(to: other.unit) {
-                return AMeasurement(value: selfConverted.value + other.value, unit: other.unit)
-            }
-        } else if unit.unitType == other.unit.unitType {
-            if let otherConverted = other.converted(to: unit) {
-                return AMeasurement(value: value + otherConverted.value, unit: unit)
-            }
+        switch unit {
+        case .fahrenheit, .rankine:
+            guard let otherConverted = other.converted(to: .fahrenheitDelta)
+            else { return nil }
+            return AMeasurement(value: value + otherConverted.value, unit: unit)
+        case .celsius, .kelvin:
+            guard let otherConverted = other.converted(to: .celsiusDelta)
+            else { return nil }
+            return AMeasurement(value: value + otherConverted.value, unit: unit)
+        default:
+            guard unit.unitType == other.unit.unitType,
+                  unit.unitType != .fuelEfficiency, // 燃油效率特殊，不能相加减
+                  let otherConverted = other.converted(to: unit)
+            else { return nil }
+            return AMeasurement(value: value + otherConverted.value, unit: unit)
         }
-        return nil
     }
 
     /// Subtracts another measurement from this measurement.
@@ -61,16 +63,22 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
     /// - Parameter other: The other measurement to subtract.
     /// - Returns: A new measurement representing the difference, or nil if the units are incompatible.
     public func subtracting(_ other: AMeasurement) -> AMeasurement? {
-        if unit.unitType == .temperature && other.unit.unitType == .temperatureDifference {
-            if let otherConverted = other.converted(to: unit) {
-                return AMeasurement(value: value - otherConverted.value, unit: unit)
-            }
-        } else if unit.unitType == other.unit.unitType {
-            if let otherConverted = other.converted(to: unit) {
-                return AMeasurement(value: value - otherConverted.value, unit: unit)
-            }
+        switch unit {
+        case .fahrenheit, .rankine:
+            guard let otherConverted = other.converted(to: .fahrenheitDelta)
+            else { return nil }
+            return AMeasurement(value: value - otherConverted.value, unit: unit)
+        case .celsius, .kelvin:
+            guard let otherConverted = other.converted(to: .celsiusDelta)
+            else { return nil }
+            return AMeasurement(value: value - otherConverted.value, unit: unit)
+        default:
+            guard unit.unitType == other.unit.unitType,
+                  unit.unitType != .fuelEfficiency, // 燃油效率特殊，不能相加减
+                  let otherConverted = other.converted(to: unit)
+            else { return nil }
+            return AMeasurement(value: value - otherConverted.value, unit: unit)
         }
-        return nil
     }
 
     /// Multiplies this measurement by another measurement.
@@ -209,7 +217,8 @@ public struct AMeasurement: Codable, Sendable, Hashable, CustomStringConvertible
     ///   - epsilon: The tolerance within which the measurements are considered equal.
     /// - Returns: A boolean indicating whether the measurements are equal within the specified tolerance.
     public func equal(to other: AMeasurement, epsilon: Double = 1e-10) -> Bool {
-        guard let convertedOther = other.converted(to: unit) else { return false }
+        guard let convertedOther = other.converted(to: unit)
+        else { return false }
         return abs(value - convertedOther.value) <= epsilon
     }
 }
