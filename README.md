@@ -1,13 +1,14 @@
-# AUnit Package README
-
-## Translations
-
-[🇺🇸 English](#english) | [🇨🇳 简体中文](#简体中文) | [🇯🇵 日本語](#日本語) | [🇫🇷 Français](#français) | [🇰🇷 한국어](#한국어) | [🇷🇺 Русский](#русский) | [🇵🇹 Português](#português) | [🇪🇸 Español](#español) | [🇹🇭 ไทย](#ไทย) | [🇩🇪 Deutsch](#deutsch)
+# AUnit Package
 
 ![Swift](https://img.shields.io/badge/Swift-5.10-orange.svg)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+
+## Translations
+
+[🇺🇸 English](#english) | [🇨🇳 简体中文](#简体中文) | [🇯🇵 日本語](#日本語) | [🇫🇷 Français](#français) | [🇰🇷 한국어](#한국어) | [🇷🇺 Русский](#русский) | [🇵🇹 Português](#português) | [🇪🇸 Español](#español) | [🇹🇭 ไทย](#ไทย) | [🇩🇪 Deutsch](#deutsch)
 
 ## English
 
