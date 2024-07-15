@@ -2,7 +2,7 @@
 
 ## Translations
 
-[🇺🇸 English](#english) | [🇨🇳 简体中文](#简体中文) | [🇯🇵 日本語](#日本語) | [🇫🇷 Français](#français) | [🇵🇹 Português](#português) | [🇪🇸 Español](#español) | [🇩🇪 Deutsch](#deutsch) | [🇷🇺 Русский](#русский) | [🇹🇭 ไทย](#ไทย) | [🇰🇷 한국어](#한국어)
+[🇺🇸 English](#english) | [🇨🇳 简体中文](#简体中文) | [🇯🇵 日本語](#日本語) | [🇫🇷 Français](#français) | [🇰🇷 한국어](#한국어) | [🇷🇺 Русский](#русский) | [🇵🇹 Português](#português) | [🇪🇸 Español](#español) | [🇹🇭 ไทย](#ไทย) | [🇩🇪 Deutsch](#deutsch)
 
 ![Swift](https://img.shields.io/badge/Swift-5.10-orange.svg)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20tvOS-blue.svg)
