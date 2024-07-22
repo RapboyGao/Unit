@@ -2373,3 +2373,8 @@
 "data.symbol" = "D";
 "data.shortName" = "Dati";
 "data.longName" = "Dati";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "Il Coulomb è l'unità SI di carica elettrica, intitolata a Charles-Augustin de Coulomb.";

@@ -240,7 +240,7 @@ final class AUnitMeasurementsCompare: XCTestCase {
             (1.0, .kiloampereHours, .ampereHours, .kiloampereHours, .ampereHours),
             (1.0, .milliampereHours, .ampereHours, .milliampereHours, .ampereHours),
             (1.0, .microampereHours, .ampereHours, .microampereHours, .ampereHours),
-            (1.0, .ampereSeconds, .ampereHours, .coulombs, .ampereHours)
+            (1.0, .coulombs, .ampereHours, .coulombs, .ampereHours)
         ]
 
         for conversion in electricChargeCapacityConversions {

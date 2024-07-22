@@ -1499,3 +1499,8 @@ gradians.detailedIntroduction" = "百分度是角度单位，等于1度的1/100�
 "data.shortName" = "数据";
 "data.longName" = "数据";
 "data.detailedIntroduction" = "数据是信息的记录，通常用于计算机处理。";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "库仑";
+"coulombs.longName" = "库仑";
+"coulombs.detailedIntroduction" = "库仑是电荷的国际单位，得名于查尔斯-奥古斯丁·库仑。";

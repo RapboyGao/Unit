@@ -1238,3 +1238,8 @@
 "framesPerSecond.shortName" = "Fotogramas por Segundo";
 "framesPerSecond.longName" = "Fotogramas por Segundo";
 "framesPerSecond.detailedIntroduction" = "Fotogramas por segundo (fps) es una unidad de frecuencia que mide el número de imágenes individuales que se muestran o capturan en un segundo.";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "El Coulomb es la unidad SI de carga eléctrica, nombrada en honor a Charles-Augustin de Coulomb.";

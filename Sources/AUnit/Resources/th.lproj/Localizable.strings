@@ -1215,3 +1215,8 @@
 "kibibits.shortName" = "กิบิบิต";
 "kibibits.longName" = "กิบิบิต";
 "kibibits.detailedIntroduction" = "กิบิบิตเป็นหน่วยข้อมูลที่ใช้ในการวัดปริมาณข้อมูลในระดับใหญ่ เช่น การสื่อสารข้อมูลในระบบเครือข่ายขนาดใหญ่";
+
+"coulombs.symbol" = "ค";
+"coulombs.shortName" = "คูลอมบ์";
+"coulombs.longName" = "คูลอมบ์";
+"coulombs.detailedIntroduction" = "คูลอมบ์เป็นหน่วยเอสไอของประจุไฟฟ้า ซึ่งตั้งชื่อตาม Charles-Augustin de Coulomb";

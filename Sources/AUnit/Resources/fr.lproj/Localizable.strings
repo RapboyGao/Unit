@@ -1214,3 +1214,8 @@
 "kibibits.detailedIntroduction" = "Le kibibit est une unité de stockage de données égale à 2^10 bits.";
 
 "None" = "Aucun";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "Le Coulomb est l'unité SI de charge électrique, nommée d'après Charles-Augustin de Coulomb.";

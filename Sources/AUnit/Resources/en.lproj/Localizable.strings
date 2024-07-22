@@ -1239,3 +1239,8 @@
 "kibibits.shortName" = "Kibibits";
 "kibibits.longName" = "Kibibits";
 "kibibits.detailedIntroduction" = "Kibibits are a unit of digital information storage equal to 2^10 bits.";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "Coulomb is the SI unit of electric charge, named after Charles-Augustin de Coulomb.";

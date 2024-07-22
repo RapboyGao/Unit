@@ -32,7 +32,7 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
     // Time
     case hours, minutes, seconds, milliseconds, microseconds, nanoseconds, picoseconds, days, weeks, years, decades, centuries
     // ElectricChargeCapacity
-    case megaampereHours, kiloampereHours, ampereHours, milliampereHours, microampereHours, ampereSeconds
+    case megaampereHours, kiloampereHours, ampereHours, milliampereHours, microampereHours, coulombs
     // ElectricCurrent
     case megaamperes, kiloamperes, amperes, milliamperes, microamperes
     // ElectricPotential
@@ -80,7 +80,7 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
             return .concentration
         case .hours, .minutes, .seconds, .milliseconds, .microseconds, .nanoseconds, .picoseconds, .days, .weeks, .years, .decades, .centuries:
             return .time
-        case .megaampereHours, .kiloampereHours, .ampereHours, .milliampereHours, .microampereHours, .ampereSeconds:
+        case .megaampereHours, .kiloampereHours, .ampereHours, .milliampereHours, .microampereHours, .coulombs:
             return .electricChargeCapacity
         case .megaamperes, .kiloamperes, .amperes, .milliamperes, .microamperes:
             return .electricCurrent
@@ -266,7 +266,7 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .ampereHours: return 3600.0
         case .milliampereHours: return 3.6
         case .microampereHours: return 0.0036
-        case .ampereSeconds: return 1.0
+        case .coulombs: return 1.0
         // ElectricCurrent
         case .megaamperes: return 1.0e6
         case .kiloamperes: return 1000.0

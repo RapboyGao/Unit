@@ -1479,3 +1479,18 @@
 "kibibits.symbol" = "Киб";
 "kibibits.shortName" = "Киб";
 "kibibits.longName" = "Кибибит";
+
+"coulombs.symbol" = "Кл";
+"coulombs.shortName" = "Кулоны";
+"coulombs.longName" = "Кулон";
+"coulombs.detailedIntroduction" = "Кулон — это единица измерения электрического заряда в системе СИ, названная в честь Шарля Огюстена де Кулона.";
+
+"coulombs.symbol" = "ค";
+"coulombs.shortName" = "คูลอมบ์";
+"coulombs.longName" = "คูลอมบ์";
+"coulombs.detailedIntroduction" = "คูลอมบ์เป็นหน่วยเอสไอของประจุไฟฟ้า ซึ่งตั้งชื่อตาม Charles-Augustin de Coulomb";
+
+"coulombs.symbol" = "Кл";
+"coulombs.shortName" = "Кулоны";
+"coulombs.longName" = "Кулон";
+"coulombs.detailedIntroduction" = "Кулон — это единица измерения электрического заряда в системе СИ, названная в честь Шарля Огюстена де Кулона.";

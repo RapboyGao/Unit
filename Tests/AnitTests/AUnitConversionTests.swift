@@ -197,7 +197,7 @@ final class AUnitConversionTests: XCTestCase {
         assertConversion(1.0, from: .kiloampereHours, to: .ampereHours, expected: 1000.0) // 千安时到安时
         assertConversion(1.0, from: .milliampereHours, to: .ampereHours, expected: 0.001) // 毫安时到安时
         assertConversion(1.0, from: .microampereHours, to: .ampereHours, expected: 1.0e-6) // 微安时到安时
-        assertConversion(1.0, from: .ampereSeconds, to: .ampereHours, expected: 1.0 / 3600.0) // 安秒到安时
+        assertConversion(1.0, from: .coulombs, to: .ampereHours, expected: 1.0 / 3600.0) // 安秒到安时
         assertConversion(1.0, from: .ampereHours, to: .ampereHours, expected: 1.0) // 安时到安时
         // 添加更多电荷容量单位测试
     }

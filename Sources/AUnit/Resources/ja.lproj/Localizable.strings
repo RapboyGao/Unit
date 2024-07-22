@@ -1295,3 +1295,8 @@
 "kibibits.shortName" = "キビビット";
 "kibibits.longName" = "キビビット";
 "kibibits.detailedIntroduction" = "キビビットはデータの単位で、1キビビットは1024ビットです。";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "クーロン";
+"coulombs.longName" = "クーロン";
+"coulombs.detailedIntroduction" = "クーロンは電気量のSI単位で、シャルル＝オーギュスタン・ド・クーロンにちなんで名付けられました。";

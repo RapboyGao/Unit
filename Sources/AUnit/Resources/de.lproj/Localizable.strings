@@ -1351,3 +1351,8 @@
 "kibibits.shortName" = "Kibibit";
 "kibibits.longName" = "Kibibit";
 "kibibits.detailedIntroduction" = "Das Kibibit ist eine Einheit der Datenmenge, die 1.024 Bits entspricht. Es wird häufig zur Messung von kleinen Datenmengen verwendet.";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "Coulomb ist die SI-Einheit der elektrischen Ladung, benannt nach Charles-Augustin de Coulomb.";

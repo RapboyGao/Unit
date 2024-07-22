@@ -1363,3 +1363,8 @@
 "kibibits.shortName" = "Kibibit";
 "kibibits.longName" = "Kibibits";
 "kibibits.detailedIntroduction" = "Kibibit é uma unidade de informação em computação, igual a 2^10 bits.";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "Coulombs";
+"coulombs.longName" = "Coulomb";
+"coulombs.detailedIntroduction" = "O Coulomb é a unidade SI de carga elétrica, nomeada em homenagem a Charles-Augustin de Coulomb.";

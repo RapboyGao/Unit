@@ -1239,3 +1239,8 @@
 "kibibits.shortName" = "千比特";
 "kibibits.longName" = "千比特";
 "kibibits.detailedIntroduction" = "千比特是数字信息存储单位，等于2^10比特。";
+
+"coulombs.symbol" = "C";
+"coulombs.shortName" = "庫侖";
+"coulombs.longName" = "庫侖";
+"coulombs.detailedIntroduction" = "庫侖是電荷的國際單位，得名於查爾斯-奧古斯丁·庫侖。";
