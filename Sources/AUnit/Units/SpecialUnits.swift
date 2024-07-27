@@ -1,4 +1,39 @@
-import Foundation
+// ---------FuelEfficiency------------
+public enum AUFuelEfficiency: AUnitProtocol, Identifiable {
+    case litersPer100Kilometers, milesPerImperialGallon, milesPerGallon
+
+    public var id: AUnit {
+        switch self {
+        case .litersPer100Kilometers: return .litersPer100Kilometers
+        case .milesPerImperialGallon: return .milesPerImperialGallon
+        case .milesPerGallon: return .milesPerGallon
+        }
+    }
+
+    public static var baseUnit: AUFuelEfficiency = .litersPer100Kilometers
+
+    public func toBaseValue(value: Double) -> Double {
+        switch self {
+        case .litersPer100Kilometers:
+            return value
+        case .milesPerImperialGallon:
+            return 282.4809362796091 / value
+        case .milesPerGallon:
+            return 235.2145833333333 / value
+        }
+    }
+
+    public func fromBaseValue(value: Double) -> Double {
+        switch self {
+        case .litersPer100Kilometers:
+            return value
+        case .milesPerImperialGallon:
+            return 282.4809362796091 / value
+        case .milesPerGallon:
+            return 235.2145833333333 / value
+        }
+    }
+}
 
 /// Enumeration representing various units of temperature.
 /// 表示各种温度单位的枚举。
@@ -27,7 +62,7 @@ public enum AUTemperature: AUnitProtocol, Identifiable {
 
     /// The associated `AUnit` value for this unit.
     /// 此单位关联的 `AUnit` 值。
-    public var aUnit: AUnit {
+    public var id: AUnit {
         switch self {
         case .celsius: return .celsius
         case .fahrenheit: return .fahrenheit
@@ -35,10 +70,6 @@ public enum AUTemperature: AUnitProtocol, Identifiable {
         case .rankine: return .rankine
         }
     }
-
-    /// The identifier for the temperature unit.
-    /// 温度单位的标识符。
-    public var id: AUTemperature { self }
 
     /// The base unit for temperature is Celsius.
     /// 温度的基本单位是摄氏度。

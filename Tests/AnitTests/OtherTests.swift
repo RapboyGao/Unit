@@ -6,8 +6,10 @@ final class OtherTests: XCTestCase {
         print("现在一共有\(AUnit.allCases.count)种单位")
     }
 
-    func testSummary2() throws {
+    func testSummaryProportional() throws {
         for unitType in AUnitType.allCases {
+            guard unitType != .fuelEfficiency, unitType != .temperature
+            else { continue }
             let capitalFirst = "\(unitType)".replacing(#/^\w/#) { match in
                 match.capitalized
             }
@@ -24,37 +26,21 @@ final class OtherTests: XCTestCase {
             guard let baseUnit = baseUnit
             else { fatalError("没有基准单位") }
             let toPrint = """
-
-            // ---------\(capitalFirst)------------
-            public enum AU\(capitalFirst): AUnitProtocol, Identifiable{
+            // Mark: - \(capitalFirst)
+            public enum AU\(capitalFirst): AProportionalUnitProtocol, Identifiable{
                 case \(caseStrings.joined(separator: ","))
-
                 public var coefficient: Double {
                     switch self {
                     \(coefficientStrings.joined(separator: "\n\t\t"))
                     }
                 }
-
-                public var aUnit: AUnit {
+                public var id: AUnit {
                     switch self {
                     \(aUnitStrings.joined(separator: "\n\t\t"))
                     }
                 }
-
                 public static var baseUnit: AU\(capitalFirst) = .\(baseUnit)
-
-                public var id: AU\(capitalFirst) { self }
-
-                public func toBaseValue(value: Double) -> Double {
-                    return value * self.coefficient
-                }
-
-                public func fromBaseValue(value: Double) -> Double {
-                    return value / self.coefficient
-                }
             }
-
-
             """
             print(toPrint)
         }

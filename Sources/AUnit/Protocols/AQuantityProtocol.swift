@@ -2,7 +2,7 @@ import Foundation
 
 /// Protocol representing a measurement with a specific value and unit.
 /// 表示具有特定值和单位的测量协议。
-public protocol AMeasurementProtocol: Codable, Hashable, Sendable {
+public protocol AQuantityProtocol: Codable, Hashable, Sendable {
     associatedtype UnitType: AUnitProtocol
     
     /// The value of the measurement.
@@ -21,7 +21,7 @@ public protocol AMeasurementProtocol: Codable, Hashable, Sendable {
     init(value: Double, unit: UnitType)
 }
 
-public extension AMeasurementProtocol {
+public extension AQuantityProtocol {
     /// Converts the measurement to a specified unit.
     /// 将测量值转换为指定单位。
     /// - Parameter newUnit: The target unit to convert to.
