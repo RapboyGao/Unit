@@ -60,4 +60,10 @@ public enum AUnitType: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         case .data: return "server.rack"
         }
     }
+
+    public var allUnits: [AUnit] {
+        AUnit.allCases.filter { unit in
+            unit.unitType == self
+        }
+    }
 }

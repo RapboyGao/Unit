@@ -2,19 +2,6 @@
 import XCTest
 
 final class AUnitTranslationTests: XCTestCase {
-    func testSummary() throws {
-        print("现在一共有\(AUnit.allCases.count)种单位")
-    }
-
-    func testSummary2() throws {
-        for unitType in AUnitType.allCases {
-            let capitalFirst = "\(unitType)".replacing(#/^\w/#) { match in
-                match.capitalized
-            }
-            print("AM" + capitalFirst + ".swift")
-        }
-    }
-
     func testAllTranslations() throws {
         // 获取所有可用的本地化列表，过滤掉 Base 本地化
         let localizations = Bundle.module.localizations.filter { $0 != "Base" }
