@@ -56,7 +56,7 @@ public enum AUTemperature: AUnitProtocol, Identifiable {
         switch self {
         case .celsius: return 273.15
         case .fahrenheit: return 459.67
-        default: return 0
+        case .kelvin, .rankine: return 0
         }
     }
 
