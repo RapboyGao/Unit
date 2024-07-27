@@ -6,6 +6,15 @@ final class AUnitTranslationTests: XCTestCase {
         print("现在一共有\(AUnit.allCases.count)种单位")
     }
 
+    func testSummary2() throws {
+        for unitType in AUnitType.allCases {
+            let capitalFirst = "\(unitType)".replacing(#/^\w/#) { match in
+                match.capitalized
+            }
+            print("AM" + capitalFirst + ".swift")
+        }
+    }
+
     func testAllTranslations() throws {
         // 获取所有可用的本地化列表，过滤掉 Base 本地化
         let localizations = Bundle.module.localizations.filter { $0 != "Base" }
@@ -66,7 +75,7 @@ final class AUnitTranslationTests: XCTestCase {
                 if longName == "\(unitType.self).longName" {
                     missingTranslations.append("\(localization): \(unitType).longName") // 记录缺失的长名称翻译
                 }
-                
+
                 if longName == "\(unitType.self).detailedIntroduction" {
                     missingTranslations.append("\(localization): \(unitType).detailedIntroduction") // 记录缺失的detailedIntroduction
                 }
