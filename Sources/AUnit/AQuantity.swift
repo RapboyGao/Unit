@@ -51,6 +51,12 @@ public extension AQuantity where UnitType == AULength {
         let value2 = other.unit.convert(value: other.value, to: .seconds)
         return AQuantity<AUSpeed>(value: value1 / value2, unit: .metersPerSecond)
     }
+
+    func divided(by other: AQuantity<AUSpeed>) -> AQuantity<AUTime> {
+        let value1 = unit.convert(value: value, to: .meters)
+        let value2 = other.unit.convert(value: other.value, to: .metersPerSecond)
+        return AQuantity<AUTime>(value: value1 / value2, unit: .seconds)
+    }
 }
 
 public extension AQuantity where UnitType == AUArea {
@@ -62,6 +68,12 @@ public extension AQuantity where UnitType == AUArea {
 
     func multiply(by other: AQuantity<AULength>) -> AQuantity<AUVolume> {
         other.multiply(by: self)
+    }
+
+    func divided(by other: AQuantity<AUVolume>) -> AQuantity<AULength> {
+        let value1 = unit.convert(value: value, to: .squareMeters)
+        let value2 = other.unit.convert(value: other.value, to: .cubicMeters)
+        return AQuantity<AULength>(value: value1 / value2, unit: .meters)
     }
 }
 
@@ -99,6 +111,18 @@ public extension AQuantity where UnitType == AUTime {
     func multiply(by other: AQuantity<AUAngularVelocity>) -> AQuantity<AUAngle> {
         other.multiply(by: self)
     }
+
+    func divided(by other: AQuantity<AUSpeed>) -> AQuantity<AULength> {
+        let value1 = unit.convert(value: value, to: .seconds)
+        let value2 = other.unit.convert(value: other.value, to: .metersPerSecond)
+        return AQuantity<AULength>(value: value1 / value2, unit: .meters)
+    }
+
+    func divided(by other: AQuantity<AUAcceleration>) -> AQuantity<AUSpeed> {
+        let value1 = unit.convert(value: value, to: .seconds)
+        let value2 = other.unit.convert(value: other.value, to: .metersPerSecondSquared)
+        return AQuantity<AUSpeed>(value: value1 / value2, unit: .metersPerSecond)
+    }
 }
 
 public extension AQuantity where UnitType == AUSpeed {
@@ -112,6 +136,12 @@ public extension AQuantity where UnitType == AUSpeed {
         let value1 = unit.convert(value: value, to: .metersPerSecond)
         let value2 = other.unit.convert(value: other.value, to: .seconds)
         return AQuantity<AUAcceleration>(value: value1 / value2, unit: .metersPerSecondSquared)
+    }
+
+    func divided(by other: AQuantity<AUAcceleration>) -> AQuantity<AUTime> {
+        let value1 = unit.convert(value: value, to: .metersPerSecond)
+        let value2 = other.unit.convert(value: other.value, to: .metersPerSecondSquared)
+        return AQuantity<AUTime>(value: value1 / value2, unit: .seconds)
     }
 }
 
@@ -128,6 +158,12 @@ public extension AQuantity where UnitType == AUMass {
         let value1 = unit.convert(value: value, to: .grams)
         let value2 = other.unit.convert(value: other.value, to: .liters)
         return AQuantity<AUConcentration>(value: value1 / value2, unit: .gramsPerLiter)
+    }
+
+    func divided(by other: AQuantity<AUConcentration>) -> AQuantity<AUVolume> {
+        let value1 = unit.convert(value: value, to: .grams)
+        let value2 = other.unit.convert(value: other.value, to: .gramsPerLiter)
+        return AQuantity<AUVolume>(value: value1 / value2, unit: .liters)
     }
 }
 
@@ -146,15 +182,21 @@ public extension AQuantity where UnitType == AUEnergy {
         return AQuantity<AUPower>(value: value1 / value2, unit: .watts)
     }
 
+    func divided(by other: AQuantity<AUPower>) -> AQuantity<AUTime> {
+        let value1 = unit.convert(value: value, to: .joules)
+        let value2 = other.unit.convert(value: other.value, to: .watts)
+        return AQuantity<AUTime>(value: value1 / value2, unit: .seconds)
+    }
+
     func divided(by other: AQuantity<AUElectricPotential>) -> AQuantity<AUElectricChargeCapacity> {
         let value1 = unit.convert(value: value, to: .joules)
         let value2 = other.unit.convert(value: other.value, to: .volts)
-        return AQuantity<AUElectricChargeCapacity>(value: value1 / value2, unit: .ampereHours)
+        return AQuantity<AUElectricChargeCapacity>(value: value1 / value2, unit: .coulombs)
     }
 
     func divided(by other: AQuantity<AUElectricChargeCapacity>) -> AQuantity<AUElectricPotential> {
         let value1 = unit.convert(value: value, to: .joules)
-        let value2 = other.unit.convert(value: other.value, to: .ampereHours)
+        let value2 = other.unit.convert(value: other.value, to: .coulombs)
         return AQuantity<AUElectricPotential>(value: value1 / value2, unit: .volts)
     }
 }
@@ -231,16 +273,22 @@ public extension AQuantity where UnitType == AUElectricChargeCapacity {
 
 public extension AQuantity where UnitType == AUAngle {
     func divided(by other: AQuantity<AUTime>) -> AQuantity<AUAngularVelocity> {
-        let value1 = unit.convert(value: value, to: .radians)
+        let value1 = unit.convert(value: value, to: .degrees)
         let value2 = other.unit.convert(value: other.value, to: .seconds)
-        return AQuantity<AUAngularVelocity>(value: value1 / value2, unit: .radiansPerSecond)
+        return AQuantity<AUAngularVelocity>(value: value1 / value2, unit: .degreesPerSecond)
+    }
+
+    func divided(by other: AQuantity<AUAngularVelocity>) -> AQuantity<AUTime> {
+        let value1 = unit.convert(value: value, to: .degrees)
+        let value2 = other.unit.convert(value: other.value, to: .degreesPerSecond)
+        return AQuantity<AUTime>(value: value1 / value2, unit: .seconds)
     }
 }
 
 public extension AQuantity where UnitType == AUAngularVelocity {
     func multiply(by other: AQuantity<AUTime>) -> AQuantity<AUAngle> {
-        let value1 = unit.convert(value: value, to: .radiansPerSecond)
+        let value1 = unit.convert(value: value, to: .degreesPerSecond)
         let value2 = other.unit.convert(value: other.value, to: .seconds)
-        return AQuantity<AUAngle>(value: value1 * value2, unit: .radians)
+        return AQuantity<AUAngle>(value: value1 * value2, unit: .degrees)
     }
 }
