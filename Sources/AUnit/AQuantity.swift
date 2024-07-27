@@ -33,6 +33,8 @@ public extension AQuantity where UnitType: AProportionalUnitProtocol {
     }
 }
 
+// MARK: - 乘除法
+
 public extension AQuantity where UnitType == AULength {
     func multiply(by other: AQuantity<AULength>) -> AQuantity<AUArea> {
         let value1 = unit.convert(value: value, to: .meters)
@@ -292,6 +294,8 @@ public extension AQuantity where UnitType == AUAngularVelocity {
         return AQuantity<AUAngle>(value: value1 * value2, unit: .degrees)
     }
 }
+
+// MARK: - 温度加减法
 
 public extension AQuantity where UnitType == AUTemperature {
     func add(_ other: AQuantity<AUTemperatureDifference>) -> AQuantity<AUTemperature> {
