@@ -12,8 +12,8 @@ temp_dir=$(mktemp -d)
 # 使用 rsync 排除 .gitignore 中的内容
 rsync -av --exclude-from='.gitignore' . "$temp_dir"
 
-# 查找所有 .swift 文件（排除 Package.swift 和 .build 目录中的文件）并总结其路径和内容
-find "$temp_dir" -type f -name "*.swift" ! -path "$temp_dir/.build/*" | while read -r file; do
+# 查找所有 .swift 文件（排除 Package.swift、.build 目录和 Tests 目录中的文件）并总结其路径和内容
+find "$temp_dir" -type f -name "*.swift" ! -path "$temp_dir/.build/*" ! -path "$temp_dir/Tests/*" | while read -r file; do
     # 获取相对路径
     relative_path="${file#$temp_dir/}"
     # 写入文件路径到输出文件
