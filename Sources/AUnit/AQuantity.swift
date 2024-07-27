@@ -292,3 +292,33 @@ public extension AQuantity where UnitType == AUAngularVelocity {
         return AQuantity<AUAngle>(value: value1 * value2, unit: .degrees)
     }
 }
+
+public extension AQuantity where UnitType == AUTemperature {
+    func add(_ other: AQuantity<AUTemperatureDifference>) -> AQuantity<AUTemperature> {
+        switch unit {
+        case .kelvin, .celsius:
+            let temperatureDelta = other.converted(to: .celsiusDelta)
+            return AQuantity(value: value + temperatureDelta.value, unit: unit)
+        case .fahrenheit, .rankine:
+            let temperatureDelta = other.converted(to: .fahrenheitDelta)
+            return AQuantity(value: value + temperatureDelta.value, unit: unit)
+        }
+    }
+
+    func subtract(_ other: AQuantity<AUTemperatureDifference>) -> AQuantity<AUTemperature> {
+        switch unit {
+        case .kelvin, .celsius:
+            let temperatureDelta = other.converted(to: .celsiusDelta)
+            return AQuantity(value: value - temperatureDelta.value, unit: unit)
+        case .fahrenheit, .rankine:
+            let temperatureDelta = other.converted(to: .fahrenheitDelta)
+            return AQuantity(value: value - temperatureDelta.value, unit: unit)
+        }
+    }
+}
+
+public extension AQuantity where UnitType == AUTemperatureDifference {
+    func add(_ other: AQuantity<AUTemperature>) -> AQuantity<AUTemperature> {
+        other.add(self)
+    }
+}
