@@ -32,6 +32,15 @@ public struct AUnitAnyTypeEasySelectorView: View {
 
 @available(iOS 14.0, macOS 11.0, tvOS 17.0, *)
 @available(watchOS, unavailable)
+private struct Example: View {
+    @State private var unit: AUnit? = nil
+    var body: some View {
+        AUnitAnyTypeEasySelectorView(unit: $unit)
+    }
+}
+
+@available(iOS 14.0, macOS 11.0, tvOS 17.0, *)
+@available(watchOS, unavailable)
 #Preview {
-    AUnitAnyTypeEasySelectorView(unit: .constant(.fahrenheit))
+    Example()
 }
