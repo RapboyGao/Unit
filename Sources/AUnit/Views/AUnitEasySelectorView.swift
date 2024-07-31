@@ -4,7 +4,7 @@ import SwiftUI
 @available(watchOS, unavailable)
 /// A view for selecting a unit of a specific type.
 /// 提供选择特定类型单位的视图。
-public struct AUnitSelectorView: View {
+public struct AUnitEasySelectorView: View {
     @Binding private var unit: AUnit?
     private var typeFilter: AUnitType
 
@@ -35,7 +35,7 @@ public struct AUnitSelectorView: View {
     ///   - unit: A binding to the selected unit.
     ///   - typeFilter: The unit type to filter by.
     ///     要过滤的单位类型。
-    public init(unit: Binding<AUnit?>, typeFilter: AUnitType) {
+    public init(unit: Binding<AUnit?>, filter typeFilter: AUnitType) {
         self._unit = unit
         self.typeFilter = typeFilter
     }
@@ -47,7 +47,7 @@ private struct AUnitSelectorViewExample: View {
     @State private var unit: AUnit? = .meters
 
     var body: some View {
-        AUnitSelectorView(unit: $unit, typeFilter: .length)
+        AUnitEasySelectorView(unit: $unit, filter: .length)
     }
 }
 

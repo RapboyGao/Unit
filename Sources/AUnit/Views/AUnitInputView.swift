@@ -51,7 +51,11 @@ public struct AUnitInputView<Label: View>: View {
                 format: .number.precision(.significantDigits(digits))
             )
             .multilineTextAlignment(.trailing)
-            AUnitSelectorView(unit: bindUnit, typeFilter: originalUnit.unitType)
+#if os(iOS)
+                .keyboardType(.decimalPad) // Ensure decimal keyboard for numeric input
+                .textContentType(.oneTimeCode) // This allows negative sign input on iOS
+#endif
+            AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType)
         }
     }
 
@@ -64,7 +68,7 @@ public struct AUnitInputView<Label: View>: View {
     ///   - digits: The number of decimal places to retain.
     ///   - placeHolder: The placeholder text for the text field.
     ///   - label: A view builder for the label to be displayed before the text field.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, originalUnit: AUnit, digits: Int, placeHolder: String, @ViewBuilder label: @escaping () -> Label) {
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String, @ViewBuilder label: @escaping () -> Label) {
         self._value = value
         self._unit = unit
         self.originalUnit = originalUnit
@@ -81,7 +85,7 @@ public struct AUnitInputView<Label: View>: View {
     ///   - originalUnit: The original unit.
     ///   - digits: The number of decimal places to retain.
     ///   - placeHolder: The placeholder text for the text field, which is also used as the label.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, originalUnit: AUnit, digits: Int, placeHolder: String) where Label == Text {
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String) where Label == Text {
         self._value = value
         self._unit = unit
         self.originalUnit = originalUnit
@@ -103,16 +107,16 @@ private struct UnitInputViewExample: View {
             AUnitInputView(
                 value: $value,
                 unit: $unit1,
-                originalUnit: .meters,
+                .meters,
                 digits: 5,
-                placeHolder: "Meters"
+                placeHolder: "1"
             )
             AUnitInputView(
                 value: $value,
                 unit: $unit2,
-                originalUnit: .meters,
+                .meters,
                 digits: 5,
-                placeHolder: "Feet"
+                placeHolder: "2"
             )
         }
     }
