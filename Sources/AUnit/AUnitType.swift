@@ -61,6 +61,33 @@ public enum AUnitType: Codable, Sendable, Hashable, CaseIterable, Identifiable {
         }
     }
 
+    public var baseUnit: AUnit {
+        switch self {
+        case .length: return .meters
+        case .speed: return .metersPerSecond
+        case .pressure: return .newtonsPerMetersSquared
+        case .temperature: return .kelvin
+        case .temperatureDifference: return .celsiusDelta
+        case .mass: return .grams
+        case .volume: return .liters
+        case .acceleration: return .metersPerSecondSquared
+        case .power: return .watts
+        case .angle: return .degrees
+        case .angularVelocity: return .degreesPerSecond
+        case .area: return .squareMeters
+        case .concentration: return .gramsPerLiter
+        case .time: return .seconds
+        case .electricChargeCapacity: return .coulombs
+        case .electricCurrent: return .amperes
+        case .electricPotential: return .volts
+        case .electricResistance: return .ohms
+        case .energy: return .joules
+        case .frequency: return .hertz
+        case .fuelEfficiency: return .litersPer100Kilometers
+        case .data: return .bytes
+        }
+    }
+
     public var allUnits: [AUnit] {
         AUnit.allCases.filter { unit in
             unit.unitType == self
