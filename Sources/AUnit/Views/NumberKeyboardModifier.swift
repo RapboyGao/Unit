@@ -4,19 +4,20 @@ import SwiftUI
 @available(iOS 15.0, *)
 struct NumberKeyboardModifier: ViewModifier {
     @Binding var value: Double?
-    var focused: Bool
     var digits: Int
 
     @State private var rotationAngle: Double = 0 // State variable to track rotation
+    @FocusState private var isFocused: Bool
 
     func body(content: Content) -> some View {
         content
-            .keyboardType(.decimalPad) // Ensure decimal keyboard for numeric input
-            .textContentType(.oneTimeCode) // This allows negative sign input on iOS
+            .focused($isFocused)
+            .keyboardType(.decimalPad)
+            .textContentType(.oneTimeCode)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
-                    if focused {
-                        if let currentValue = value {
+                    if isFocused {
+                        if let currentValue = value, !currentValue.isZero {
                             Button {
                                 value = -currentValue
                             } label: {

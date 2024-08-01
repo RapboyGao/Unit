@@ -4,15 +4,13 @@ import SwiftUI
 @available(watchOS, unavailable)
 /// A view for inputting a value and selecting a unit.
 /// 提供输入值和选择单位的视图。
-public struct AUnitInputView<Label: View>: View {
+public struct AUnitInputHStack<ALabel: View>: View {
     @Binding private var value: Double?
     @Binding private var unit: AUnit?
     private var originalUnit: AUnit
     private var digits: Int
     private var placeHolder: String
-    private var label: () -> Label
-
-    @FocusState private var isFocused: Bool
+    private var label: () -> ALabel
 
     private var bindUnit: Binding<AUnit?> {
         Binding {
@@ -52,10 +50,9 @@ public struct AUnitInputView<Label: View>: View {
                 value: convertedValue,
                 format: .number.precision(.significantDigits(0 ... digits))
             )
-            .focused($isFocused)
             .multilineTextAlignment(.trailing)
 #if os(iOS)
-                .modifier(NumberKeyboardModifier(value: $value, focused: isFocused, digits: digits))
+                .modifier(NumberKeyboardModifier(value: convertedValue, digits: digits))
 #endif
             AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType)
         }
@@ -70,7 +67,7 @@ public struct AUnitInputView<Label: View>: View {
     ///   - digits: The number of decimal places to retain.
     ///   - placeHolder: The placeholder text for the text field.
     ///   - label: A view builder for the label to be displayed before the text field.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String, @ViewBuilder label: @escaping () -> Label) {
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String, @ViewBuilder label: @escaping () -> ALabel) {
         self._value = value
         self._unit = unit
         self.originalUnit = originalUnit
@@ -87,7 +84,7 @@ public struct AUnitInputView<Label: View>: View {
     ///   - originalUnit: The original unit.
     ///   - digits: The number of decimal places to retain.
     ///   - placeHolder: The placeholder text for the text field, which is also used as the label.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String) where Label == Text {
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String) where ALabel == Text {
         self._value = value
         self._unit = unit
         self.originalUnit = originalUnit
@@ -107,14 +104,14 @@ private struct UnitInputViewExample: View {
     var body: some View {
         NavigationView {
             List {
-                AUnitInputView(
+                AUnitInputHStack(
                     value: $value,
                     unit: $unit1,
                     .meters,
                     digits: 5,
                     placeHolder: "1"
                 )
-                AUnitInputView(
+                AUnitInputHStack(
                     value: $value,
                     unit: $unit2,
                     .meters,
