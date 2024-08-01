@@ -12,6 +12,8 @@ public struct AUnitInputView<Label: View>: View {
     private var placeHolder: String
     private var label: () -> Label
 
+    @FocusState private var isFocused: Bool
+
     private var bindUnit: Binding<AUnit?> {
         Binding {
             guard originalUnit.unitType == unit?.unitType
@@ -48,12 +50,12 @@ public struct AUnitInputView<Label: View>: View {
             TextField(
                 placeHolder,
                 value: convertedValue,
-                format: .number.precision(.significantDigits(digits))
+                format: .number.precision(.significantDigits(0 ... digits))
             )
+            .focused($isFocused)
             .multilineTextAlignment(.trailing)
 #if os(iOS)
-                .keyboardType(.decimalPad) // Ensure decimal keyboard for numeric input
-                .textContentType(.oneTimeCode) // This allows negative sign input on iOS
+                .modifier(NumberKeyboardModifier(value: $value, focused: isFocused, digits: digits))
 #endif
             AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType)
         }
@@ -98,26 +100,28 @@ public struct AUnitInputView<Label: View>: View {
 @available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
 @available(watchOS, unavailable)
 private struct UnitInputViewExample: View {
-    @State private var value: Double? = nil
+    @State private var value: Double? = 1500
     @State private var unit1: AUnit? = .fahrenheit
     @State private var unit2: AUnit? = .feet
 
     var body: some View {
-        List {
-            AUnitInputView(
-                value: $value,
-                unit: $unit1,
-                .meters,
-                digits: 5,
-                placeHolder: "1"
-            )
-            AUnitInputView(
-                value: $value,
-                unit: $unit2,
-                .meters,
-                digits: 5,
-                placeHolder: "2"
-            )
+        NavigationView {
+            List {
+                AUnitInputView(
+                    value: $value,
+                    unit: $unit1,
+                    .meters,
+                    digits: 5,
+                    placeHolder: "1"
+                )
+                AUnitInputView(
+                    value: $value,
+                    unit: $unit2,
+                    .meters,
+                    digits: 5,
+                    placeHolder: "2"
+                )
+            }
         }
     }
 }
