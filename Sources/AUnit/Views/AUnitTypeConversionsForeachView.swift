@@ -29,14 +29,10 @@ public struct AUnitTypeConversionsForeachView: View {
 #Preview {
     NavigationView {
         List {
-            Section {
-                AUnitTypeConversionsForeachView(unitType: .constant(.speed))
-            }
-            Section {
-                AUnitTypeConversionsForeachView(unitType: .constant(.temperature))
-            }
-            Section {
-                AUnitTypeConversionsForeachView(unitType: .constant(.energy))
+            ForEach(AUnitType.allCases) { unitType in
+                Section(unitType.shortName) {
+                    AUnitTypeConversionsForeachView(unitType: .constant(unitType))
+                }
             }
         }
     }

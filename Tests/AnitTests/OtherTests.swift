@@ -77,4 +77,8 @@ final class OtherTests: XCTestCase {
         let value1 = AULength.nauticalMiles.convert(value: 1, to: .kilometers)
         XCTAssertEqual(value1, 1.852)
     }
+
+    func testUUID() throws {
+        print(UUID())
+    }
 }
