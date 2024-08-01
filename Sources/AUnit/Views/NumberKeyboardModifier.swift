@@ -11,6 +11,7 @@ struct NumberKeyboardModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
+            .autocorrectionDisabled()
             .focused($isFocused)
             .keyboardType(.decimalPad)
             .textContentType(.oneTimeCode)

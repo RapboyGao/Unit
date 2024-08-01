@@ -8,6 +8,24 @@ public struct AUnitTypeConversionsForeachView: View {
 
     var digits: Int
 
+    @AppStorage("18E422F5-8307-47ED-AD8E-434402A64A35 unitValues")
+    private var storedData: Data?
+
+    private func loadValue() {
+        let jsonDecoder = JSONDecoder()
+        guard let data = storedData,
+              let dictionary = try? jsonDecoder.decode([AUnitType: Double].self, from: data)
+        else { return }
+        value = dictionary[unitType]
+    }
+
+    private func saveValue() {
+        let jsonDecoder = JSONDecoder()
+        var dictionary = (try? jsonDecoder.decode([AUnitType: Double].self, from: storedData ?? Data())) ?? [:]
+        dictionary[unitType] = value
+        storedData = try? JSONEncoder().encode(dictionary)
+    }
+
     private var allUnits: [AUnit] {
         unitType.allUnits
     }
@@ -16,10 +34,16 @@ public struct AUnitTypeConversionsForeachView: View {
         ForEach(allUnits) { unit in
             AUnitInputHStackFixedUnit(value: $value, unit: unit, originalUnit: unitType.baseUnit, digits: 10, placeHolder: unit.shortName)
         }
+        .onAppear {
+            loadValue()
+        }
+        .onDisappear {
+            saveValue()
+        }
     }
 
     init(unitType: Binding<AUnitType>, digits: Int = 10) {
-        self._unitType = unitType
+        _unitType = unitType
         self.digits = digits
     }
 }
