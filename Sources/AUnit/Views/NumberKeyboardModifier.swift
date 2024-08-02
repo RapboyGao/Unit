@@ -1,7 +1,9 @@
 import SwiftUI
 
-#if os(iOS)
-@available(iOS 15.0, *)
+@available(iOS 15.0, macOS 12.0, *)
+@available(tvOS, unavailable)
+@available(watchOS, unavailable)
+@available(visionOS, unavailable)
 struct NumberKeyboardModifier: ViewModifier {
     @Binding var value: Double?
     var digits: Int
@@ -11,34 +13,35 @@ struct NumberKeyboardModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .autocorrectionDisabled()
-            .focused($isFocused)
-            .keyboardType(.decimalPad)
-            .textContentType(.oneTimeCode)
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    if isFocused {
-                        if let currentValue = value, !currentValue.isZero {
-                            Button {
-                                value = -currentValue
-                            } label: {
-                                Text(-currentValue, format: .number.precision(.significantDigits(0 ... digits)))
-                                    .foregroundStyle(currentValue > 0 ? .red : .blue)
+#if os(iOS)
+        .autocorrectionDisabled()
+        .focused($isFocused)
+        .keyboardType(.decimalPad)
+        .textContentType(.oneTimeCode)
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                if isFocused {
+                    if let currentValue = value, !currentValue.isZero {
+                        Button {
+                            value = -currentValue
+                        } label: {
+                            Text(-currentValue, format: .number.precision(.significantDigits(0 ... digits)))
+                                .foregroundStyle(currentValue > 0 ? .red : .blue)
+                        }
+                    }
+                    Spacer()
+                    Image(systemName: "arrow.counterclockwise")
+                        .foregroundStyle(.blue)
+                        .onTapGesture {
+                            value = nil
+                            withAnimation {
+                                rotationAngle -= 360
                             }
                         }
-                        Spacer()
-                        Image(systemName: "arrow.counterclockwise")
-                            .foregroundStyle(.blue)
-                            .onTapGesture {
-                                value = nil
-                                withAnimation {
-                                    rotationAngle -= 360
-                                }
-                            }
-                            .rotationEffect(.degrees(rotationAngle)) // Apply rotation effect
-                    }
+                        .rotationEffect(.degrees(rotationAngle)) // Apply rotation effect
                 }
             }
+        }
+#endif
     }
 }
-#endif

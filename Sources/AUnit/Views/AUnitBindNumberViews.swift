@@ -37,8 +37,12 @@ public struct AUnitBindNumberViews: View {
     }
 
     private func handleInput(_ newValue: Double?) {
-        guard let newValue = newValue,
-              let shownUnit = shownUnit,
+        guard let newValue = newValue
+        else {
+            originalValue = nil
+            return
+        }
+        guard let shownUnit = shownUnit,
               let originalUnit = originalUnit
         else {
             originalValue = newValue
@@ -63,7 +67,7 @@ public struct AUnitBindNumberViews: View {
             TextField(placeholder, value: bindValue, format: format)
                 .multilineTextAlignment(.trailing)
             #if os(iOS)
-                .modifier(NumberKeyboardModifier(value: $originalValue, digits: digits))
+                .modifier(NumberKeyboardModifier(value: bindValue, digits: digits))
             #endif
         } else {
             Spacer()
@@ -115,11 +119,11 @@ public struct AUnitBindNumberViews: View {
     List {
         HStack {
             Text("Hello")
-            AUnitBindNumberViews(value: .constant(nil), unit: .constant(nil), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: true)
+            AUnitBindNumberViews(value: .constant(nil), unit: .constant(.feet), origin: .meters, digits: 5, placeholder: "Hello", allowInput: true)
         }
         HStack {
             Text("Hello")
-            AUnitBindNumberViews(value: .constant(5), unit: .constant(.fahrenheit), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: true)
+            AUnitBindNumberViews(value: .constant(5), unit: .constant(.meters), origin: .meters, digits: 5, placeholder: "Hello", allowInput: true)
         }
         HStack {
             Text("Hello")
