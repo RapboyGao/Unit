@@ -17,7 +17,7 @@ public struct AUnitEasySelectorView: View {
                 Button {
                     self.unit = unit
                 } label: {
-                    Text(unit.symbol + " / " + unit.longName)
+                    Label(unit.symbol + " / " + unit.longName, systemImage: unit.unitType.systemImage)
                 }
             }
         } label: {

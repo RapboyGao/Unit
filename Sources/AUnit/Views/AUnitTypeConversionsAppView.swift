@@ -26,5 +26,6 @@ public struct AUnitTypeConversionsAppView: View {
 #Preview {
     NavigationView {
         AUnitTypeConversionsAppView()
+            .navigationTitle("Units")
     }
 }
