@@ -9,7 +9,7 @@ public struct AUnitInputViews: View {
     @Binding private var unit: AUnit?
     private var originalUnit: AUnit
     private var digits: Int
-    private var placeHolder: String
+    private var placeholder: String
 
     private var bindUnit: Binding<AUnit?> {
         Binding {
@@ -43,14 +43,14 @@ public struct AUnitInputViews: View {
 
     public var body: some View {
         TextField(
-            placeHolder,
+            placeholder,
             value: convertedValue,
             format: .number.precision(.significantDigits(0 ... digits))
         )
         .multilineTextAlignment(.trailing)
-#if os(iOS)
+        #if os(iOS)
             .modifier(NumberKeyboardModifier(value: convertedValue, digits: digits))
-#endif
+        #endif
         AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType)
     }
 
@@ -61,14 +61,14 @@ public struct AUnitInputViews: View {
     ///   - unit: A binding to the selected unit.
     ///   - originalUnit: The original unit.
     ///   - digits: The number of decimal places to retain.
-    ///   - placeHolder: The placeholder text for the text field.
+    ///   - placeholder: The placeholder text for the text field.
     ///   - label: A view builder for the label to be displayed before the text field.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String) {
-        self._value = value
-        self._unit = unit
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeholder: String) {
+        _value = value
+        _unit = unit
         self.originalUnit = originalUnit
         self.digits = digits
-        self.placeHolder = placeHolder
+        self.placeholder = placeholder
     }
 }
 
@@ -87,14 +87,14 @@ private struct UnitInputViewExample: View {
                     unit: $unit1,
                     .meters,
                     digits: 5,
-                    placeHolder: "1"
+                    placeholder: "1"
                 )
                 AUnitInputHStack(
                     value: $value,
                     unit: $unit2,
                     .meters,
                     digits: 5,
-                    placeHolder: "2"
+                    placeholder: "2"
                 )
             }
         }

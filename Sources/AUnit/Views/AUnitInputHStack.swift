@@ -9,13 +9,13 @@ public struct AUnitInputHStack<ALabel: View>: View {
     @Binding private var unit: AUnit?
     private var originalUnit: AUnit
     private var digits: Int
-    private var placeHolder: String
+    private var placeholder: String
     private var label: () -> ALabel
 
     public var body: some View {
         HStack {
             label()
-            AUnitInputViews(value: $value, unit: $unit, originalUnit, digits: digits, placeHolder: placeHolder)
+            AUnitInputViews(value: $value, unit: $unit, originalUnit, digits: digits, placeholder: placeholder)
         }
     }
 
@@ -26,14 +26,14 @@ public struct AUnitInputHStack<ALabel: View>: View {
     ///   - unit: A binding to the selected unit.
     ///   - originalUnit: The original unit.
     ///   - digits: The number of decimal places to retain.
-    ///   - placeHolder: The placeholder text for the text field.
+    ///   - placeholder: The placeholder text for the text field.
     ///   - label: A view builder for the label to be displayed before the text field.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String, @ViewBuilder label: @escaping () -> ALabel) {
-        self._value = value
-        self._unit = unit
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeholder: String, @ViewBuilder label: @escaping () -> ALabel) {
+        _value = value
+        _unit = unit
         self.originalUnit = originalUnit
         self.digits = digits
-        self.placeHolder = placeHolder
+        self.placeholder = placeholder
         self.label = label
     }
 
@@ -44,14 +44,14 @@ public struct AUnitInputHStack<ALabel: View>: View {
     ///   - unit: A binding to the selected unit.
     ///   - originalUnit: The original unit.
     ///   - digits: The number of decimal places to retain.
-    ///   - placeHolder: The placeholder text for the text field, which is also used as the label.
-    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeHolder: String) where ALabel == Text {
-        self._value = value
-        self._unit = unit
+    ///   - placeholder: The placeholder text for the text field, which is also used as the label.
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, _ originalUnit: AUnit, digits: Int, placeholder: String) where ALabel == Text {
+        _value = value
+        _unit = unit
         self.originalUnit = originalUnit
         self.digits = digits
-        self.placeHolder = placeHolder
-        self.label = { Text(placeHolder) }
+        self.placeholder = placeholder
+        label = { Text(placeholder) }
     }
 }
 
@@ -70,14 +70,14 @@ private struct UnitInputViewExample: View {
                     unit: $unit1,
                     .meters,
                     digits: 5,
-                    placeHolder: "1"
+                    placeholder: "1"
                 )
                 AUnitInputHStack(
                     value: $value,
                     unit: $unit2,
                     .meters,
                     digits: 5,
-                    placeHolder: "2"
+                    placeholder: "2"
                 )
             }
         }

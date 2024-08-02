@@ -32,7 +32,7 @@ public struct AUnitTypeConversionsForeachView: View {
 
     public var body: some View {
         ForEach(allUnits) { unit in
-            AUnitInputHStackFixedUnit(value: $value, unit: unit, originalUnit: unitType.baseUnit, digits: 10, placeHolder: unit.shortName)
+            AUnitInputHStackFixedUnit(value: $value, unit: unit, originalUnit: unitType.baseUnit, digits: 10, placeholder: unit.shortName)
         }
         .onAppear {
             loadValue()

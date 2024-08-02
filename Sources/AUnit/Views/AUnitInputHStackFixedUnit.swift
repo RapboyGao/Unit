@@ -7,7 +7,7 @@ public struct AUnitInputHStackFixedUnit: View {
     private var unit: AUnit
     private var originalUnit: AUnit
     private var digits: Int
-    private var placeHolder: String
+    private var placeholder: String
 
     private var actualUnit: AUnit {
         guard originalUnit.unitType == unit.unitType
@@ -36,24 +36,24 @@ public struct AUnitInputHStackFixedUnit: View {
     public var body: some View {
         HStack {
             TextField(
-                placeHolder,
+                placeholder,
                 value: convertedValue,
                 format: .number.precision(.significantDigits(0 ... digits))
             )
-#if os(iOS)
+            #if os(iOS)
             .modifier(NumberKeyboardModifier(value: convertedValue, digits: digits))
-#endif
+            #endif
             Menu(actualUnit.symbol) {
                 Label(actualUnit.longName, systemImage: actualUnit.unitType.systemImage)
             }
         }
     }
 
-    public init(value: Binding<Double?>, unit: AUnit, originalUnit: AUnit, digits: Int, placeHolder: String) {
-        self._value = value
+    public init(value: Binding<Double?>, unit: AUnit, originalUnit: AUnit, digits: Int, placeholder: String) {
+        _value = value
         self.unit = unit
         self.originalUnit = originalUnit
         self.digits = digits
-        self.placeHolder = placeHolder
+        self.placeholder = placeholder
     }
 }
