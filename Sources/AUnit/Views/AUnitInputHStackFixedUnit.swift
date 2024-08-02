@@ -49,7 +49,7 @@ public struct AUnitInputHStackFixedUnit: View {
         }
     }
 
-    init(value: Binding<Double?>, unit: AUnit, originalUnit: AUnit, digits: Int, placeHolder: String) {
+    public init(value: Binding<Double?>, unit: AUnit, originalUnit: AUnit, digits: Int, placeHolder: String) {
         self._value = value
         self.unit = unit
         self.originalUnit = originalUnit
