@@ -14,16 +14,63 @@ public struct AUnitBindNumberViews: View {
         if let originalUnit = originalUnit {
             if allowInput {
                 AUnitInputViews(value: $value, unit: $unit, originalUnit, digits: digits, placeholder: placeholder)
-            } else {}
+            } else {
+                AUnitValueViews(unit: $unit, value: value, originalUnit: originalUnit, digits: digits)
+            }
         } else {
             if allowInput {
-            } else {}
+                TextField(placeholder, value: $value, format: .number.precision(.significantDigits(0 ... digits)))
+                    .modifier(NumberKeyboardModifier(value: $value, digits: digits))
+            } else {
+                Spacer()
+                if let value = value {
+                    Text("= ")
+                        +
+                        Text(value, format: .number.precision(.significantDigits(0 ... digits)))
+                } else {
+                    Text(verbatim: "-")
+                }
+            }
         }
+    }
+
+    public init(value: Binding<Double?>, unit: Binding<AUnit?>, origin originalUnit: AUnit?, digits: Int, placeholder: String, allowInput: Bool) {
+        self._value = value
+        self._unit = unit
+        self.originalUnit = originalUnit
+        self.digits = digits
+        self.placeholder = placeholder
+        self.allowInput = allowInput
     }
 }
 
 @available(macOS 12.0, iOS 15.0, tvOS 15.0, *)
 @available(watchOS, unavailable)
 #Preview {
-    AUnitBindNumberViews(value: <#T##Double?#>, unit: <#T##AUnit?#>, originalUnit: <#T##AUnit?#>, digits: <#T##Int#>, placeholder: <#T##String#>, allowInput: <#T##Bool#>)
+    List {
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(nil), unit: .constant(.fahrenheit), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: true)
+        }
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(5), unit: .constant(.fahrenheit), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: true)
+        }
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(5), unit: .constant(.celsius), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: false)
+        }
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(nil), unit: .constant(.celsius), origin: .celsius, digits: 5, placeholder: "Hello", allowInput: false)
+        }
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(5), unit: .constant(.fahrenheit), origin: nil, digits: 5, placeholder: "Hello", allowInput: false)
+        }
+        HStack {
+            Text("Hello")
+            AUnitBindNumberViews(value: .constant(nil), unit: .constant(.fahrenheit), origin: nil, digits: 5, placeholder: "Hello", allowInput: false)
+        }
+    }
 }
