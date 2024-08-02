@@ -51,7 +51,7 @@ public struct AUnitInputViews: View {
         #if os(iOS)
             .modifier(NumberKeyboardModifier(value: convertedValue, digits: digits))
         #endif
-        AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType)
+        AUnitEasySelectorView(unit: bindUnit, filter: originalUnit.unitType, showNone: false)
     }
 
     /// Initializes a new instance of `UnitInputView`.

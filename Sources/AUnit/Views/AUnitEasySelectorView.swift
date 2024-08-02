@@ -8,10 +8,14 @@ public struct AUnitEasySelectorView: View {
     @Binding private var unit: AUnit?
     private var typeFilter: AUnitType
 
+    private var showNone: Bool
+
     public var body: some View {
         Menu {
-            Button(Ref.none) {
-                unit = nil
+            if showNone {
+                Button(Ref.none) {
+                    unit = nil
+                }
             }
             AUnitForeachView(typeFilter: typeFilter) { unit in
                 Button {
@@ -35,9 +39,10 @@ public struct AUnitEasySelectorView: View {
     ///   - unit: A binding to the selected unit.
     ///   - typeFilter: The unit type to filter by.
     ///     要过滤的单位类型。
-    public init(unit: Binding<AUnit?>, filter typeFilter: AUnitType) {
+    public init(unit: Binding<AUnit?>, filter typeFilter: AUnitType, showNone: Bool) {
         self._unit = unit
         self.typeFilter = typeFilter
+        self.showNone = showNone
     }
 }
 
@@ -47,7 +52,7 @@ private struct AUnitSelectorViewExample: View {
     @State private var unit: AUnit? = .meters
 
     var body: some View {
-        AUnitEasySelectorView(unit: $unit, filter: .length)
+        AUnitEasySelectorView(unit: $unit, filter: .length, showNone: false)
     }
 }
 
