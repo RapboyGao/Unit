@@ -30,15 +30,16 @@ struct NumberKeyboardModifier: ViewModifier {
                         }
                     }
                     Spacer()
-                    Image(systemName: "arrow.counterclockwise")
-                        .foregroundStyle(.blue)
-                        .onTapGesture {
+                    Button {
+                        value = 0
+                        withAnimation {
+                            rotationAngle -= 360
                             value = nil
-                            withAnimation {
-                                rotationAngle -= 360
-                            }
                         }
-                        .rotationEffect(.degrees(rotationAngle)) // Apply rotation effect
+                    } label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .rotationEffect(.degrees(rotationAngle)) // Apply rotation effect
+                    }
                 }
             }
         }
