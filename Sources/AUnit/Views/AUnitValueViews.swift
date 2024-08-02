@@ -4,7 +4,7 @@ import SwiftUI
 /// 提供显示值和选择单位的视图。
 @available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
 @available(watchOS, unavailable)
-struct AUnitValueViews: View {
+public struct AUnitValueViews: View {
     @Binding private var unit: AUnit?
     private var value: Double?
     private var originalUnit: AUnit
@@ -26,7 +26,7 @@ struct AUnitValueViews: View {
         return originalUnit.convert(value: value, to: bindUnit.wrappedValue)
     }
 
-    var body: some View {
+    public var body: some View {
         Spacer()
         if let convertedValue = convertedValue {
             Text("=")
@@ -66,6 +66,7 @@ private struct Example: View {
     var body: some View {
         List {
             HStack {
+                Text("Value")
                 AUnitValueViews(unit: $unit, value: value, originalUnit: originalUnit, digits: digits)
             }
         }

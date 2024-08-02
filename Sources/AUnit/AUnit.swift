@@ -58,7 +58,7 @@ public enum AUnit: Codable, Sendable, Hashable, CaseIterable, Identifiable {
             return .speed
         case .hectopascals, .inchesOfMercury, .millimetersOfMercury, .newtonsPerMetersSquared, .gigapascals, .megapascals, .kilopascals, .bars, .millibars, .poundsForcePerSquareInch:
             return .pressure
-        case .kelvin, .celsius, .fahrenheit, .rankine:
+        case .celsius, .fahrenheit, .kelvin, .rankine:
             return .temperature
         case .celsiusDelta, .fahrenheitDelta:
             return .temperatureDifference
